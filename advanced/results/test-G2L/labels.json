@@ -8,7 +8,7 @@
   "citations": [
    "openstax-intro-stats-2e:p21:text"
   ],
-  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên Nguyễn Ngọc Toàn đã duyệt"
  },
  {
   "query_id": "n02",
@@ -19,7 +19,7 @@
   "citations": [
    "openstax-intro-stats-2e:p74:text"
   ],
-  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên Nguyễn Ngọc Toàn đã duyệt"
  },
  {
   "query_id": "n03",
@@ -30,7 +30,7 @@
   "citations": [
    "openstax-intro-stats-2e:p96:text"
   ],
-  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên Nguyễn Ngọc Toàn đã duyệt"
  },
  {
   "query_id": "n04",
@@ -41,7 +41,7 @@
   "citations": [
    "openstax-intro-stats-2e:p134:text"
   ],
-  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên Nguyễn Ngọc Toàn đã duyệt"
  },
  {
   "query_id": "n05",
@@ -52,7 +52,7 @@
   "citations": [
    "openstax-intro-stats-2e:p142:text"
   ],
-  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên Nguyễn Ngọc Toàn đã duyệt"
  },
  {
   "query_id": "n06",
@@ -64,7 +64,7 @@
    "openstax-intro-stats-2e:p159:text",
    "openstax-intro-stats-2e:p160:text"
   ],
-  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên Nguyễn Ngọc Toàn đã duyệt"
  },
  {
   "query_id": "n07",
@@ -76,7 +76,7 @@
    "openstax-intro-stats-2e:p27:text",
    "openstax-intro-stats-2e:p27:visual"
   ],
-  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên Nguyễn Ngọc Toàn đã duyệt"
  },
  {
   "query_id": "n08",
@@ -87,7 +87,7 @@
   "citations": [
    "openstax-intro-stats-2e:p68:visual"
   ],
-  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên Nguyễn Ngọc Toàn đã duyệt"
  },
  {
   "query_id": "n09",
@@ -98,7 +98,7 @@
   "citations": [
    "openstax-intro-stats-2e:p89:visual"
   ],
-  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên Nguyễn Ngọc Toàn đã duyệt"
  },
  {
   "query_id": "n10",
@@ -110,7 +110,7 @@
    "openstax-intro-stats-2e:p107:text",
    "openstax-intro-stats-2e:p107:visual"
   ],
-  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên Nguyễn Ngọc Toàn đã duyệt"
  },
  {
   "query_id": "n11",
@@ -122,7 +122,7 @@
    "openstax-intro-stats-2e:p116:text",
    "openstax-intro-stats-2e:p116:visual"
   ],
-  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên Nguyễn Ngọc Toàn đã duyệt"
  },
  {
   "query_id": "n12",
@@ -133,7 +133,7 @@
   "citations": [
    "openstax-intro-stats-2e:p128:visual"
   ],
-  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên Nguyễn Ngọc Toàn đã duyệt"
  },
  {
   "query_id": "n13",
@@ -144,7 +144,7 @@
   "citations": [
    "openstax-intro-stats-2e:p202:visual"
   ],
-  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên Nguyễn Ngọc Toàn đã duyệt"
  },
  {
   "query_id": "n14",
@@ -155,7 +155,7 @@
   "citations": [
    "openstax-intro-stats-2e:p208:visual"
   ],
-  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên Nguyễn Ngọc Toàn đã duyệt"
  },
  {
   "query_id": "n15",
@@ -166,7 +166,7 @@
   "citations": [
    "openstax-intro-stats-2e:p236:visual"
   ],
-  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên Nguyễn Ngọc Toàn đã duyệt"
  },
  {
   "query_id": "n16",
@@ -178,7 +178,7 @@
    "openstax-intro-stats-2e:p304:text",
    "openstax-intro-stats-2e:p304:visual"
   ],
-  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên Nguyễn Ngọc Toàn đã duyệt"
  },
  {
   "query_id": "n17",
@@ -189,7 +189,7 @@
   "citations": [
    "openstax-intro-stats-2e:p38:text"
   ],
-  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên Nguyễn Ngọc Toàn đã duyệt"
  },
  {
   "query_id": "n18",
@@ -201,7 +201,7 @@
    "openstax-intro-stats-2e:p87:text",
    "openstax-intro-stats-2e:p87:text"
   ],
-  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên Nguyễn Ngọc Toàn đã duyệt"
  },
  {
   "query_id": "n19",
@@ -212,7 +212,7 @@
   "citations": [
    "openstax-intro-stats-2e:p110:text"
   ],
-  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên Nguyễn Ngọc Toàn đã duyệt"
  },
  {
   "query_id": "n20",
@@ -223,7 +223,7 @@
   "citations": [
    "openstax-intro-stats-2e:p180:text"
   ],
-  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên Nguyễn Ngọc Toàn đã duyệt"
  },
  {
   "query_id": "n21",
@@ -235,7 +235,7 @@
    "openstax-intro-stats-2e:p144:visual",
    "openstax-intro-stats-2e:p172:text"
   ],
-  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên Nguyễn Ngọc Toàn đã duyệt"
  },
  {
   "query_id": "n22",
@@ -247,7 +247,7 @@
    "openstax-intro-stats-2e:p152:visual",
    "openstax-intro-stats-2e:p152:text"
   ],
-  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên Nguyễn Ngọc Toàn đã duyệt"
  },
  {
   "query_id": "n23",
@@ -259,7 +259,7 @@
    "openstax-intro-stats-2e:p156:visual",
    "openstax-intro-stats-2e:p155:text"
   ],
-  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên Nguyễn Ngọc Toàn đã duyệt"
  },
  {
   "query_id": "n24",
@@ -271,7 +271,7 @@
    "openstax-intro-stats-2e:p169:visual",
    "openstax-intro-stats-2e:p135:text"
   ],
-  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên Nguyễn Ngọc Toàn đã duyệt"
  },
  {
   "query_id": "n25",
@@ -282,7 +282,7 @@
   "citations": [
    "openstax-intro-stats-2e:p257:text"
   ],
-  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên Nguyễn Ngọc Toàn đã duyệt"
  },
  {
   "query_id": "n26",
@@ -305,7 +305,7 @@
    "openstax-intro-stats-2e:p227:visual",
    "openstax-intro-stats-2e:p227:text"
   ],
-  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên Nguyễn Ngọc Toàn đã duyệt"
  },
  {
   "query_id": "n27",
@@ -316,7 +316,7 @@
   "citations": [
    "openstax-intro-stats-2e:p275:text"
   ],
-  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên Nguyễn Ngọc Toàn đã duyệt"
  },
  {
   "query_id": "n28",
@@ -325,7 +325,7 @@
   "pass": true,
   "reason": "Từ chối đúng (abstain).",
   "citations": [],
-  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên Nguyễn Ngọc Toàn đã duyệt"
  },
  {
   "query_id": "n29",
@@ -337,7 +337,7 @@
    "openstax-intro-stats-2e:p46:text",
    "openstax-intro-stats-2e:p224:text"
   ],
-  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên Nguyễn Ngọc Toàn đã duyệt"
  },
  {
   "query_id": "n30",
@@ -346,6 +346,6 @@
   "pass": true,
   "reason": "Từ chối đúng (abstain).",
   "citations": [],
-  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên Nguyễn Ngọc Toàn đã duyệt"
  }
 ]

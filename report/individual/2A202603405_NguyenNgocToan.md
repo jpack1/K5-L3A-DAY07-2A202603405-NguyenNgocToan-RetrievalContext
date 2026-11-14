@@ -83,7 +83,7 @@ Chi tiết, cách chọn benchmark, các cấu hình và lệnh tái lập: [adv
 | Thiếu bằng chứng | 6/6 | 100% | |
 | **Toàn bộ** | **28/30** | **93,3%** | **đạt ngưỡng 90%** |
 
-- **Trace, nhãn, chi phí:** `advanced/results/test-G2L/{traces,labels,grade_summary,summary}.json`. 0 lỗi hệ thống; 0 từ chối nhầm; 3,2 s/câu; $0 (Gemini free tier). Vòng 1 với OpenAI tốn $0,98 (vision $0,64 vẫn được dùng lại ở vòng 2). Nhãn do Claude chấm, đối chiếu trang gốc; học viên cần duyệt.
+- **Trace, nhãn, chi phí:** `advanced/results/test-G2L/{traces,labels,grade_summary,summary}.json`. 0 lỗi hệ thống; 0 từ chối nhầm; 3,2 s/câu; $0 (Gemini free tier). Vòng 1 với OpenAI tốn $0,98 (vision $0,64 vẫn được dùng lại ở vòng 2). Nhãn test 5 do Claude chấm nháp (đối chiếu trang gốc), học viên Nguyễn Ngọc Toàn đã duyệt cả 30 câu, không sửa nhãn nào.
 - **Lịch sử, minh bạch:** cấu hình E1 (OpenAI `gpt-4.1-mini`, cổng kiểm chứng) đạt 23/30 trên test cũ. Lỗi của E1 là cổng kiểm chứng chặn phép tính đúng, bảng trải hai trang, vision đọc sai và câu trả lời dài thêm ý ngoài nguồn. Vòng 2 sửa bằng cơ chế chung (tra cứu theo nhãn, ảnh gốc lúc trả lời, trả lời ngắn, bỏ cổng) và đánh giá trên test 5 mới.
 - **Giới hạn:**
   - Người soạn benchmark cũng là người dựng pipeline (Claude).
