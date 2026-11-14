@@ -1,0 +1,212 @@
+[
+ {
+  "query_id": "d01",
+  "group": "table",
+  "status": "answered",
+  "pass": true,
+  "reason": "Đúng, đối chiếu trang/ảnh gốc.",
+  "citations": [
+   "openstax-intro-stats-2e:p86:text"
+  ],
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+ },
+ {
+  "query_id": "d02",
+  "group": "table",
+  "status": "answered",
+  "pass": true,
+  "reason": "Đúng, đối chiếu trang/ảnh gốc.",
+  "citations": [
+   "openstax-intro-stats-2e:p151:text",
+   "openstax-intro-stats-2e:p151:text"
+  ],
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+ },
+ {
+  "query_id": "d03",
+  "group": "table",
+  "status": "answered",
+  "pass": true,
+  "reason": "Đúng 0.10; trích p295 (bảng lời giải 4.38 có dòng 4 → 0.10), cùng giá trị gold.",
+  "citations": [
+   "openstax-intro-stats-2e:p295:text"
+  ],
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+ },
+ {
+  "query_id": "d04",
+  "group": "chart",
+  "status": "answered",
+  "pass": true,
+  "reason": "Đúng, đối chiếu trang/ảnh gốc.",
+  "citations": [
+   "openstax-intro-stats-2e:p29:visual"
+  ],
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+ },
+ {
+  "query_id": "d05",
+  "group": "chart",
+  "status": "answered",
+  "pass": true,
+  "reason": "Đúng, đối chiếu trang/ảnh gốc.",
+  "citations": [
+   "openstax-intro-stats-2e:p109:text",
+   "openstax-intro-stats-2e:p109:visual"
+  ],
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+ },
+ {
+  "query_id": "d06",
+  "group": "chart",
+  "status": "answered",
+  "pass": true,
+  "reason": "Đúng, đối chiếu trang/ảnh gốc.",
+  "citations": [
+   "openstax-intro-stats-2e:p143:visual"
+  ],
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+ },
+ {
+  "query_id": "d07",
+  "group": "visual",
+  "status": "answered",
+  "pass": true,
+  "reason": "Đúng, đối chiếu trang/ảnh gốc.",
+  "citations": [
+   "openstax-intro-stats-2e:p205:text",
+   "openstax-intro-stats-2e:p205:visual"
+  ],
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+ },
+ {
+  "query_id": "d08",
+  "group": "visual",
+  "status": "answered",
+  "pass": true,
+  "reason": "Đúng, đối chiếu trang/ảnh gốc.",
+  "citations": [
+   "openstax-intro-stats-2e:p313:text",
+   "openstax-intro-stats-2e:p313:visual"
+  ],
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+ },
+ {
+  "query_id": "d09",
+  "group": "visual",
+  "status": "answered",
+  "pass": true,
+  "reason": "Đúng, đối chiếu trang/ảnh gốc.",
+  "citations": [
+   "openstax-intro-stats-2e:p321:visual"
+  ],
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+ },
+ {
+  "query_id": "d10",
+  "group": "text",
+  "status": "answered",
+  "pass": true,
+  "reason": "Đúng, đối chiếu trang/ảnh gốc.",
+  "citations": [
+   "openstax-intro-stats-2e:p78:text"
+  ],
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+ },
+ {
+  "query_id": "d11",
+  "group": "text",
+  "status": "answered",
+  "pass": true,
+  "reason": "Đúng, đối chiếu trang/ảnh gốc.",
+  "citations": [
+   "openstax-intro-stats-2e:p119:text",
+   "openstax-intro-stats-2e:p123:text"
+  ],
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+ },
+ {
+  "query_id": "d12",
+  "group": "text",
+  "status": "answered",
+  "pass": true,
+  "reason": "Đúng, đối chiếu trang/ảnh gốc.",
+  "citations": [
+   "openstax-intro-stats-2e:p240:text"
+  ],
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+ },
+ {
+  "query_id": "d13",
+  "group": "multihop",
+  "status": "answered",
+  "pass": true,
+  "reason": "Đúng, đối chiếu trang/ảnh gốc.",
+  "citations": [
+   "openstax-intro-stats-2e:p99:text",
+   "openstax-intro-stats-2e:p162:visual"
+  ],
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+ },
+ {
+  "query_id": "d14",
+  "group": "multihop",
+  "status": "answered",
+  "pass": true,
+  "reason": "Đúng, đối chiếu trang/ảnh gốc.",
+  "citations": [
+   "openstax-intro-stats-2e:p117:visual",
+   "openstax-intro-stats-2e:p118:text"
+  ],
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+ },
+ {
+  "query_id": "d15",
+  "group": "multihop",
+  "status": "answered",
+  "pass": true,
+  "reason": "Đúng, đối chiếu trang/ảnh gốc.",
+  "citations": [
+   "openstax-intro-stats-2e:p338:text",
+   "openstax-intro-stats-2e:p343:text",
+   "openstax-intro-stats-2e:p343:visual"
+  ],
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+ },
+ {
+  "query_id": "d16",
+  "group": "unanswerable",
+  "status": "answered",
+  "pass": true,
+  "reason": "Câu thiếu evidence: nêu rõ nguồn không có thông tin, không thêm khẳng định → đạt (ADVANCED.md: \"từ chối hoặc nêu rõ không đủ bằng chứng\").",
+  "citations": [
+   "openstax-intro-stats-2e:p117:text",
+   "openstax-intro-stats-2e:p133:text"
+  ],
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+ },
+ {
+  "query_id": "d17",
+  "group": "unanswerable",
+  "status": "answered",
+  "pass": true,
+  "reason": "Câu thiếu evidence: nêu rõ nguồn không có thông tin, không thêm khẳng định → đạt (ADVANCED.md: \"từ chối hoặc nêu rõ không đủ bằng chứng\").",
+  "citations": [
+   "openstax-intro-stats-2e:p314:text",
+   "openstax-intro-stats-2e:p327:text",
+   "openstax-intro-stats-2e:p328:text"
+  ],
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+ },
+ {
+  "query_id": "d18",
+  "group": "unanswerable",
+  "status": "answered",
+  "pass": true,
+  "reason": "Câu thiếu evidence: nêu rõ nguồn không có thông tin, không thêm khẳng định → đạt (ADVANCED.md: \"từ chối hoặc nêu rõ không đủ bằng chứng\").",
+  "citations": [
+   "openstax-intro-stats-2e:p92:text"
+  ],
+  "grader": "Claude (AI), đối chiếu text/ảnh trang gốc; học viên cần duyệt"
+ }
+]

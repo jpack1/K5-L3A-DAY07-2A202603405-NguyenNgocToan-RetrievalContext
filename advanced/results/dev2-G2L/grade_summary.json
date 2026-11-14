@@ -1,0 +1,19 @@
+{
+ "config": "G2L",
+ "model": "gemini-3.5-flash-lite",
+ "split": "dev2",
+ "by_group": {
+  "table": "6/6",
+  "chart": "4/5",
+  "visual": "5/5",
+  "text": "4/4",
+  "multihop": "4/4",
+  "unanswerable": "6/6"
+ },
+ "pass": "29/30",
+ "rate": 96.7,
+ "system_errors": 0,
+ "model_calls": 42,
+ "median_s": 3.83,
+ "cost_usd": 0.0
+}

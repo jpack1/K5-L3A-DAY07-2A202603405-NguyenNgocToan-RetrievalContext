@@ -1,0 +1,25 @@
+{
+ "config": {
+  "split": "dev",
+  "name": "G1",
+  "model": "gemini-3.5-flash",
+  "top_k": 8,
+  "budget": 30000,
+  "max_searches": 1,
+  "images": true,
+  "limit": 0,
+  "embedding": "gemini-embedding-001",
+  "strategy": "ADVG"
+ },
+ "answered_cases": "18/18",
+ "cases": 18,
+ "errors": 1,
+ "context_evidence_rate": "15/15",
+ "answered_with_gold_cited": "15/15",
+ "false_abstention": "0/15",
+ "abstention_unanswerable": "2/2",
+ "model_calls": 20,
+ "median_s": 30.68,
+ "total_cost_usd": 0.0,
+ "note": "automatic counts only; answers and citations are graded by hand in labels.json"
+}

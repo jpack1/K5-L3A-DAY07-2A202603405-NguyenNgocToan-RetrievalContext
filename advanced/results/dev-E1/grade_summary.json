@@ -1,0 +1,15 @@
+{
+ "config": "E1",
+ "by_group": {
+  "table": "3/3",
+  "chart": "3/3",
+  "visual": "3/3",
+  "text": "3/3",
+  "multihop": "2/3",
+  "unanswerable": "3/3"
+ },
+ "pass": "17/18",
+ "system_errors": 0,
+ "median_s": 4.885,
+ "cost_usd": 0.13074
+}

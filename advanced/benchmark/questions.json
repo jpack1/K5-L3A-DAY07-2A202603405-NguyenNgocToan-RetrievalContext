@@ -1,0 +1,1433 @@
+[
+ {
+  "id": "d01",
+  "split": "dev",
+  "group": "table",
+  "question": "In Table 2.11, which region has the largest number of graduates, and what number and percentage are listed for it?",
+  "expected_answer": "The South: 1,253,540 graduates, 39.0%.",
+  "required_pages": [
+   86
+  ],
+  "evidence": [
+   {
+    "page": 86,
+    "kind": "table",
+    "locator": "Table 2.11 row South",
+    "quote": "South 1,253,540 39.0%"
+   }
+  ]
+ },
+ {
+  "id": "d02",
+  "split": "dev",
+  "group": "table",
+  "question": "In Table 2.68 on the number of movies students watched the previous week, what frequency is listed for 1 movie, and how many students were asked?",
+  "expected_answer": "Frequency 9 for 1 movie; twenty-five students were asked.",
+  "required_pages": [
+   151
+  ],
+  "evidence": [
+   {
+    "page": 151,
+    "kind": "table",
+    "locator": "Table 2.68 row 1",
+    "quote": "0 5 1 9 2 6"
+   },
+   {
+    "page": 151,
+    "kind": "text",
+    "quote": "Twenty-five randomly selected students were asked the number of movies they watched the previous week."
+   }
+  ]
+ },
+ {
+  "id": "d03",
+  "split": "dev",
+  "group": "table",
+  "question": "Table 4.20 gives the probability distribution of the number of years a new hire stays with the company, but P(x = 4) is left blank. What must P(x = 4) be, given the other listed probabilities?",
+  "expected_answer": "0.10, because the probabilities sum to 1: 1 − (0.12 + 0.18 + 0.30 + 0.15 + 0.10 + 0.05) = 0.10.",
+  "required_pages": [
+   276
+  ],
+  "evidence": [
+   {
+    "page": 276,
+    "kind": "table",
+    "locator": "Table 4.20",
+    "quote": "0 0.12 1 0.18 2 0.30 3 0.15 4 5 0.10 6 0.05 Table 4.20"
+   }
+  ]
+ },
+ {
+  "id": "d04",
+  "split": "dev",
+  "group": "chart",
+  "question": "In the Pareto chart of student ethnicity (Figure 1.10), which category has the third-tallest bar, and what percentage is printed on it?",
+  "expected_answer": "Hispanic/Latino, 17.1%.",
+  "required_pages": [
+   29
+  ],
+  "evidence": [
+   {
+    "page": 29,
+    "kind": "chart",
+    "locator": "Figure 1.10",
+    "value": "bars sorted: Asian 36.1%, White 24.5%, Hispanic/Latino 17.1%, Other/Unknown 9.6%, Black 5.8%, Filipino 5.3%, Pacific Islander 1.0%, Native American 0.6%"
+   }
+  ]
+ },
+ {
+  "id": "d05",
+  "split": "dev",
+  "group": "chart",
+  "question": "Figure 2.14 shows two box plots of test scores on one axis. Which plot (top or bottom) has its box between about 78 and 89, and about where does that plot's left whisker end?",
+  "expected_answer": "The bottom plot; its left whisker ends at about 25 (25.5, the night class minimum).",
+  "required_pages": [
+   109
+  ],
+  "evidence": [
+   {
+    "page": 109,
+    "kind": "chart",
+    "locator": "Figure 2.14",
+    "value": "top box ≈56–82.5, whiskers ≈32–99; bottom box ≈78–89, median ≈81, whiskers ≈25.5–98"
+   },
+   {
+    "page": 109,
+    "kind": "text",
+    "quote": "Min = 25.5 Q1 = 78 M = 81 Q3 = 89 Max = 98"
+   }
+  ]
+ },
+ {
+  "id": "d06",
+  "split": "dev",
+  "group": "chart",
+  "question": "In the histogram of Figure 2.32, which value has the tallest bar and what is its height, and which two values have bars of equal height?",
+  "expected_answer": "Value 3 has the tallest bar (8); values 5 and 6 have equal bars (2 each).",
+  "required_pages": [
+   143
+  ],
+  "evidence": [
+   {
+    "page": 143,
+    "kind": "chart",
+    "locator": "Figure 2.32",
+    "value": "3: 8, 4: 4, 5: 2, 6: 2, 7: 1 (y-axis 0–10)"
+   }
+  ]
+ },
+ {
+  "id": "d07",
+  "split": "dev",
+  "group": "visual",
+  "question": "In the Venn diagram of Figure 3.6, which outcome lies in both circles, and which outcomes lie outside both circles?",
+  "expected_answer": "6 is in both A and B; 10, 11 and 12 are outside both circles.",
+  "required_pages": [
+   205
+  ],
+  "evidence": [
+   {
+    "page": 205,
+    "kind": "diagram",
+    "locator": "Figure 3.6",
+    "value": "A: 1–5 and 6; B: 6, 7, 8, 9; outside: 10, 11, 12"
+   }
+  ]
+ },
+ {
+  "id": "d08",
+  "split": "dev",
+  "group": "visual",
+  "question": "In Figure 5.18 for the repair-time uniform distribution, what height is marked on the f(x) axis, between which x-values does the rectangle run, and which interval is shaded?",
+  "expected_answer": "Height 0.4; the rectangle runs from 1.5 to 4; the area from 2 to 4 is shaded (P(x > 2)).",
+  "required_pages": [
+   313
+  ],
+  "evidence": [
+   {
+    "page": 313,
+    "kind": "diagram",
+    "locator": "Figure 5.18",
+    "value": "f(x) 0.4; rectangle 1.5–4; shaded 2–4; label P(x > 2)"
+   }
+  ]
+ },
+ {
+  "id": "d09",
+  "split": "dev",
+  "group": "visual",
+  "question": "In Figure 5.30, which part of the exponential curve is shaded, up to which x-value, and what probability does the label give?",
+  "expected_answer": "The left part, from 0 up to x = 2.41, is shaded; it represents probability 0.70.",
+  "required_pages": [
+   321
+  ],
+  "evidence": [
+   {
+    "page": 321,
+    "kind": "diagram",
+    "locator": "Figure 5.30",
+    "value": "f(x) ticks 0.1–0.5; shaded 0–2.41; label 'Shaded area represents probability 0.70'"
+   }
+  ]
+ },
+ {
+  "id": "d10",
+  "split": "dev",
+  "group": "text",
+  "question": "In a stem-and-leaf graph, what are the stem and the leaf of the number 432, and of the decimal 9.3?",
+  "expected_answer": "432: stem 43, leaf 2. 9.3: stem 9, leaf 3.",
+  "required_pages": [
+   78
+  ],
+  "evidence": [
+   {
+    "page": 78,
+    "kind": "text",
+    "quote": "The number 432 has stem 43 and leaf two."
+   },
+   {
+    "page": 78,
+    "kind": "text",
+    "quote": "The decimal 9.3 has stem nine and leaf three."
+   }
+  ]
+ },
+ {
+  "id": "d11",
+  "split": "dev",
+  "group": "text",
+  "question": "According to the book, what two things does the standard deviation provide, and can it be negative?",
+  "expected_answer": "A numerical measure of the overall variation in a data set, and a way to determine whether a data value is close to or far from the mean; it is always positive or zero, never negative.",
+  "required_pages": [
+   119
+  ],
+  "evidence": [
+   {
+    "page": 119,
+    "kind": "text",
+    "quote": "provides a numerical measure of the overall amount of variation in a data set, and"
+   },
+   {
+    "page": 119,
+    "kind": "text",
+    "quote": "The standard deviation is always positive or zero."
+   }
+  ]
+ },
+ {
+  "id": "d12",
+  "split": "dev",
+  "group": "text",
+  "question": "What two characteristics must a discrete probability distribution function have?",
+  "expected_answer": "Each probability is between zero and one, inclusive, and the probabilities sum to one.",
+  "required_pages": [
+   240
+  ],
+  "evidence": [
+   {
+    "page": 240,
+    "kind": "text",
+    "quote": "1. Each probability is between zero and one, inclusive. 2. The sum of the probabilities is one."
+   }
+  ]
+ },
+ {
+  "id": "d13",
+  "split": "dev",
+  "group": "multihop",
+  "question": "For box plot (b) in Figure 2.50, what is the IQR, and is its maximum value an outlier by the IQR times 1.5 rule the book uses?",
+  "expected_answer": "Q1 = 4 and Q3 = 9, so IQR = 5; upper fence 9 + 1.5(5) = 16.5 and lower fence 4 − 7.5 = −3.5; the maximum 12 is below 16.5, so it is not an outlier.",
+  "required_pages": [
+   162,
+   100
+  ],
+  "evidence": [
+   {
+    "page": 162,
+    "kind": "chart",
+    "locator": "Figure 2.50 (b)",
+    "value": "min 0, Q1 4, median 6, Q3 9, max 12"
+   },
+   {
+    "page": 100,
+    "kind": "text",
+    "quote": "Day class outliers are found using the IQR times 1.5 rule. So, Q1 - IQR(1.5) = 56 – 26.5(1.5) = 16.25 Q3 + IQR(1.5) = 82.5 + 26.5(1.5) = 122.25"
+   }
+  ]
+ },
+ {
+  "id": "d14",
+  "split": "dev",
+  "group": "multihop",
+  "question": "In Terry's letter-count dot plot (Figure 2.19), which value has the most X marks and how many, and what mean and median does the solution give for Terry?",
+  "expected_answer": "Value 3 has the most X marks (4); Terry's mean is 3.7 and median is three.",
+  "required_pages": [
+   117,
+   118
+  ],
+  "evidence": [
+   {
+    "page": 117,
+    "kind": "chart",
+    "locator": "Figure 2.19",
+    "value": "1: 1, 2: 2, 3: 4, 4: 1, 7: 1, 9: 1"
+   },
+   {
+    "page": 118,
+    "kind": "text",
+    "quote": "Terry’s mean is 3.7, Davis’ mean is 2.7, Maris’ mean is 4.6. c. Terry’s median is three"
+   }
+  ]
+ },
+ {
+  "id": "d15",
+  "split": "dev",
+  "group": "multihop",
+  "question": "Exercise 83 in Chapter 5 is about the daily value of a stock. Between which dollar values does it vary, and what probability that the value is more than $19 is shown in the solution graph (Figure 5.54)?",
+  "expected_answer": "It varies uniformly from $16 to $25; the graph shows P(X > 19) = 2/3 (shaded from 19 to 25, height 1/9).",
+  "required_pages": [
+   338,
+   343
+  ],
+  "evidence": [
+   {
+    "page": 338,
+    "kind": "text",
+    "quote": "Suppose that the value of a stock varies each day from $16 to $25 with a uniform distribution."
+   },
+   {
+    "page": 343,
+    "kind": "chart",
+    "locator": "Figure 5.54",
+    "value": "rectangle 16–25, height 1/9, shaded 19–25, label P(x > 19) = 2/3"
+   }
+  ]
+ },
+ {
+  "id": "d16",
+  "split": "dev",
+  "group": "unanswerable",
+  "question": "How is a trimmed mean computed and when should it be preferred to the median?",
+  "expected_behavior": "abstain",
+  "absent_terms": [
+   "trimmed mean",
+   "trimmed"
+  ],
+  "check": "'trimmed' has 0 hits in the 328 indexed pages; Chapter 2 covers mean/median/mode only."
+ },
+ {
+  "id": "d17",
+  "split": "dev",
+  "group": "unanswerable",
+  "question": "What are the parameters of the gamma distribution and how does it generalize the exponential distribution?",
+  "expected_behavior": "abstain",
+  "absent_terms": [
+   "gamma"
+  ],
+  "check": "'gamma' has 0 hits; Chapter 5 covers uniform and exponential distributions only."
+ },
+ {
+  "id": "d18",
+  "split": "dev",
+  "group": "unanswerable",
+  "question": "How do you draw an ogive from a cumulative frequency table?",
+  "expected_behavior": "abstain",
+  "absent_terms": [
+   "ogive"
+  ],
+  "check": "'ogive' has 0 hits; cumulative relative frequency appears only in tables."
+ },
+ {
+  "id": "t01",
+  "split": "dev2",
+  "group": "table",
+  "question": "In Table 1.27 on worldwide earthquake deaths over a 13-year period, which year had the most deaths, how many, and what total is listed?",
+  "expected_answer": "Year 11 with 320,120 deaths; the total is 823,856.",
+  "required_pages": [
+   58
+  ],
+  "evidence": [
+   {
+    "page": 58,
+    "kind": "table",
+    "locator": "Table 1.27 rows 11 and Total",
+    "quote": "11 320,120 12 21,953 13 768 Total 823,856"
+   }
+  ]
+ },
+ {
+  "id": "t02",
+  "split": "dev2",
+  "group": "table",
+  "question": "In Table 2.28 (hours teenagers spend on video games), how many teenagers are in the 7.5–11.5 hour class, and how many teenagers are there in total?",
+  "expected_answer": "12 teenagers in 7.5–11.5; 38 in total (3 + 7 + 12 + 7 + 9).",
+  "required_pages": [
+   115,
+   116
+  ],
+  "evidence": [
+   {
+    "page": 115,
+    "kind": "table",
+    "locator": "Table 2.28 first rows",
+    "quote": "0–3.5 3 3.5–7.5 7 Table 2.28"
+   },
+   {
+    "page": 116,
+    "kind": "table",
+    "locator": "Table 2.28 continued",
+    "quote": "7.5–11.5 12 11.5–15.5 7 15.5–19.5 9 Table 2.28"
+   }
+  ]
+ },
+ {
+  "id": "t03",
+  "split": "dev2",
+  "group": "table",
+  "question": "In Table 2.46 (tar in nonfiltered cigarettes), which tar class has the highest frequency, and what is the frequency of the 26–29 mg class?",
+  "expected_answer": "18–21 mg with frequency 15; the 26–29 class has frequency 2.",
+  "required_pages": [
+   138
+  ],
+  "evidence": [
+   {
+    "page": 138,
+    "kind": "table",
+    "locator": "Table 2.46",
+    "quote": "10–13 1 14–17 0 18–21 15 22–25 7 26–29 2 Table 2.46"
+   }
+  ]
+ },
+ {
+  "id": "t04",
+  "split": "dev2",
+  "group": "table",
+  "question": "In the stem-and-leaf plot of Table 2.85, which leaves are on stem 2 and which are on stem 4?",
+  "expected_answer": "Stem 2: 0 1 1 5 5 5 6 6 8 9. Stem 4: 1 3 3.",
+  "required_pages": [
+   167,
+   168
+  ],
+  "evidence": [
+   {
+    "page": 167,
+    "kind": "table",
+    "locator": "Table 2.85 stem 2",
+    "quote": "2 0 1 1 5 5 5 6 6 8 9 Table 2.85"
+   },
+   {
+    "page": 168,
+    "kind": "table",
+    "locator": "Table 2.85 stem 4",
+    "quote": "4 1 3 3 Table 2.85"
+   }
+  ]
+ },
+ {
+  "id": "t05",
+  "split": "dev2",
+  "group": "table",
+  "question": "In Table 3.25 of 49ers and Cowboys players by shirt number and weight, how many players with shirt numbers 34–66 weigh 251–290 pounds, and how many with shirt numbers 1–33 weigh 210 pounds or less?",
+  "expected_answer": "7 players (34–66, 251–290); 21 players (1–33, ≤ 210).",
+  "required_pages": [
+   228
+  ],
+  "evidence": [
+   {
+    "page": 228,
+    "kind": "table",
+    "locator": "Table 3.25",
+    "quote": "1–33 21 5 0 0 34–66 6 18 7 4"
+   }
+  ]
+ },
+ {
+  "id": "t06",
+  "split": "dev2",
+  "group": "table",
+  "question": "Table 4.33 gives P(x) for the number of children married adults have, but P(x = 3) is left blank. What must P(x = 3) be, given the other listed probabilities?",
+  "expected_answer": "0.20: 1 − (0.10 + 0.20 + 0.30 + 0.10 + 0.05 + 0.05) = 0.20.",
+  "required_pages": [
+   284
+  ],
+  "evidence": [
+   {
+    "page": 284,
+    "kind": "table",
+    "locator": "Table 4.33",
+    "quote": "0 0.10 1 0.20 2 0.30 3 4 0.10 5 0.05 6 (or more) 0.05 Table 4.33"
+   }
+  ]
+ },
+ {
+  "id": "t07",
+  "split": "dev2",
+  "group": "chart",
+  "question": "In the histogram of credit hours completed per student (Figure 1.4), which class has the tallest bar, and what is the vertical axis label?",
+  "expected_answer": "16 to less than 19 credit hours; the vertical axis is Number of Students.",
+  "required_pages": [
+   25
+  ],
+  "evidence": [
+   {
+    "page": 25,
+    "kind": "chart",
+    "locator": "Figure 1.4",
+    "value": "bars 10–13 ≈250, 13–16 ≈575, 16–19 ≈730 (tallest), 19–22 ≈630, 22–25 ≈250; y-axis 'Number of Students' 0–800"
+   }
+  ]
+ },
+ {
+  "id": "t08",
+  "split": "dev2",
+  "group": "chart",
+  "question": "In the line graph of the number of times a teenager is reminded (Figure 2.2), at which number of reminders is the frequency highest, and what is that frequency?",
+  "expected_answer": "At 3 reminders, with frequency 14.",
+  "required_pages": [
+   84
+  ],
+  "evidence": [
+   {
+    "page": 84,
+    "kind": "chart",
+    "locator": "Figure 2.2",
+    "value": "points 0: 2, 1: 5, 2: 8, 3: 14, 4: 7, 5: 4"
+   }
+  ]
+ },
+ {
+  "id": "t09",
+  "split": "dev2",
+  "group": "chart",
+  "question": "In the frequency polygon of test scores (Figure 2.8), at which x-axis label is the frequency highest, and what is that frequency?",
+  "expected_answer": "At 84.5, with frequency 40.",
+  "required_pages": [
+   93
+  ],
+  "evidence": [
+   {
+    "page": 93,
+    "kind": "chart",
+    "locator": "Figure 2.8",
+    "value": "44.5: 0, 54.5: 5, 64.5: 10, 74.5: 30, 84.5: 40, 94.5: 15, 104.5: 0"
+   }
+  ]
+ },
+ {
+  "id": "t10",
+  "split": "dev2",
+  "group": "chart",
+  "question": "In the dot plot of Davis' letter count (Figure 2.20), how many X marks are above the value 1, and how many X marks are there in total?",
+  "expected_answer": "2 X marks above 1; 10 X marks in total.",
+  "required_pages": [
+   118
+  ],
+  "evidence": [
+   {
+    "page": 118,
+    "kind": "chart",
+    "locator": "Figure 2.20",
+    "value": "1: 2, 2: 1, 3: 5, 4: 2 (total 10)"
+   }
+  ]
+ },
+ {
+  "id": "t11",
+  "split": "dev2",
+  "group": "chart",
+  "question": "In the histogram of Figure 2.38, which value has the tallest bar and what is its height, and which values have bars of height 1?",
+  "expected_answer": "Value 7 is tallest with height 7; values 3 and 4 have height 1.",
+  "required_pages": [
+   145
+  ],
+  "evidence": [
+   {
+    "page": 145,
+    "kind": "chart",
+    "locator": "Figure 2.38",
+    "value": "3: 1, 4: 1, 5: 2, 6: 4, 7: 7 (y-axis 0–8)"
+   }
+  ]
+ },
+ {
+  "id": "t12",
+  "split": "dev2",
+  "group": "visual",
+  "question": "In the calculator screen of Figure 2.26, which three menu headings appear at the top, and what is menu option 4?",
+  "expected_answer": "EDIT, CALC and TESTS; option 4 is ClrList.",
+  "required_pages": [
+   127
+  ],
+  "evidence": [
+   {
+    "page": 127,
+    "kind": "diagram",
+    "locator": "Figure 2.26",
+    "value": "EDIT CALC TESTS; 1:Edit... 2:SortA( 3:SortD( 4:ClrList 5:SetUpEditor"
+   }
+  ]
+ },
+ {
+  "id": "t13",
+  "split": "dev2",
+  "group": "visual",
+  "question": "In Figure 5.6 for f(x) = 1/20, which interval of x is shaded, and what area does the book compute for it?",
+  "expected_answer": "0 < x < 2 is shaded; area = (2 − 0)(1/20) = 0.1.",
+  "required_pages": [
+   305
+  ],
+  "evidence": [
+   {
+    "page": 305,
+    "kind": "diagram",
+    "locator": "Figure 5.6",
+    "value": "rectangle 0–20 at height 1/20; shaded 0–2; AREA = (2 – 0)(1/20) = 0.1"
+   }
+  ]
+ },
+ {
+  "id": "t14",
+  "split": "dev2",
+  "group": "visual",
+  "question": "In Figure 5.12 for smiling times, what height is marked on the f(x) axis, where does the rectangle end on the x-axis, and what does the shaded area represent?",
+  "expected_answer": "Height 1/23; the rectangle ends at 23; the shaded area (0 to k) represents P(x < k) = 0.90.",
+  "required_pages": [
+   309
+  ],
+  "evidence": [
+   {
+    "page": 309,
+    "kind": "diagram",
+    "locator": "Figure 5.12",
+    "value": "f(x) 1/23; x from 0 to 23; shaded 0–k; label 'Shaded area represents P(x < k) = 0.90'"
+   }
+  ]
+ },
+ {
+  "id": "t15",
+  "split": "dev2",
+  "group": "visual",
+  "question": "In Figure 5.24, what value is marked at the top of the f(x) axis, and what does the shaded area to the right of k represent?",
+  "expected_answer": "0.25; the shaded area represents probability P(x > k) = 0.50.",
+  "required_pages": [
+   316
+  ],
+  "evidence": [
+   {
+    "page": 316,
+    "kind": "diagram",
+    "locator": "Figure 5.24",
+    "value": "f(x) starts at 0.25; shaded right of k; label 'Shaded area represents probability P(x > k) = 0.50'"
+   }
+  ]
+ },
+ {
+  "id": "t16",
+  "split": "dev2",
+  "group": "visual",
+  "question": "In Figure 5.36 for a general uniform distribution, what height is labeled on the vertical axis, which x-values bound the rectangle, and what is written inside it?",
+  "expected_answer": "Height 1/(b − a); the rectangle runs from a to b; it says 'Total area = 1'.",
+  "required_pages": [
+   328
+  ],
+  "evidence": [
+   {
+    "page": 328,
+    "kind": "diagram",
+    "locator": "Figure 5.36",
+    "value": "y label 1/(b – a); x marks a and b; 'Total area = 1'"
+   }
+  ]
+ },
+ {
+  "id": "t17",
+  "split": "dev2",
+  "group": "text",
+  "question": "Why do researchers often prefer quantitative data over qualitative data?",
+  "expected_answer": "Because quantitative data lend themselves more easily to mathematical analysis.",
+  "required_pages": [
+   22
+  ],
+  "evidence": [
+   {
+    "page": 22,
+    "kind": "text",
+    "quote": "Researchers often prefer to use quantitative data over qualitative data because it lends itself more easily to mathematical analysis."
+   }
+  ]
+ },
+ {
+  "id": "t18",
+  "split": "dev2",
+  "group": "text",
+  "question": "From which five values is a box plot constructed, and approximately what share of the data falls inside the box?",
+  "expected_answer": "Minimum, first quartile, median, third quartile and maximum; approximately the middle 50 percent of the data.",
+  "required_pages": [
+   106
+  ],
+  "evidence": [
+   {
+    "page": 106,
+    "kind": "text",
+    "quote": "A box plot is constructed from five values: the minimum value, the first quartile, the median, the third quartile, and the maximum value."
+   },
+   {
+    "page": 106,
+    "kind": "text",
+    "quote": "Approximately the middle 50 percent of the data fall inside the box."
+   }
+  ]
+ },
+ {
+  "id": "t19",
+  "split": "dev2",
+  "group": "text",
+  "question": "What does the addition rule P(A OR B) become when A and B are mutually exclusive, and why?",
+  "expected_answer": "P(A OR B) = P(A) + P(B), because P(A AND B) = 0 for mutually exclusive events.",
+  "required_pages": [
+   191
+  ],
+  "evidence": [
+   {
+    "page": 191,
+    "kind": "text",
+    "quote": "If A and B are mutually exclusive, then P(A AND B) = 0. Then P(A OR B) = P(A) + P(B) - P(A AND B) becomes P(A OR B) = P(A) + P(B)."
+   }
+  ]
+ },
+ {
+  "id": "t20",
+  "split": "dev2",
+  "group": "text",
+  "question": "In a geometric experiment, how are the repeated trials related to each other, and what is true about the probabilities of success and failure from trial to trial?",
+  "expected_answer": "The repeated trials are independent; the probability of success p and of failure q are the same for each trial.",
+  "required_pages": [
+   254
+  ],
+  "evidence": [
+   {
+    "page": 254,
+    "kind": "text",
+    "quote": "2. The repeated trials are independent of each other. 3. The probability, p, of a success and the probability, q, of a failure is the same for each trial."
+   }
+  ]
+ },
+ {
+  "id": "t21",
+  "split": "dev2",
+  "group": "multihop",
+  "question": "In the box plots of foreign countries visited by 20-year-olds (Figure 2.44), what is the interquartile range for Germany, and how does the book define the interquartile range?",
+  "expected_answer": "Germany's box runs from 4 (Q1) to 8 (Q3), so IQR = 8 − 4 = 4; the IQR is Q3 − Q1, the spread of the middle 50% of the data.",
+  "required_pages": [
+   154,
+   99
+  ],
+  "evidence": [
+   {
+    "page": 154,
+    "kind": "chart",
+    "locator": "Figure 2.44 Germany",
+    "value": "whiskers 0–11, box 4–8, median at 8"
+   },
+   {
+    "page": 99,
+    "kind": "text",
+    "quote": "The interquartile range is a number that indicates the spread of the middle half or the middle 50% of the data. It is the difference between the third quartile (Q3) and the first quartile (Q1)."
+   }
+  ]
+ },
+ {
+  "id": "t22",
+  "split": "dev2",
+  "group": "multihop",
+  "question": "Figure 2.62 is the solution histogram of onboard charges for singles. Which intervals have the tallest bars and what relative frequency do they reach, and what x-axis bin width does the exercise ask for?",
+  "expected_answer": "$150–200 and $200–250, both at relative frequency 0.25; the exercise asks to scale the x-axis by $50 widths (with relative frequency on the y-axis).",
+  "required_pages": [
+   175,
+   151
+  ],
+  "evidence": [
+   {
+    "page": 175,
+    "kind": "chart",
+    "locator": "Figure 2.62",
+    "value": "50–100 ≈0.08, 100–150 ≈0.17, 150–200 0.25, 200–250 0.25, 250–300 ≈0.17, 300–350 ≈0.08"
+   },
+   {
+    "page": 151,
+    "kind": "text",
+    "quote": "b. Construct a histogram for the singles group. Scale the x-axis by $50 widths. Use relative frequency on the y-axis."
+   }
+  ]
+ },
+ {
+  "id": "t23",
+  "split": "dev2",
+  "group": "multihop",
+  "question": "Figure 2.56 is a solution histogram of the number of cars sold by car salespersons. Which number of cars has the tallest bar, and according to the exercise, how many salespersons sell that number and how many were surveyed?",
+  "expected_answer": "Four cars (the 4–5 bar, height 19); nineteen salespersons sell four cars, out of sixty-five surveyed.",
+  "required_pages": [
+   170,
+   136
+  ],
+  "evidence": [
+   {
+    "page": 170,
+    "kind": "chart",
+    "locator": "Figure 2.56",
+    "value": "3–4: 14, 4–5: 19 (tallest), 5–6: 12, 6–7: 9, 7–8: 11"
+   },
+   {
+    "page": 136,
+    "kind": "text",
+    "quote": "Sixty-five randomly selected car salespersons were asked the number of cars they generally sell in one week. Fourteen people answered that they generally sell three cars; nineteen generally sell four cars;"
+   }
+  ]
+ },
+ {
+  "id": "t24",
+  "split": "dev2",
+  "group": "multihop",
+  "question": "For the uniform distribution in Figure 5.42, which interval is shaded, and what is the probability that x falls in the shaded area, using the book's rule for the area of a rectangle?",
+  "expected_answer": "6 to 8 is shaded under height 1/9 (rectangle 0 to 9); probability = (8 − 6)(1/9) = 2/9 ≈ 0.222, since area = (base)(height).",
+  "required_pages": [
+   330,
+   305
+  ],
+  "evidence": [
+   {
+    "page": 330,
+    "kind": "chart",
+    "locator": "Figure 5.42",
+    "value": "f(x) = 1/9 from 0 to 9; shaded 6–8"
+   },
+   {
+    "page": 305,
+    "kind": "text",
+    "quote": "area of a rectangle = (base)(height)."
+   }
+  ]
+ },
+ {
+  "id": "t25",
+  "split": "dev2",
+  "group": "unanswerable",
+  "question": "How is the coefficient of variation computed, and how is it used to compare the spread of two data sets?",
+  "expected_behavior": "abstain",
+  "absent_terms": [
+   "coefficient of variation"
+  ],
+  "check": "0 hits in the 328 indexed pages; spread is covered by range, IQR, variance and standard deviation only."
+ },
+ {
+  "id": "t26",
+  "split": "dev2",
+  "group": "unanswerable",
+  "question": "What does the kurtosis of a distribution measure, and what is excess kurtosis?",
+  "expected_behavior": "abstain",
+  "absent_terms": [
+   "kurtosis"
+  ],
+  "check": "0 hits; Section 2.6 covers skewness only."
+ },
+ {
+  "id": "t27",
+  "split": "dev2",
+  "group": "unanswerable",
+  "question": "What is the probability formula of the negative binomial distribution for the number of trials until the r-th success?",
+  "expected_behavior": "abstain",
+  "absent_terms": [
+   "negative binomial"
+  ],
+  "check": "0 hits; Chapter 4 covers binomial, geometric (first success), hypergeometric and Poisson."
+ },
+ {
+  "id": "t28",
+  "split": "dev2",
+  "group": "unanswerable",
+  "question": "How does Bayes' theorem update a prior probability into a posterior probability?",
+  "expected_behavior": "abstain",
+  "absent_terms": [
+   "bayes",
+   "posterior",
+   "prior probabilit"
+  ],
+  "check": "0 hits; Chapter 3 covers conditional probability, independence and the multiplication/addition rules only."
+ },
+ {
+  "id": "t29",
+  "split": "dev2",
+  "group": "unanswerable",
+  "question": "How does snowball sampling recruit participants, and when is it used?",
+  "expected_behavior": "abstain",
+  "absent_terms": [
+   "snowball"
+  ],
+  "check": "0 hits; Section 1.2 covers simple random, stratified, cluster, systematic and convenience sampling."
+ },
+ {
+  "id": "t30",
+  "split": "dev2",
+  "group": "unanswerable",
+  "question": "In Table 1.27 on worldwide earthquake deaths, how many deaths occurred in Year 14?",
+  "expected_behavior": "abstain",
+  "absent_terms": [
+   "year 14"
+  ],
+  "absent_on_pages": [
+   58
+  ],
+  "check": "Table 1.27 (p58) lists Years 1–13 and a total only. Distractor: Table 1.17 (p45, car crashes) has a Year 14 row."
+ },
+ {
+  "id": "n01",
+  "split": "test",
+  "group": "table",
+  "question": "In Table 1.1 of the electric-car crash study, at what speed were the cars crashed and where were the \"drivers\" (dummies) located?",
+  "expected_answer": "35 miles/hour; in the front seat.",
+  "required_pages": [
+   21
+  ],
+  "evidence": [
+   {
+    "page": 21,
+    "kind": "table",
+    "quote": "35 miles/hour Front Seat Table 1.1",
+    "locator": "Table 1.1"
+   }
+  ]
+ },
+ {
+  "id": "n02",
+  "split": "test",
+  "group": "table",
+  "question": "In Table 1.41 (number of times flossing per week), what are the frequency and the cumulative relative frequency for 3 times per week?",
+  "expected_answer": "Frequency 11; cumulative relative frequency 0.9333.",
+  "required_pages": [
+   74
+  ],
+  "evidence": [
+   {
+    "page": 74,
+    "kind": "table",
+    "quote": "3 11 0.1833 0.9333",
+    "locator": "Table 1.41 row 3"
+   }
+  ]
+ },
+ {
+  "id": "n03",
+  "split": "test",
+  "group": "table",
+  "question": "In Table 2.20 of CPI values, what Annual values are listed for year 6 and year 7?",
+  "expected_answer": "Year 6: 215.303; year 7: 214.537.",
+  "required_pages": [
+   96
+  ],
+  "evidence": [
+   {
+    "page": 96,
+    "kind": "table",
+    "quote": "6 219.086 218.783 216.573 212.425 210.228 215.303 7 215.834 215.969 216.177 216.330 215.949 214.537",
+    "locator": "Table 2.20 rows 6-7, Annual column"
+   }
+  ]
+ },
+ {
+  "id": "n04",
+  "split": "test",
+  "group": "table",
+  "question": "In Table 2.38 (number of times people visited a store before a major purchase), which number of visits has the highest frequency, and how many people were surveyed in total?",
+  "expected_answer": "3 visits (frequency 16); 40 people (4 + 10 + 16 + 6 + 4).",
+  "required_pages": [
+   134
+  ],
+  "evidence": [
+   {
+    "page": 134,
+    "kind": "table",
+    "quote": "Number of times in store Frequency 1 4 2 10 3 16 4 6 5 4 Table 2.38",
+    "locator": "Table 2.38"
+   }
+  ]
+ },
+ {
+  "id": "n05",
+  "split": "test",
+  "group": "table",
+  "question": "In Table 2.55 (part a, grades), which grade class has the highest frequency, and how many grades fall in the 49.5–59.5 class?",
+  "expected_answer": "79.5–89.5 with frequency 12; 2 grades in 49.5–59.5.",
+  "required_pages": [
+   142
+  ],
+  "evidence": [
+   {
+    "page": 142,
+    "kind": "table",
+    "quote": "Grade Frequency 49.5–59.5 2 59.5–69.5 3 69.5–79.5 8 79.5–89.5 12 89.5–99.5 5 Table 2.55",
+    "locator": "Table 2.55 a"
+   }
+  ]
+ },
+ {
+  "id": "n06",
+  "split": "test",
+  "group": "table",
+  "question": "In Table 2.77 on the percent of underweight children under five, which interval has the most countries, and how many countries are in the 43.25–48.7 interval?",
+  "expected_answer": "16–21.45 with 23 countries; 1 country in 43.25–48.7.",
+  "required_pages": [
+   159,
+   160
+  ],
+  "evidence": [
+   {
+    "page": 159,
+    "kind": "table",
+    "quote": "16–21.45 23 21.45–26.9 4 26.9–32.35 9 32.35–37.8 7 Table 2.77",
+    "locator": "Table 2.77 first rows"
+   },
+   {
+    "page": 160,
+    "kind": "table",
+    "quote": "37.8–43.25 6 43.25–48.7 1 Table 2.77",
+    "locator": "Table 2.77 continued"
+   }
+  ]
+ },
+ {
+  "id": "n07",
+  "split": "test",
+  "group": "chart",
+  "question": "In Figure 1.7 (De Anza College, most recent spring quarter), what percentages are shown for \"Intend to transfer\" and for \"Full-time\"?",
+  "expected_answer": "Intend to transfer 48.6%; Full-time 40.9%.",
+  "required_pages": [
+   27
+  ],
+  "evidence": [
+   {
+    "page": 27,
+    "kind": "chart",
+    "locator": "Figure 1.7",
+    "value": "Under age 25 61.0%, Intend to transfer 48.6%, Full-time 40.9%, All students 100.0%"
+   }
+  ]
+ },
+ {
+  "id": "n08",
+  "split": "test",
+  "group": "chart",
+  "question": "In Figure 1.13 of CEO ages, which age class has the tallest bar in Graph A, and which graph has bars that rise to 1 at the 70–74 class?",
+  "expected_answer": "55–59 is tallest in Graph A; Graph B (cumulative) reaches 1 at 70–74.",
+  "required_pages": [
+   68
+  ],
+  "evidence": [
+   {
+    "page": 68,
+    "kind": "chart",
+    "locator": "Figure 1.13",
+    "value": "Graph A relative frequency: 55–59 tallest (≈0.27), 70–74 ≈0; Graph B increasing to 1 at 70–74"
+   }
+  ]
+ },
+ {
+  "id": "n09",
+  "split": "test",
+  "group": "chart",
+  "question": "In the histogram of heights (Figure 2.5), what relative frequency is printed on the tallest bar, and which interval does it cover?",
+  "expected_answer": "0.4, for the interval 65.95–67.95.",
+  "required_pages": [
+   89
+  ],
+  "evidence": [
+   {
+    "page": 89,
+    "kind": "chart",
+    "locator": "Figure 2.5",
+    "value": "printed: 0.05, 0.03, 0.15, 0.4 (65.95–67.95), 0.17, 0.12, 0.07, 0.01"
+   }
+  ]
+ },
+ {
+  "id": "n10",
+  "split": "test",
+  "group": "chart",
+  "question": "In the box plot of Figure 2.11, what are the first quartile, the median and the third quartile, and where does the right whisker end?",
+  "expected_answer": "Q1 = 2, median = 7, Q3 = 9; the right whisker ends at 11.5.",
+  "required_pages": [
+   107
+  ],
+  "evidence": [
+   {
+    "page": 107,
+    "kind": "chart",
+    "locator": "Figure 2.11",
+    "value": "whisker from 1, box 2–9, dashed median 7, whisker to 11.5"
+   }
+  ]
+ },
+ {
+  "id": "n11",
+  "split": "test",
+  "group": "chart",
+  "question": "In the histogram of Figure 2.17, which value has the tallest bar, and how does the book describe the shape of this distribution?",
+  "expected_answer": "7 has the tallest bar (four values); the distribution is skewed to the left.",
+  "required_pages": [
+   116
+  ],
+  "evidence": [
+   {
+    "page": 116,
+    "kind": "chart",
+    "locator": "Figure 2.17",
+    "value": "4: 1, 5: 1, 6: 3, 7: 4, 8: 1"
+   },
+   {
+    "page": 116,
+    "kind": "text",
+    "quote": "A distribution of this type is called skewed to the left because it is pulled out to the left."
+   }
+  ]
+ },
+ {
+  "id": "n12",
+  "split": "test",
+  "group": "visual",
+  "question": "In the calculator 1-Var Stats screen of Figure 2.29, what values are shown for Sx and for σx?",
+  "expected_answer": "Sx = 3.500549407; σx = 3.432571103.",
+  "required_pages": [
+   128
+  ],
+  "evidence": [
+   {
+    "page": 128,
+    "kind": "diagram",
+    "locator": "Figure 2.29",
+    "value": "x̄=7.576923077, Σx=197, Σx²=1799, Sx=3.500549407, σx=3.432571103, n=26"
+   }
+  ]
+ },
+ {
+  "id": "n13",
+  "split": "test",
+  "group": "visual",
+  "question": "In the tree diagram of Figure 3.3, what are the two first-draw branch labels, and what counts appear at the ends of the FN and NN paths?",
+  "expected_answer": "First draw: 12F and 40N; ends 480FN and 1,600NN.",
+  "required_pages": [
+   202
+  ],
+  "evidence": [
+   {
+    "page": 202,
+    "kind": "diagram",
+    "locator": "Figure 3.3",
+    "value": "1st draw 12F, 40N; 2nd draw 12F, 40N under each; ends 144FF, 480FN, 480NF, 1,600NN"
+   }
+  ]
+ },
+ {
+  "id": "n14",
+  "split": "test",
+  "group": "visual",
+  "question": "In the Venn diagram of Figure 3.9, what labels are written on the two ovals?",
+  "expected_answer": "\"O\" and \"Rh-\".",
+  "required_pages": [
+   208
+  ],
+  "evidence": [
+   {
+    "page": 208,
+    "kind": "diagram",
+    "locator": "Figure 3.9",
+    "value": "two overlapping ovals labeled O and Rh-"
+   }
+  ]
+ },
+ {
+  "id": "n15",
+  "split": "test",
+  "group": "visual",
+  "question": "In the tree diagram of Figure 3.16 for drawing two cards, what probabilities are written on the Green and Yellow branches?",
+  "expected_answer": "Green 5/8 and Yellow 3/8, on both the first and the second card.",
+  "required_pages": [
+   236
+  ],
+  "evidence": [
+   {
+    "page": 236,
+    "kind": "diagram",
+    "locator": "Figure 3.16",
+    "value": "1st card 5/8 Green, 3/8 Yellow; 2nd card 5/8 Green, 3/8 Yellow on each branch"
+   }
+  ]
+ },
+ {
+  "id": "n16",
+  "split": "test",
+  "group": "visual",
+  "question": "In Figure 5.3 (the exponential distribution), which interval of x is shaded, and what does the shaded area represent?",
+  "expected_answer": "2 to 4 is shaded; it represents the probability P(2 < x < 4).",
+  "required_pages": [
+   304
+  ],
+  "evidence": [
+   {
+    "page": 304,
+    "kind": "diagram",
+    "locator": "Figure 5.3",
+    "value": "x axis 0–8; shaded 2–4; label \"Shaded area represents probability P(2 < x < 4)\""
+   }
+  ]
+ },
+ {
+  "id": "n17",
+  "split": "test",
+  "group": "text",
+  "question": "According to the book's rounding rule, how many decimal places should a final answer carry, and should intermediate results be rounded?",
+  "expected_answer": "One more decimal place than in the original data; round only the final answer and do not round intermediate results if possible.",
+  "required_pages": [
+   38
+  ],
+  "evidence": [
+   {
+    "page": 38,
+    "kind": "text",
+    "quote": "A simple way to round off answers is to carry your final answer one more decimal place than was present in the original data. Round off only the final answer. Do not round off any intermediate results, if possible."
+   }
+  ]
+ },
+ {
+  "id": "n18",
+  "split": "test",
+  "group": "text",
+  "question": "When does the book suggest using a histogram, and how is the vertical axis of a histogram labeled?",
+  "expected_answer": "When the data set has 100 values or more (rule of thumb); the vertical axis is labeled frequency or relative frequency (or percent frequency or probability).",
+  "required_pages": [
+   87
+  ],
+  "evidence": [
+   {
+    "page": 87,
+    "kind": "text",
+    "quote": "A rule of thumb is to use a histogram when the data set consists of 100 values or more."
+   },
+   {
+    "page": 87,
+    "kind": "text",
+    "quote": "The vertical axis is labeled either frequency or relative frequency (or percent frequency or probability)."
+   }
+  ]
+ },
+ {
+  "id": "n19",
+  "split": "test",
+  "group": "text",
+  "question": "Why is the median generally a better measure of the center than the mean when there are extreme values?",
+  "expected_answer": "Because the median is not affected by the precise numerical values of the outliers.",
+  "required_pages": [
+   110
+  ],
+  "evidence": [
+   {
+    "page": 110,
+    "kind": "text",
+    "quote": "The median is generally a better measure of the center when there are extreme values or outliers because it is not affected by the precise numerical values of the outliers."
+   }
+  ]
+ },
+ {
+  "id": "n20",
+  "split": "test",
+  "group": "text",
+  "question": "What makes an experiment a chance experiment, and what are the three ways the book gives to represent a sample space?",
+  "expected_answer": "Its result is not predetermined; list the possible outcomes, create a tree diagram, or create a Venn diagram.",
+  "required_pages": [
+   180
+  ],
+  "evidence": [
+   {
+    "page": 180,
+    "kind": "text",
+    "quote": "If the result is not predetermined, then the experiment is said to be a chance experiment."
+   },
+   {
+    "page": 180,
+    "kind": "text",
+    "quote": "Three ways to represent a sample space are: to list the possible outcomes, to create a tree diagram, or to create a Venn diagram."
+   }
+  ]
+ },
+ {
+  "id": "n21",
+  "split": "test",
+  "group": "multihop",
+  "question": "In the histogram of Figure 2.35, which value has the tallest bar, and what does the solution to exercise 59 say about the mode and the median of this distribution?",
+  "expected_answer": "5 has the tallest bar (8); the solution says the mode and the median are the same, both five.",
+  "required_pages": [
+   144,
+   172
+  ],
+  "evidence": [
+   {
+    "page": 144,
+    "kind": "chart",
+    "locator": "Figure 2.35",
+    "value": "3: 2, 4: 4, 5: 8, 6: 3, 7: 2"
+   },
+   {
+    "page": 172,
+    "kind": "text",
+    "quote": "59 . The mode and the median are the same. In this case, they are both five."
+   }
+  ]
+ },
+ {
+  "id": "n22",
+  "split": "test",
+  "group": "multihop",
+  "question": "Figure 2.41 shows the number of T-shirts costing more than $19 owned by 111 shoppers. What relative frequency is printed for 4 T-shirts, and which answer does the solution give for the percentage who own at most three?",
+  "expected_answer": "39/111 for 4 T-shirts; the solution answer is (c) 41 (percent).",
+  "required_pages": [
+   152,
+   176
+  ],
+  "evidence": [
+   {
+    "page": 152,
+    "kind": "chart",
+    "locator": "Figure 2.41",
+    "value": "1: 5/111, 2: 17/111, 3: 23/111, 4: 39/111, 5: 25/111, 6: 2/111"
+   },
+   {
+    "page": 152,
+    "kind": "text",
+    "quote": "The percentage of people who own at most three T-shirts costing more than $19 each is approximately: a. 21 b. 59 c. 41 d. Cannot be determined"
+   },
+   {
+    "page": 176,
+    "kind": "text",
+    "quote": "79 . c"
+   }
+  ]
+ },
+ {
+  "id": "n23",
+  "split": "test",
+  "group": "multihop",
+  "question": "In the box plots of BMW buyers' ages (Figure 2.47), which series has the highest median age, and how many purchasers of each series were surveyed?",
+  "expected_answer": "The BMW 7 series has the highest median (≈46); 130 purchasers of each series.",
+  "required_pages": [
+   156,
+   155
+  ],
+  "evidence": [
+   {
+    "page": 156,
+    "kind": "chart",
+    "locator": "Figure 2.47",
+    "value": "medians ≈33 (3 series), ≈41 (5 series), ≈46 (7 series)"
+   },
+   {
+    "page": 155,
+    "kind": "text",
+    "quote": "A survey was conducted of 130 purchasers of new BMW 3 series cars, 130 purchasers of new BMW 5 series cars, and 130 purchasers of new BMW 7 series cars."
+   }
+  ]
+ },
+ {
+  "id": "n24",
+  "split": "test",
+  "group": "multihop",
+  "question": "Figure 2.53 is the solution line graph for the TV-shows exercise. At how many TV shows per day does the line peak, what frequency does Table 2.40 give there, and how many children were surveyed?",
+  "expected_answer": "It peaks at 2 shows; Table 2.40 gives frequency 36; 75 children in total (12 + 18 + 36 + 7 + 2).",
+  "required_pages": [
+   169,
+   135
+  ],
+  "evidence": [
+   {
+    "page": 169,
+    "kind": "chart",
+    "locator": "Figure 2.53",
+    "value": "0: 12, 1: 18, 2: 36 (peak), 3: 7, 4: 2"
+   },
+   {
+    "page": 135,
+    "kind": "table",
+    "quote": "Number of TV Shows Frequency 0 12 1 18 2 36 3 7 4 2 Table 2.40",
+    "locator": "Table 2.40"
+   }
+  ]
+ },
+ {
+  "id": "n25",
+  "split": "test",
+  "group": "unanswerable",
+  "question": "How is the geometric mean of a data set computed, and when is it preferred to the arithmetic mean?",
+  "expected_behavior": "abstain",
+  "absent_terms": [
+   "geometric mean"
+  ],
+  "check": "0 hits; Chapter 2 covers mean, median and mode. Near-topic distractor: the geometric distribution (4.4)."
+ },
+ {
+  "id": "n26",
+  "split": "test",
+  "group": "unanswerable",
+  "question": "How does the law of total probability combine conditional probabilities over a partition?",
+  "expected_behavior": "abstain",
+  "absent_terms": [
+   "total probability"
+  ],
+  "check": "0 hits; Chapter 3 covers conditional probability and the multiplication/addition rules only."
+ },
+ {
+  "id": "n27",
+  "split": "test",
+  "group": "unanswerable",
+  "question": "What is the probability formula of the multinomial distribution?",
+  "expected_behavior": "abstain",
+  "absent_terms": [
+   "multinomial"
+  ],
+  "check": "0 hits; Chapter 4 covers binomial, geometric, hypergeometric and Poisson."
+ },
+ {
+  "id": "n28",
+  "split": "test",
+  "group": "unanswerable",
+  "question": "What are the shape and scale parameters of the Weibull distribution used for waiting times?",
+  "expected_behavior": "abstain",
+  "absent_terms": [
+   "weibull"
+  ],
+  "check": "0 hits; Chapter 5 covers uniform and exponential distributions."
+ },
+ {
+  "id": "n29",
+  "split": "test",
+  "group": "unanswerable",
+  "question": "How is relative risk computed from a two-way table, and how does it differ from an odds ratio?",
+  "expected_behavior": "abstain",
+  "absent_terms": [
+   "relative risk",
+   "odds ratio"
+  ],
+  "check": "0 hits; contingency tables (3.4) are used for probabilities only."
+ },
+ {
+  "id": "n30",
+  "split": "test",
+  "group": "unanswerable",
+  "question": "In Figure 1.7 (De Anza College, most recent spring quarter), what percentage of students are international students?",
+  "expected_behavior": "abstain",
+  "absent_terms": [
+   "international"
+  ],
+  "check": "Figure 1.7 (p27) shows Under age 25, Intend to transfer, Full-time and All students only; \"international\" has 0 hits on p27.",
+  "absent_on_pages": [
+   27
+  ]
+ }
+]

@@ -55,28 +55,37 @@ Context 0/1/2 trên 6 câu test có đáp án: **R0** 2: 4 (q19, q20, q21, q24),
 
 ## Thử thách nâng cao (nếu thực hiện)
 
-Chi tiết, cách chọn benchmark, cấu hình và lệnh tái lập: [advanced/README.md](../../advanced/README.md).
+Chi tiết, cách chọn benchmark, các cấu hình và lệnh tái lập: [advanced/README.md](../../advanced/README.md).
 
-- **Tài liệu, nguồn, quyền, số trang, phiên bản:** OpenStax *Introductory Statistics 2e* (2023), CC BY-NC-SA 4.0. Dùng Chương 1–5: PDF trang 17–346, 330 trang (SHA-256 `a79a953b…382a`, tải từ assets.openstax.org). Index 328 trang (bỏ 2 trang trống).
+- **Tài liệu, nguồn, quyền, số trang, phiên bản:** OpenStax *Introductory Statistics 2e* (2023), CC BY-NC-SA 4.0. Dùng Chương 1–5, tức PDF trang 17–346 (330 trang); SHA-256 `a79a953b…382a`, tải từ assets.openstax.org. Index 328 trang (bỏ 2 trang trống).
 - **Cách xử lý:**
   - Text từng trang bằng PyMuPDF 1.26.5 (bảng giữ trong text, bbox bảng ở metadata).
-  - 113 trang có hình raster: crop từng hình, `gpt-4.1-mini` mô tả mọi trang có hình, sau đó `gpt-4.1` đọc lại 69 trang biểu đồ với luật đọc biểu đồ (đếm dấu X, liệt kê điểm, xếp hạng cột, box plot, vùng tô). Mô tả lưu thành chunk `:visual` kèm bbox và ảnh trang.
-  - Index pgvector Day 6 (strategy `ADV`, `text-embedding-3-small`) kết hợp BM25, hybrid RRF.
-  - Chưa xử lý: công thức dạng ảnh. Mô tả vision có thể sai, nên kiểm chứng bằng ảnh gốc.
+  - 113 trang có hình raster: crop từng hình. `gpt-4.1-mini` mô tả, sau đó `gpt-4.1` đọc lại 69 trang biểu đồ. Mô tả lưu thành chunk `:visual` kèm bbox và ảnh trang.
+  - Vòng 2 (cấu hình chính thức) dùng **Gemini API free tier**:
+    - embedding `gemini-embedding-001` (1536 chiều) trên pgvector Day 6, strategy `ADVG`;
+    - hybrid RRF với BM25;
+    - **tra cứu theo nhãn** Figure/Table nêu trong câu hỏi;
+    - mỗi trang mang cả chunk text lẫn chunk visual;
+    - lúc trả lời, **gửi kèm ảnh crop hình gốc** cho `gemini-3.5-flash-lite`.
+  - Chưa xử lý: công thức dạng ảnh; mô tả vision có thể sai, nên kiểm chứng bằng ảnh gốc.
 - **Benchmark, model, cấu hình:**
-  - 48 câu, khóa trước mọi lần chạy vision và agent: dev 15+3, test 24+6, đủ số tối thiểu từng nhóm.
-  - Hình, bảng và trang text được **chọn bằng lấy mẫu hệ thống** để không chọn câu dễ. Evidence text được kiểm tra nguyên văn bằng script; evidence hình đối chiếu trên ảnh trang gốc.
-  - Agent `gpt-4.1-mini`: hybrid RRF top-12, context 24.000 ký tự, tối đa 4 search, 8 luật grounding, hai cổng kiểm chứng. Chốt E1 (dev 17/18) trước khi chạy test.
+  - 78 câu: dev 15+3; dev2 24+6 (là test E1 cũ, đã xem nên chuyển sang dev); test 5 gồm 24+6 câu mới, khóa trước vòng 2 (SHA-256 trong `advanced/benchmark/questions.sha256`).
+  - Hình, bảng và trang text được chọn bằng lấy mẫu hệ thống. Evidence text kiểm tra nguyên văn bằng script; evidence hình đối chiếu trên ảnh trang gốc.
+  - Chốt G2L trên 48 câu dev + dev2 (47/48) trước khi chạy test 5 một lần.
 
-| Nhóm test | Đạt / tổng | Tỷ lệ | Lỗi / nhận xét |
+| Nhóm test 5 | Đạt / tổng | Tỷ lệ | Lỗi / nhận xét |
 |---|---|---|---|
-| Bảng | 4/6 | 67% | t02 cổng kiểm chứng chặn phép cộng đúng; t04 bảng trải hai trang, đọc nhầm bảng kế bên |
+| Bảng | 6/6 | 100% | gồm 2 bảng trải hai trang |
 | Ảnh, sơ đồ | 5/5 | 100% | |
-| Biểu đồ | 4/5 | 80% | t10 vision đếm sai dấu X trong dot plot |
-| Multi-hop | 2/4 | 50% | t22 nói 0.26 thay vì 0.25; t24 lấy nhầm hình rồi từ chối |
-| Text | 2/4 | 50% | t17, t20 thêm khẳng định không có trong trang trích |
+| Biểu đồ | 5/5 | 100% | |
+| Multi-hop | 2/4 | 50% | n22 khẳng định đáp án lời giải khi trang lời giải không có trong context; n24 cộng sai (78 thay vì 75) |
+| Text | 4/4 | 100% | |
 | Thiếu bằng chứng | 6/6 | 100% | |
-| **Toàn bộ** | **23/30** | **76,7%** | 25/30 nếu chấp nhận t17, t20 — **chưa đạt ngưỡng 90%** |
+| **Toàn bộ** | **28/30** | **93,3%** | **đạt ngưỡng 90%** |
 
-- **Trace, nhãn, chi phí:** `advanced/results/test-E1/{traces,labels,grade_summary}.json`; 0 lỗi hệ thống; 4,4 s/câu; test $0,207; toàn bộ phần nâng cao $0,98. Nhãn do Claude chấm, đối chiếu trang gốc; học viên cần duyệt.
-- **Kết luận:** chưa đạt ngưỡng 90% nên không đủ điều kiện bonus. Dev 17/18 không đại diện cho test vì dev quá nhỏ. Lỗi chính là cổng kiểm chứng chặn phép tính đúng, bảng trải hai trang, vision đếm sai, và câu trả lời dài thêm ý ngoài nguồn.
+- **Trace, nhãn, chi phí:** `advanced/results/test-G2L/{traces,labels,grade_summary,summary}.json`. 0 lỗi hệ thống; 0 từ chối nhầm; 3,2 s/câu; $0 (Gemini free tier). Vòng 1 với OpenAI tốn $0,98 (vision $0,64 vẫn được dùng lại ở vòng 2). Nhãn do Claude chấm, đối chiếu trang gốc; học viên cần duyệt.
+- **Lịch sử, minh bạch:** cấu hình E1 (OpenAI `gpt-4.1-mini`, cổng kiểm chứng) đạt 23/30 trên test cũ. Lỗi của E1 là cổng kiểm chứng chặn phép tính đúng, bảng trải hai trang, vision đọc sai và câu trả lời dài thêm ý ngoài nguồn. Vòng 2 sửa bằng cơ chế chung (tra cứu theo nhãn, ảnh gốc lúc trả lời, trả lời ngắn, bỏ cổng) và đánh giá trên test 5 mới.
+- **Giới hạn:**
+  - Người soạn benchmark cũng là người dựng pipeline (Claude).
+  - Free tier giới hạn request/ngày.
+  - Một số câu thiếu evidence được trả lời bằng nội dung "không có thông tin" thay vì tool `abstain`; chấm tay tính là đạt theo ADVANCED.md.

@@ -1,0 +1,9 @@
+{
+  "strategy": "ADVG",
+  "model": "gemini-embedding-001",
+  "chunks": 441,
+  "embedded_now": 441,
+  "deleted_obsolete": 0,
+  "embedding_tokens": 0,
+  "cost_usd": 0.0
+}

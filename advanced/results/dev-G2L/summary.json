@@ -1,0 +1,26 @@
+{
+ "config": {
+  "split": "dev",
+  "name": "G2L",
+  "model": "gemini-3.5-flash-lite",
+  "top_k": 8,
+  "budget": 30000,
+  "max_searches": 1,
+  "final_no_search": true,
+  "images": true,
+  "limit": 0,
+  "embedding": "gemini-embedding-001",
+  "strategy": "ADVG"
+ },
+ "answered_cases": "18/18",
+ "cases": 18,
+ "errors": 0,
+ "context_evidence_rate": "15/15",
+ "answered_with_gold_cited": "13/15",
+ "false_abstention": "0/15",
+ "abstention_unanswerable": "0/3",
+ "model_calls": 25,
+ "median_s": 3.59,
+ "total_cost_usd": 0.0,
+ "note": "automatic counts only; answers and citations are graded by hand in labels.json"
+}

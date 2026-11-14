@@ -7,7 +7,7 @@ from pathlib import Path
 from types import SimpleNamespace as NS
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'starter'))
-os.environ.setdefault('OPENAI_API_KEY', 'test-only')
+os.environ['OPENAI_API_KEY'] = os.environ.get('OPENAI_API_KEY') or 'test-only'  # also when .env sets it empty
 from agent import OpenAIController, PairPageText
 
 

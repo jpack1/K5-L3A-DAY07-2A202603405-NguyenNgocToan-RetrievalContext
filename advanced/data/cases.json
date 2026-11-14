@@ -1,0 +1,470 @@
+[
+ {
+  "id": "d01",
+  "split": "dev",
+  "question": "In Table 2.11, which region has the largest number of graduates, and what number and percentage are listed for it?",
+  "filter": null
+ },
+ {
+  "id": "d02",
+  "split": "dev",
+  "question": "In Table 2.68 on the number of movies students watched the previous week, what frequency is listed for 1 movie, and how many students were asked?",
+  "filter": null
+ },
+ {
+  "id": "d03",
+  "split": "dev",
+  "question": "Table 4.20 gives the probability distribution of the number of years a new hire stays with the company, but P(x = 4) is left blank. What must P(x = 4) be, given the other listed probabilities?",
+  "filter": null
+ },
+ {
+  "id": "d04",
+  "split": "dev",
+  "question": "In the Pareto chart of student ethnicity (Figure 1.10), which category has the third-tallest bar, and what percentage is printed on it?",
+  "filter": null
+ },
+ {
+  "id": "d05",
+  "split": "dev",
+  "question": "Figure 2.14 shows two box plots of test scores on one axis. Which plot (top or bottom) has its box between about 78 and 89, and about where does that plot's left whisker end?",
+  "filter": null
+ },
+ {
+  "id": "d06",
+  "split": "dev",
+  "question": "In the histogram of Figure 2.32, which value has the tallest bar and what is its height, and which two values have bars of equal height?",
+  "filter": null
+ },
+ {
+  "id": "d07",
+  "split": "dev",
+  "question": "In the Venn diagram of Figure 3.6, which outcome lies in both circles, and which outcomes lie outside both circles?",
+  "filter": null
+ },
+ {
+  "id": "d08",
+  "split": "dev",
+  "question": "In Figure 5.18 for the repair-time uniform distribution, what height is marked on the f(x) axis, between which x-values does the rectangle run, and which interval is shaded?",
+  "filter": null
+ },
+ {
+  "id": "d09",
+  "split": "dev",
+  "question": "In Figure 5.30, which part of the exponential curve is shaded, up to which x-value, and what probability does the label give?",
+  "filter": null
+ },
+ {
+  "id": "d10",
+  "split": "dev",
+  "question": "In a stem-and-leaf graph, what are the stem and the leaf of the number 432, and of the decimal 9.3?",
+  "filter": null
+ },
+ {
+  "id": "d11",
+  "split": "dev",
+  "question": "According to the book, what two things does the standard deviation provide, and can it be negative?",
+  "filter": null
+ },
+ {
+  "id": "d12",
+  "split": "dev",
+  "question": "What two characteristics must a discrete probability distribution function have?",
+  "filter": null
+ },
+ {
+  "id": "d13",
+  "split": "dev",
+  "question": "For box plot (b) in Figure 2.50, what is the IQR, and is its maximum value an outlier by the IQR times 1.5 rule the book uses?",
+  "filter": null
+ },
+ {
+  "id": "d14",
+  "split": "dev",
+  "question": "In Terry's letter-count dot plot (Figure 2.19), which value has the most X marks and how many, and what mean and median does the solution give for Terry?",
+  "filter": null
+ },
+ {
+  "id": "d15",
+  "split": "dev",
+  "question": "Exercise 83 in Chapter 5 is about the daily value of a stock. Between which dollar values does it vary, and what probability that the value is more than $19 is shown in the solution graph (Figure 5.54)?",
+  "filter": null
+ },
+ {
+  "id": "d16",
+  "split": "dev",
+  "question": "How is a trimmed mean computed and when should it be preferred to the median?",
+  "filter": null
+ },
+ {
+  "id": "d17",
+  "split": "dev",
+  "question": "What are the parameters of the gamma distribution and how does it generalize the exponential distribution?",
+  "filter": null
+ },
+ {
+  "id": "d18",
+  "split": "dev",
+  "question": "How do you draw an ogive from a cumulative frequency table?",
+  "filter": null
+ },
+ {
+  "id": "t01",
+  "split": "dev2",
+  "question": "In Table 1.27 on worldwide earthquake deaths over a 13-year period, which year had the most deaths, how many, and what total is listed?",
+  "filter": null
+ },
+ {
+  "id": "t02",
+  "split": "dev2",
+  "question": "In Table 2.28 (hours teenagers spend on video games), how many teenagers are in the 7.5–11.5 hour class, and how many teenagers are there in total?",
+  "filter": null
+ },
+ {
+  "id": "t03",
+  "split": "dev2",
+  "question": "In Table 2.46 (tar in nonfiltered cigarettes), which tar class has the highest frequency, and what is the frequency of the 26–29 mg class?",
+  "filter": null
+ },
+ {
+  "id": "t04",
+  "split": "dev2",
+  "question": "In the stem-and-leaf plot of Table 2.85, which leaves are on stem 2 and which are on stem 4?",
+  "filter": null
+ },
+ {
+  "id": "t05",
+  "split": "dev2",
+  "question": "In Table 3.25 of 49ers and Cowboys players by shirt number and weight, how many players with shirt numbers 34–66 weigh 251–290 pounds, and how many with shirt numbers 1–33 weigh 210 pounds or less?",
+  "filter": null
+ },
+ {
+  "id": "t06",
+  "split": "dev2",
+  "question": "Table 4.33 gives P(x) for the number of children married adults have, but P(x = 3) is left blank. What must P(x = 3) be, given the other listed probabilities?",
+  "filter": null
+ },
+ {
+  "id": "t07",
+  "split": "dev2",
+  "question": "In the histogram of credit hours completed per student (Figure 1.4), which class has the tallest bar, and what is the vertical axis label?",
+  "filter": null
+ },
+ {
+  "id": "t08",
+  "split": "dev2",
+  "question": "In the line graph of the number of times a teenager is reminded (Figure 2.2), at which number of reminders is the frequency highest, and what is that frequency?",
+  "filter": null
+ },
+ {
+  "id": "t09",
+  "split": "dev2",
+  "question": "In the frequency polygon of test scores (Figure 2.8), at which x-axis label is the frequency highest, and what is that frequency?",
+  "filter": null
+ },
+ {
+  "id": "t10",
+  "split": "dev2",
+  "question": "In the dot plot of Davis' letter count (Figure 2.20), how many X marks are above the value 1, and how many X marks are there in total?",
+  "filter": null
+ },
+ {
+  "id": "t11",
+  "split": "dev2",
+  "question": "In the histogram of Figure 2.38, which value has the tallest bar and what is its height, and which values have bars of height 1?",
+  "filter": null
+ },
+ {
+  "id": "t12",
+  "split": "dev2",
+  "question": "In the calculator screen of Figure 2.26, which three menu headings appear at the top, and what is menu option 4?",
+  "filter": null
+ },
+ {
+  "id": "t13",
+  "split": "dev2",
+  "question": "In Figure 5.6 for f(x) = 1/20, which interval of x is shaded, and what area does the book compute for it?",
+  "filter": null
+ },
+ {
+  "id": "t14",
+  "split": "dev2",
+  "question": "In Figure 5.12 for smiling times, what height is marked on the f(x) axis, where does the rectangle end on the x-axis, and what does the shaded area represent?",
+  "filter": null
+ },
+ {
+  "id": "t15",
+  "split": "dev2",
+  "question": "In Figure 5.24, what value is marked at the top of the f(x) axis, and what does the shaded area to the right of k represent?",
+  "filter": null
+ },
+ {
+  "id": "t16",
+  "split": "dev2",
+  "question": "In Figure 5.36 for a general uniform distribution, what height is labeled on the vertical axis, which x-values bound the rectangle, and what is written inside it?",
+  "filter": null
+ },
+ {
+  "id": "t17",
+  "split": "dev2",
+  "question": "Why do researchers often prefer quantitative data over qualitative data?",
+  "filter": null
+ },
+ {
+  "id": "t18",
+  "split": "dev2",
+  "question": "From which five values is a box plot constructed, and approximately what share of the data falls inside the box?",
+  "filter": null
+ },
+ {
+  "id": "t19",
+  "split": "dev2",
+  "question": "What does the addition rule P(A OR B) become when A and B are mutually exclusive, and why?",
+  "filter": null
+ },
+ {
+  "id": "t20",
+  "split": "dev2",
+  "question": "In a geometric experiment, how are the repeated trials related to each other, and what is true about the probabilities of success and failure from trial to trial?",
+  "filter": null
+ },
+ {
+  "id": "t21",
+  "split": "dev2",
+  "question": "In the box plots of foreign countries visited by 20-year-olds (Figure 2.44), what is the interquartile range for Germany, and how does the book define the interquartile range?",
+  "filter": null
+ },
+ {
+  "id": "t22",
+  "split": "dev2",
+  "question": "Figure 2.62 is the solution histogram of onboard charges for singles. Which intervals have the tallest bars and what relative frequency do they reach, and what x-axis bin width does the exercise ask for?",
+  "filter": null
+ },
+ {
+  "id": "t23",
+  "split": "dev2",
+  "question": "Figure 2.56 is a solution histogram of the number of cars sold by car salespersons. Which number of cars has the tallest bar, and according to the exercise, how many salespersons sell that number and how many were surveyed?",
+  "filter": null
+ },
+ {
+  "id": "t24",
+  "split": "dev2",
+  "question": "For the uniform distribution in Figure 5.42, which interval is shaded, and what is the probability that x falls in the shaded area, using the book's rule for the area of a rectangle?",
+  "filter": null
+ },
+ {
+  "id": "t25",
+  "split": "dev2",
+  "question": "How is the coefficient of variation computed, and how is it used to compare the spread of two data sets?",
+  "filter": null
+ },
+ {
+  "id": "t26",
+  "split": "dev2",
+  "question": "What does the kurtosis of a distribution measure, and what is excess kurtosis?",
+  "filter": null
+ },
+ {
+  "id": "t27",
+  "split": "dev2",
+  "question": "What is the probability formula of the negative binomial distribution for the number of trials until the r-th success?",
+  "filter": null
+ },
+ {
+  "id": "t28",
+  "split": "dev2",
+  "question": "How does Bayes' theorem update a prior probability into a posterior probability?",
+  "filter": null
+ },
+ {
+  "id": "t29",
+  "split": "dev2",
+  "question": "How does snowball sampling recruit participants, and when is it used?",
+  "filter": null
+ },
+ {
+  "id": "t30",
+  "split": "dev2",
+  "question": "In Table 1.27 on worldwide earthquake deaths, how many deaths occurred in Year 14?",
+  "filter": null
+ },
+ {
+  "id": "n01",
+  "split": "test",
+  "question": "In Table 1.1 of the electric-car crash study, at what speed were the cars crashed and where were the \"drivers\" (dummies) located?",
+  "filter": null
+ },
+ {
+  "id": "n02",
+  "split": "test",
+  "question": "In Table 1.41 (number of times flossing per week), what are the frequency and the cumulative relative frequency for 3 times per week?",
+  "filter": null
+ },
+ {
+  "id": "n03",
+  "split": "test",
+  "question": "In Table 2.20 of CPI values, what Annual values are listed for year 6 and year 7?",
+  "filter": null
+ },
+ {
+  "id": "n04",
+  "split": "test",
+  "question": "In Table 2.38 (number of times people visited a store before a major purchase), which number of visits has the highest frequency, and how many people were surveyed in total?",
+  "filter": null
+ },
+ {
+  "id": "n05",
+  "split": "test",
+  "question": "In Table 2.55 (part a, grades), which grade class has the highest frequency, and how many grades fall in the 49.5–59.5 class?",
+  "filter": null
+ },
+ {
+  "id": "n06",
+  "split": "test",
+  "question": "In Table 2.77 on the percent of underweight children under five, which interval has the most countries, and how many countries are in the 43.25–48.7 interval?",
+  "filter": null
+ },
+ {
+  "id": "n07",
+  "split": "test",
+  "question": "In Figure 1.7 (De Anza College, most recent spring quarter), what percentages are shown for \"Intend to transfer\" and for \"Full-time\"?",
+  "filter": null
+ },
+ {
+  "id": "n08",
+  "split": "test",
+  "question": "In Figure 1.13 of CEO ages, which age class has the tallest bar in Graph A, and which graph has bars that rise to 1 at the 70–74 class?",
+  "filter": null
+ },
+ {
+  "id": "n09",
+  "split": "test",
+  "question": "In the histogram of heights (Figure 2.5), what relative frequency is printed on the tallest bar, and which interval does it cover?",
+  "filter": null
+ },
+ {
+  "id": "n10",
+  "split": "test",
+  "question": "In the box plot of Figure 2.11, what are the first quartile, the median and the third quartile, and where does the right whisker end?",
+  "filter": null
+ },
+ {
+  "id": "n11",
+  "split": "test",
+  "question": "In the histogram of Figure 2.17, which value has the tallest bar, and how does the book describe the shape of this distribution?",
+  "filter": null
+ },
+ {
+  "id": "n12",
+  "split": "test",
+  "question": "In the calculator 1-Var Stats screen of Figure 2.29, what values are shown for Sx and for σx?",
+  "filter": null
+ },
+ {
+  "id": "n13",
+  "split": "test",
+  "question": "In the tree diagram of Figure 3.3, what are the two first-draw branch labels, and what counts appear at the ends of the FN and NN paths?",
+  "filter": null
+ },
+ {
+  "id": "n14",
+  "split": "test",
+  "question": "In the Venn diagram of Figure 3.9, what labels are written on the two ovals?",
+  "filter": null
+ },
+ {
+  "id": "n15",
+  "split": "test",
+  "question": "In the tree diagram of Figure 3.16 for drawing two cards, what probabilities are written on the Green and Yellow branches?",
+  "filter": null
+ },
+ {
+  "id": "n16",
+  "split": "test",
+  "question": "In Figure 5.3 (the exponential distribution), which interval of x is shaded, and what does the shaded area represent?",
+  "filter": null
+ },
+ {
+  "id": "n17",
+  "split": "test",
+  "question": "According to the book's rounding rule, how many decimal places should a final answer carry, and should intermediate results be rounded?",
+  "filter": null
+ },
+ {
+  "id": "n18",
+  "split": "test",
+  "question": "When does the book suggest using a histogram, and how is the vertical axis of a histogram labeled?",
+  "filter": null
+ },
+ {
+  "id": "n19",
+  "split": "test",
+  "question": "Why is the median generally a better measure of the center than the mean when there are extreme values?",
+  "filter": null
+ },
+ {
+  "id": "n20",
+  "split": "test",
+  "question": "What makes an experiment a chance experiment, and what are the three ways the book gives to represent a sample space?",
+  "filter": null
+ },
+ {
+  "id": "n21",
+  "split": "test",
+  "question": "In the histogram of Figure 2.35, which value has the tallest bar, and what does the solution to exercise 59 say about the mode and the median of this distribution?",
+  "filter": null
+ },
+ {
+  "id": "n22",
+  "split": "test",
+  "question": "Figure 2.41 shows the number of T-shirts costing more than $19 owned by 111 shoppers. What relative frequency is printed for 4 T-shirts, and which answer does the solution give for the percentage who own at most three?",
+  "filter": null
+ },
+ {
+  "id": "n23",
+  "split": "test",
+  "question": "In the box plots of BMW buyers' ages (Figure 2.47), which series has the highest median age, and how many purchasers of each series were surveyed?",
+  "filter": null
+ },
+ {
+  "id": "n24",
+  "split": "test",
+  "question": "Figure 2.53 is the solution line graph for the TV-shows exercise. At how many TV shows per day does the line peak, what frequency does Table 2.40 give there, and how many children were surveyed?",
+  "filter": null
+ },
+ {
+  "id": "n25",
+  "split": "test",
+  "question": "How is the geometric mean of a data set computed, and when is it preferred to the arithmetic mean?",
+  "filter": null
+ },
+ {
+  "id": "n26",
+  "split": "test",
+  "question": "How does the law of total probability combine conditional probabilities over a partition?",
+  "filter": null
+ },
+ {
+  "id": "n27",
+  "split": "test",
+  "question": "What is the probability formula of the multinomial distribution?",
+  "filter": null
+ },
+ {
+  "id": "n28",
+  "split": "test",
+  "question": "What are the shape and scale parameters of the Weibull distribution used for waiting times?",
+  "filter": null
+ },
+ {
+  "id": "n29",
+  "split": "test",
+  "question": "How is relative risk computed from a two-way table, and how does it differ from an odds ratio?",
+  "filter": null
+ },
+ {
+  "id": "n30",
+  "split": "test",
+  "question": "In Figure 1.7 (De Anza College, most recent spring quarter), what percentage of students are international students?",
+  "filter": null
+ }
+]

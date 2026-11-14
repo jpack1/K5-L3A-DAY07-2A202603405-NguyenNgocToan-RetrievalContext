@@ -1,0 +1,23 @@
+{
+  "document": "Introductory Statistics 2e (OpenStax, 2023), CC BY-NC-SA 4.0",
+  "source": "https://assets.openstax.org/oscms-prodcms/media/documents/introductory-statistics-2e_-_WEB.pdf",
+  "sha256": "a79a953b75e570030c74ea6f700b8bd70f41dc8c01bf4e9618e6a0adba3a382a",
+  "scope": "Chapters 1-5, PDF pages 17-346",
+  "pages_in_scope": 330,
+  "pages_indexed": 328,
+  "pages_with_figures": 113,
+  "figures": 165,
+  "skipped_pages": [
+    {
+      "page": 76,
+      "reason": "under 200 characters and no figure"
+    },
+    {
+      "page": 238,
+      "reason": "under 200 characters and no figure"
+    }
+  ],
+  "tools": {
+    "pymupdf": "1.26.5"
+  }
+}

@@ -1,0 +1,22 @@
+{
+ "config": "E1",
+ "by_group": {
+  "table": "4/6",
+  "chart": "4/5",
+  "visual": "5/5",
+  "text": "2/4",
+  "multihop": "2/4",
+  "unanswerable": "6/6"
+ },
+ "pass": "23/30",
+ "rate": 76.7,
+ "pass_if_t17_t20_accepted": "25/30",
+ "threshold": "27/30 (90%)",
+ "system_errors": 0,
+ "false_abstentions": [
+  "t02",
+  "t24"
+ ],
+ "median_s": 4.355,
+ "cost_usd_test": 0.20658
+}

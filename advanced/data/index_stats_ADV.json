@@ -1,0 +1,9 @@
+{
+  "strategy": "ADV",
+  "model": "text-embedding-3-small",
+  "chunks": 441,
+  "embedded_now": 441,
+  "deleted_obsolete": 642,
+  "embedding_tokens": 223572,
+  "cost_usd": 0.004471
+}
