@@ -1,0 +1,38 @@
+q19: answered searches=1 4.35s 'If the step size of a counter is negative, it counts in descending order. Conversely, if t'
+q20: answered searches=1 5.12s 'An infinite loop is a loop that does not have a termination condition, meaning it will con'
+q21: answered searches=1 4.34s '"Gail" might be placed before "apple" when a list of words is sorted because Python uses A'
+q22: abstain  searches=3 6.33s 'Không đủ bằng chứng để trả lời.'
+q23: answered searches=1 4.59s "In programming, 'nested' refers to a data structure that contains other data structures as"
+q24: answered searches=1 3.49s 'To make a copy of your collection (list) in Python, you can use the `copy()` method. This '
+u04: abstain  searches=3 5.97s 'Không đủ bằng chứng để trả lời.'
+u05: abstain  searches=3 5.59s 'Không đủ bằng chứng để trả lời.'
+{
+  "config": {
+    "split": "test",
+    "method": "dense",
+    "filter": false,
+    "top_k": 3,
+    "budget": 1500,
+    "max_searches": 3,
+    "context_order": "arrival",
+    "stop_repeat": false,
+    "model": "gpt-4o-mini",
+    "output": "results\\exp-test\\R0-dense-b1500"
+  },
+  "cases": 8,
+  "errors": 0,
+  "tool_use": "8/8",
+  "searches_distribution": {
+    "1": 5,
+    "3": 3
+  },
+  "context_evidence_rate": "4/6",
+  "answered_with_gold_cited": "4/6",
+  "false_abstention": "1/6",
+  "abstention_unanswerable": "2/2",
+  "answers_with_citation": "5/5",
+  "median_s": 4.855,
+  "total_cost_usd": 0.001954,
+  "avg_context_chars": 1032,
+  "note": "context/abstention counts are automatic; answer grade and citation support need manual review"
+}

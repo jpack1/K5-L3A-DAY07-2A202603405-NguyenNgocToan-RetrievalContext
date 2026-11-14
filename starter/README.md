@@ -61,3 +61,41 @@ Thay đường dẫn trong `< >`. Script tổng hợp nhãn bạn đã chấm, k
 TF-IDF dùng cách tách từ đơn giản. `baseline.py` dùng mặc định context budget 800 ký tự, gồm cả nguồn; chunk không vừa bị bỏ. Bạn có thể chọn cách khác. File kết quả cùng tên sẽ bị ghi đè. `starter/data/` và `starter/results/` không được Git theo dõi mặc định; nếu được phép chia sẻ, dùng `git add -f <đường-dẫn>`, hoặc ghi cách tái tạo. Không nộp dữ liệu mật và secret.
 
 Khung agent ưu tiên giữ chunk từ lần search trước. Khi chunk đầu chiếm gần hết budget, lần search sau có thể không thêm được evidence; hãy kiểm tra trace và thử cách chọn context phù hợp trên dev. Citation ID hợp lệ hoặc verifier trả “đúng” không đảm bảo câu trả lời được hỗ trợ; cần chấm thủ công.
+
+## Kết nối Day 6 (bài làm)
+
+| Thành phần | Giá trị |
+|---|---|
+| Corpus | OpenStax *Introduction to Python Programming* ch5/9/10, 59 trang, CC BY-NC-SA 4.0 (manifest ở repo Day 6) |
+| Chunk | Day 6 strategy **B** (by_paragraph ≤500 ký tự, cấu hình C đã chọn ở Day 6 = B + filter `chapter`): 203 chunk, ID `openstax-intro-python:p<page>:p<n>` |
+| Embedding | OpenAI `text-embedding-3-small`, 1536 chiều, query/document embed giống nhau, không prefix |
+| Vector store | PostgreSQL 16 + pgvector 0.8.7 (Docker Day 6, `127.0.0.1:55433`), bảng `chunks`, exact cosine `<=>` |
+| Agent model | `gpt-4o-mini` (tool calling) |
+
+```bash
+pip install -r starter/requirements.txt
+# Copy starter/.env.example -> starter/.env, điền OPENAI_API_KEY
+python starter/day6_store.py "How do I leave an infinite loop?"   # kiểm tra model/số chiều + dense top-3
+python starter/prepare_day6.py                                       # -> starter/data/{chunks,questions,cases}.json
+```
+
+`day6_store.py` báo lỗi nếu model của index khác `EMBEDDING_MODEL` hoặc số chiều query khác index. `prepare_day6.py` chỉ xuất text/metadata (vector ở lại pgvector), gộp `alt_evidence` của Day 6 vào `gold` và thêm câu thiếu evidence từ `data/unanswerable.json`. Benchmark: dev 18 có đáp án + 3 thiếu evidence; test 6 + 2. Hit khớp evidence không phân biệt khoảng trắng, giống quy tắc Day 6. Trên Windows chạy test với `PYTHONUTF8=1`.
+
+## Retrieval (bài làm)
+
+`starter/retrieval.py`: `tfidf` (starter), `bm25` (k1=1.5, b=0.75, tách từ `\w+` casefold), `dense` (pgvector Day 6), `hybrid_rrf` (RRF k=60 trên top-20 dense + top-20 BM25; dùng rank nên không cần chuẩn hóa score). Biến thể `+filter` dùng `filter.chapter` do người dùng cung cấp trong câu hỏi. Context = top-3 qua `pack_context`, budget 1500 ký tự.
+
+```bash
+cd starter
+PYTHONUTF8=1 python retrieval.py --chunks data/chunks.json --questions data/questions.json --split dev --output results/retrieval-dev
+```
+
+## Agent (bài làm)
+
+`starter/agent.py`: controller OpenAI (`gpt-4o-mini`, temperature 0, tool calling) gồm 3 tool `search(query)`, `answer(answer, citations)`, `abstain(reason)`; vòng lặp, giới hạn search, kiểm tra citation và từ chối dùng `run_agent` của starter. Bước đầu bắt buộc `search` (không được từ chối khi chưa tìm). Nếu model liệt kê citation mà thiếu `[id]` trong câu trả lời, controller nối marker vào cuối và ghi `citation_markers_appended` trong trace; `run_agent` vẫn kiểm tra ID nằm trong context. Filter `chapter` (do người dùng cung cấp) được hệ thống áp dụng, model không tự đặt filter. Lỗi provider/DB ghi `status: error`, không thay bằng kết quả giả. Gold chỉ đọc sau khi chạy để tính Context Evidence Rate.
+
+```bash
+cd starter
+PYTHONUTF8=1 python agent.py --split dev --method dense --budget 1500 --output results/exp-dev/R0-dense-b1500
+PYTHONUTF8=1 python agent.py --split dev --method hybrid_rrf --filter --budget 1500 --context-order rank --stop-repeat --output results/exp-dev/R5-hybridf-b1500-rank-stop
+```

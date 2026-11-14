@@ -1,0 +1,12 @@
+[
+  {"id": "u01", "split": "dev", "question": "Does Python have a do-while loop, and how is it written?", "answerable": false, "expected_behavior": "search_and_abstain",
+   "absence_reason": "Corpus (ch5 Loops) covers while, for, break/continue, loop else; grep 'do-while'/'do while' on pages.jsonl = 0 hits."},
+  {"id": "u02", "split": "dev", "question": "What is the time complexity of sorting a list with sort()?", "answerable": false, "expected_behavior": "search_and_abstain",
+   "absence_reason": "sort() is described (page 235) without any performance claim; grep 'complexity'/'timsort' = 0 hits."},
+  {"id": "u03", "split": "dev", "question": "What is a defaultdict and when should it be used instead of a normal dictionary?", "answerable": false, "expected_behavior": "search_and_abstain",
+   "absence_reason": "Ch10 covers dict creation, get(), keys/values/items, pop, comprehension, nesting; grep 'defaultdict' = 0 hits."},
+  {"id": "u04", "split": "test", "question": "What does the dictionary method setdefault() return when the key is missing?", "answerable": false, "expected_behavior": "search_and_abstain",
+   "absence_reason": "Near-topic to get() (page 241) but grep 'setdefault' = 0 hits."},
+  {"id": "u05", "split": "test", "question": "How does enumerate() give both the index and the value when looping over a list?", "answerable": false, "expected_behavior": "search_and_abstain",
+   "absence_reason": "Loops over lists are covered but grep 'enumerate' = 0 hits."}
+]

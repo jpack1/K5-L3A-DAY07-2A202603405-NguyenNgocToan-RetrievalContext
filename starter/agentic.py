@@ -30,7 +30,8 @@ class Retriever(Protocol):
 
 def run_agent(question: str, controller: Controller, retriever: Retriever, *,
               filters: dict[str, Any] | None = None, max_searches: int = 4,
-              top_k: int = 3, budget: int = 800) -> dict[str, Any]:
+              top_k: int = 3, budget: int = 800, context_order: str = 'arrival',
+              drop_invalid_citations: bool = False) -> dict[str, Any]:
     """Return answer, citation IDs and trace; no benchmark gold enters this loop.
 
     A final answer without valid citations, an empty context, and a search limit
@@ -55,7 +56,10 @@ def run_agent(question: str, controller: Controller, retriever: Retriever, *,
             if len(results) > top_k or len({r['id'] for r in results}) != len(results):
                 raise ValueError('retriever phải trả tối đa top_k chunk ID duy nhất')
             candidates.extend(results)
-            context, ids = pack_context(candidates, budget=budget)
+            # 'rank': best rank across all searches first (stable sort keeps earlier search on ties),
+            # so a better chunk from a later search is not dropped when the budget is full.
+            ordered = sorted(candidates, key=lambda c: c.get('rank', 0)) if context_order == 'rank' else candidates
+            context, ids = pack_context(ordered, budget=budget)
             chunks = {c['id']: c for c in candidates if c['id'] in ids}
             events.append({'event': 'search', 'query': query, 'filter': filters, 'results': results,
                            'context': context, 'context_ids': ids})
@@ -66,9 +70,17 @@ def run_agent(question: str, controller: Controller, retriever: Retriever, *,
             answer, citations = action.get('answer'), action.get('citations')
             if not isinstance(answer, str) or not isinstance(citations, list) or any(not isinstance(i, str) for i in citations):
                 raise ValueError('answer/citations không hợp lệ')
+            dropped = []
+            if drop_invalid_citations:
+                # One citation outside the context should not discard an answer whose other citations are valid.
+                dropped = [i for i in citations if i not in chunks]
+                citations = [i for i in citations if i in chunks]
+                for i in dropped:
+                    answer = answer.replace(f'[{i}]', '')
             valid = bool(answer.strip() and citations and all(i in chunks and f'[{i}]' in answer for i in citations))
             if valid:
-                return {'status': 'answered', 'answer': answer, 'citations': citations, 'events': events + [{'event': 'answer'}]}
+                done = {'event': 'answer', **({'dropped_citations': dropped} if dropped else {})}
+                return {'status': 'answered', 'answer': answer, 'citations': citations, 'events': events + [done]}
             return {'status': 'abstain', 'answer': 'Không đủ bằng chứng để trả lời.', 'citations': [], 'events': events + [{'event': 'invalid_or_missing_citations'}]}
         else:
             raise ValueError('action phải là search hoặc answer')

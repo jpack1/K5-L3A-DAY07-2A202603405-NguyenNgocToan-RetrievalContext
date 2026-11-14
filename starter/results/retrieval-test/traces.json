@@ -1,0 +1,1991 @@
+[
+  {
+    "config": "tfidf",
+    "query_id": "q19",
+    "type": "condition",
+    "question": "If the step size of a counter is negative, in which order does it count?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p127:p1",
+        "page": 127,
+        "rank": 1,
+        "score": 0.5327,
+        "chapter": 5,
+        "hit": true
+      },
+      {
+        "id": "openstax-intro-python:p127:p0",
+        "page": 127,
+        "rank": 2,
+        "score": 0.4003,
+        "chapter": 5,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p138:p0",
+        "page": 138,
+        "rank": 3,
+        "score": 0.3001,
+        "chapter": 5,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p127:p1",
+      "openstax-intro-python:p127:p0"
+    ],
+    "context_chars": 1101,
+    "elapsed_ms": 0.7,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "tfidf",
+    "query_id": "q20",
+    "type": "direct",
+    "question": "What is an infinite loop, and which statement is essential for leaving it?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p138:p0",
+        "page": 138,
+        "rank": 1,
+        "score": 0.3622,
+        "chapter": 5,
+        "hit": true
+      },
+      {
+        "id": "openstax-intro-python:p232:p3",
+        "page": 232,
+        "rank": 2,
+        "score": 0.2799,
+        "chapter": 9,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p141:p0",
+        "page": 141,
+        "rank": 3,
+        "score": 0.2584,
+        "chapter": 5,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p138:p0",
+      "openstax-intro-python:p232:p3",
+      "openstax-intro-python:p141:p0"
+    ],
+    "context_chars": 1423,
+    "elapsed_ms": 0.5,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "tfidf",
+    "query_id": "q21",
+    "type": "exception",
+    "question": "Why might \"Gail\" be placed before \"apple\" when a list of words is sorted?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p225:p1",
+        "page": 225,
+        "rank": 1,
+        "score": 0.3024,
+        "chapter": 9,
+        "hit": true
+      },
+      {
+        "id": "openstax-intro-python:p235:p1",
+        "page": 235,
+        "rank": 2,
+        "score": 0.2821,
+        "chapter": 9,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p229:p3",
+        "page": 229,
+        "rank": 3,
+        "score": 0.2256,
+        "chapter": 9,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p225:p1",
+      "openstax-intro-python:p235:p1"
+    ],
+    "context_chars": 1090,
+    "elapsed_ms": 0.5,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "tfidf",
+    "query_id": "q22",
+    "type": "paraphrase",
+    "question": "When iterating with items(), what does the loop variable receive on each pass?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p248:p1",
+        "page": 248,
+        "rank": 1,
+        "score": 0.3311,
+        "chapter": 10,
+        "hit": true
+      },
+      {
+        "id": "openstax-intro-python:p230:p2",
+        "page": 230,
+        "rank": 2,
+        "score": 0.2665,
+        "chapter": 9,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p129:p1",
+        "page": 129,
+        "rank": 3,
+        "score": 0.204,
+        "chapter": 5,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p248:p1",
+      "openstax-intro-python:p230:p2",
+      "openstax-intro-python:p129:p1"
+    ],
+    "context_chars": 1437,
+    "elapsed_ms": 0.5,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "tfidf",
+    "query_id": "q23",
+    "type": "filter",
+    "question": "What does nested mean for this data type?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p237:p6",
+        "page": 237,
+        "rank": 1,
+        "score": 0.4004,
+        "chapter": 10,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p254:p2",
+        "page": 254,
+        "rank": 2,
+        "score": 0.1964,
+        "chapter": 10,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p238:p2",
+        "page": 238,
+        "rank": 3,
+        "score": 0.1942,
+        "chapter": 10,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p237:p6",
+      "openstax-intro-python:p254:p2",
+      "openstax-intro-python:p238:p2"
+    ],
+    "context_chars": 963,
+    "elapsed_ms": 0.4,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  },
+  {
+    "config": "tfidf",
+    "query_id": "q24",
+    "type": "filter",
+    "question": "How do I make a copy of my collection?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p236:p2",
+        "page": 236,
+        "rank": 1,
+        "score": 0.3557,
+        "chapter": 9,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p229:p1",
+        "page": 229,
+        "rank": 2,
+        "score": 0.2191,
+        "chapter": 9,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p139:p2",
+        "page": 139,
+        "rank": 3,
+        "score": 0.2151,
+        "chapter": 5,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p236:p2",
+      "openstax-intro-python:p229:p1",
+      "openstax-intro-python:p139:p2"
+    ],
+    "context_chars": 1063,
+    "elapsed_ms": 0.4,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  },
+  {
+    "config": "bm25",
+    "query_id": "q19",
+    "type": "condition",
+    "question": "If the step size of a counter is negative, in which order does it count?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p127:p1",
+        "page": 127,
+        "rank": 1,
+        "score": 29.2616,
+        "chapter": 5,
+        "hit": true
+      },
+      {
+        "id": "openstax-intro-python:p127:p0",
+        "page": 127,
+        "rank": 2,
+        "score": 21.535,
+        "chapter": 5,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p143:p3",
+        "page": 143,
+        "rank": 3,
+        "score": 13.9786,
+        "chapter": 5,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p127:p1",
+      "openstax-intro-python:p127:p0"
+    ],
+    "context_chars": 1101,
+    "elapsed_ms": 0.7,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "bm25",
+    "query_id": "q20",
+    "type": "direct",
+    "question": "What is an infinite loop, and which statement is essential for leaving it?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p138:p0",
+        "page": 138,
+        "rank": 1,
+        "score": 20.0848,
+        "chapter": 5,
+        "hit": true
+      },
+      {
+        "id": "openstax-intro-python:p232:p3",
+        "page": 232,
+        "rank": 2,
+        "score": 14.6407,
+        "chapter": 9,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p140:p2",
+        "page": 140,
+        "rank": 3,
+        "score": 11.0519,
+        "chapter": 5,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p138:p0",
+      "openstax-intro-python:p232:p3",
+      "openstax-intro-python:p140:p2"
+    ],
+    "context_chars": 1442,
+    "elapsed_ms": 0.5,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "bm25",
+    "query_id": "q21",
+    "type": "exception",
+    "question": "Why might \"Gail\" be placed before \"apple\" when a list of words is sorted?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p225:p1",
+        "page": 225,
+        "rank": 1,
+        "score": 17.2949,
+        "chapter": 9,
+        "hit": true
+      },
+      {
+        "id": "openstax-intro-python:p235:p1",
+        "page": 235,
+        "rank": 2,
+        "score": 14.2215,
+        "chapter": 9,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p224:p2",
+        "page": 224,
+        "rank": 3,
+        "score": 10.6886,
+        "chapter": 9,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p225:p1",
+      "openstax-intro-python:p235:p1"
+    ],
+    "context_chars": 1090,
+    "elapsed_ms": 0.6,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "bm25",
+    "query_id": "q22",
+    "type": "paraphrase",
+    "question": "When iterating with items(), what does the loop variable receive on each pass?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p248:p1",
+        "page": 248,
+        "rank": 1,
+        "score": 17.2669,
+        "chapter": 10,
+        "hit": true
+      },
+      {
+        "id": "openstax-intro-python:p230:p2",
+        "page": 230,
+        "rank": 2,
+        "score": 12.4644,
+        "chapter": 9,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p126:p2",
+        "page": 126,
+        "rank": 3,
+        "score": 12.0564,
+        "chapter": 5,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p248:p1",
+      "openstax-intro-python:p230:p2",
+      "openstax-intro-python:p126:p2"
+    ],
+    "context_chars": 1398,
+    "elapsed_ms": 0.5,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "bm25",
+    "query_id": "q23",
+    "type": "filter",
+    "question": "What does nested mean for this data type?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p237:p6",
+        "page": 237,
+        "rank": 1,
+        "score": 13.239,
+        "chapter": 10,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p251:p2",
+        "page": 251,
+        "rank": 2,
+        "score": 9.3637,
+        "chapter": 10,
+        "hit": true
+      },
+      {
+        "id": "openstax-intro-python:p238:p2",
+        "page": 238,
+        "rank": 3,
+        "score": 9.2161,
+        "chapter": 10,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p237:p6",
+      "openstax-intro-python:p251:p2",
+      "openstax-intro-python:p238:p2"
+    ],
+    "context_chars": 1263,
+    "elapsed_ms": 0.4,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "bm25",
+    "query_id": "q24",
+    "type": "filter",
+    "question": "How do I make a copy of my collection?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p229:p1",
+        "page": 229,
+        "rank": 1,
+        "score": 9.5492,
+        "chapter": 9,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p236:p2",
+        "page": 236,
+        "rank": 2,
+        "score": 8.0513,
+        "chapter": 9,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p138:p1",
+        "page": 138,
+        "rank": 3,
+        "score": 6.8523,
+        "chapter": 5,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p229:p1",
+      "openstax-intro-python:p236:p2",
+      "openstax-intro-python:p138:p1"
+    ],
+    "context_chars": 1098,
+    "elapsed_ms": 0.4,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  },
+  {
+    "config": "bm25+filter",
+    "query_id": "q19",
+    "type": "condition",
+    "question": "If the step size of a counter is negative, in which order does it count?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p127:p1",
+        "page": 127,
+        "rank": 1,
+        "score": 29.2616,
+        "chapter": 5,
+        "hit": true
+      },
+      {
+        "id": "openstax-intro-python:p127:p0",
+        "page": 127,
+        "rank": 2,
+        "score": 21.535,
+        "chapter": 5,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p143:p3",
+        "page": 143,
+        "rank": 3,
+        "score": 13.9786,
+        "chapter": 5,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p127:p1",
+      "openstax-intro-python:p127:p0"
+    ],
+    "context_chars": 1101,
+    "elapsed_ms": 0.7,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "bm25+filter",
+    "query_id": "q20",
+    "type": "direct",
+    "question": "What is an infinite loop, and which statement is essential for leaving it?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p138:p0",
+        "page": 138,
+        "rank": 1,
+        "score": 20.0848,
+        "chapter": 5,
+        "hit": true
+      },
+      {
+        "id": "openstax-intro-python:p232:p3",
+        "page": 232,
+        "rank": 2,
+        "score": 14.6407,
+        "chapter": 9,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p140:p2",
+        "page": 140,
+        "rank": 3,
+        "score": 11.0519,
+        "chapter": 5,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p138:p0",
+      "openstax-intro-python:p232:p3",
+      "openstax-intro-python:p140:p2"
+    ],
+    "context_chars": 1442,
+    "elapsed_ms": 0.6,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "bm25+filter",
+    "query_id": "q21",
+    "type": "exception",
+    "question": "Why might \"Gail\" be placed before \"apple\" when a list of words is sorted?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p225:p1",
+        "page": 225,
+        "rank": 1,
+        "score": 17.2949,
+        "chapter": 9,
+        "hit": true
+      },
+      {
+        "id": "openstax-intro-python:p235:p1",
+        "page": 235,
+        "rank": 2,
+        "score": 14.2215,
+        "chapter": 9,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p224:p2",
+        "page": 224,
+        "rank": 3,
+        "score": 10.6886,
+        "chapter": 9,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p225:p1",
+      "openstax-intro-python:p235:p1"
+    ],
+    "context_chars": 1090,
+    "elapsed_ms": 0.6,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "bm25+filter",
+    "query_id": "q22",
+    "type": "paraphrase",
+    "question": "When iterating with items(), what does the loop variable receive on each pass?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p248:p1",
+        "page": 248,
+        "rank": 1,
+        "score": 17.2669,
+        "chapter": 10,
+        "hit": true
+      },
+      {
+        "id": "openstax-intro-python:p230:p2",
+        "page": 230,
+        "rank": 2,
+        "score": 12.4644,
+        "chapter": 9,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p126:p2",
+        "page": 126,
+        "rank": 3,
+        "score": 12.0564,
+        "chapter": 5,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p248:p1",
+      "openstax-intro-python:p230:p2",
+      "openstax-intro-python:p126:p2"
+    ],
+    "context_chars": 1398,
+    "elapsed_ms": 0.5,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "bm25+filter",
+    "query_id": "q23",
+    "type": "filter",
+    "question": "What does nested mean for this data type?",
+    "filter_applied": {
+      "chapter": 10
+    },
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p237:p6",
+        "page": 237,
+        "rank": 1,
+        "score": 13.239,
+        "chapter": 10,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p251:p2",
+        "page": 251,
+        "rank": 2,
+        "score": 9.3637,
+        "chapter": 10,
+        "hit": true
+      },
+      {
+        "id": "openstax-intro-python:p238:p2",
+        "page": 238,
+        "rank": 3,
+        "score": 9.2161,
+        "chapter": 10,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p237:p6",
+      "openstax-intro-python:p251:p2",
+      "openstax-intro-python:p238:p2"
+    ],
+    "context_chars": 1263,
+    "elapsed_ms": 0.2,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "bm25+filter",
+    "query_id": "q24",
+    "type": "filter",
+    "question": "How do I make a copy of my collection?",
+    "filter_applied": {
+      "chapter": 9
+    },
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p229:p1",
+        "page": 229,
+        "rank": 1,
+        "score": 9.5492,
+        "chapter": 9,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p236:p2",
+        "page": 236,
+        "rank": 2,
+        "score": 8.0513,
+        "chapter": 9,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p229:p0",
+        "page": 229,
+        "rank": 3,
+        "score": 6.6222,
+        "chapter": 9,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p229:p1",
+      "openstax-intro-python:p236:p2",
+      "openstax-intro-python:p229:p0"
+    ],
+    "context_chars": 921,
+    "elapsed_ms": 0.2,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  },
+  {
+    "config": "dense",
+    "query_id": "q19",
+    "type": "condition",
+    "question": "If the step size of a counter is negative, in which order does it count?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p127:p1",
+        "page": 127,
+        "rank": 1,
+        "score": 0.7346,
+        "chapter": 5,
+        "hit": true
+      },
+      {
+        "id": "openstax-intro-python:p127:p0",
+        "page": 127,
+        "rank": 2,
+        "score": 0.5436,
+        "chapter": 5,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p126:p3",
+        "page": 126,
+        "rank": 3,
+        "score": 0.5119,
+        "chapter": 5,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p127:p1",
+      "openstax-intro-python:p127:p0",
+      "openstax-intro-python:p126:p3"
+    ],
+    "context_chars": 1302,
+    "elapsed_ms": 519.9,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "dense",
+    "query_id": "q20",
+    "type": "direct",
+    "question": "What is an infinite loop, and which statement is essential for leaving it?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p138:p0",
+        "page": 138,
+        "rank": 1,
+        "score": 0.6356,
+        "chapter": 5,
+        "hit": true
+      },
+      {
+        "id": "openstax-intro-python:p141:p0",
+        "page": 141,
+        "rank": 2,
+        "score": 0.4971,
+        "chapter": 5,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p143:p2",
+        "page": 143,
+        "rank": 3,
+        "score": 0.4813,
+        "chapter": 5,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p138:p0",
+      "openstax-intro-python:p141:p0"
+    ],
+    "context_chars": 1049,
+    "elapsed_ms": 249.2,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "dense",
+    "query_id": "q21",
+    "type": "exception",
+    "question": "Why might \"Gail\" be placed before \"apple\" when a list of words is sorted?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p225:p1",
+        "page": 225,
+        "rank": 1,
+        "score": 0.4547,
+        "chapter": 9,
+        "hit": true
+      },
+      {
+        "id": "openstax-intro-python:p221:p2",
+        "page": 221,
+        "rank": 2,
+        "score": 0.3895,
+        "chapter": 9,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p225:p0",
+        "page": 225,
+        "rank": 3,
+        "score": 0.3876,
+        "chapter": 9,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p225:p1",
+      "openstax-intro-python:p221:p2",
+      "openstax-intro-python:p225:p0"
+    ],
+    "context_chars": 1296,
+    "elapsed_ms": 242.8,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "dense",
+    "query_id": "q22",
+    "type": "paraphrase",
+    "question": "When iterating with items(), what does the loop variable receive on each pass?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p125:p2",
+        "page": 125,
+        "rank": 1,
+        "score": 0.472,
+        "chapter": 5,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p125:p1",
+        "page": 125,
+        "rank": 2,
+        "score": 0.445,
+        "chapter": 5,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p129:p0",
+        "page": 129,
+        "rank": 3,
+        "score": 0.4419,
+        "chapter": 5,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p125:p2",
+      "openstax-intro-python:p125:p1",
+      "openstax-intro-python:p129:p0"
+    ],
+    "context_chars": 715,
+    "elapsed_ms": 260.5,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  },
+  {
+    "config": "dense",
+    "query_id": "q23",
+    "type": "filter",
+    "question": "What does nested mean for this data type?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p251:p3",
+        "page": 251,
+        "rank": 1,
+        "score": 0.5477,
+        "chapter": 10,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p229:p3",
+        "page": 229,
+        "rank": 2,
+        "score": 0.5275,
+        "chapter": 9,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p221:p4",
+        "page": 221,
+        "rank": 3,
+        "score": 0.5253,
+        "chapter": 9,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p251:p3",
+      "openstax-intro-python:p229:p3",
+      "openstax-intro-python:p221:p4"
+    ],
+    "context_chars": 784,
+    "elapsed_ms": 567.8,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  },
+  {
+    "config": "dense",
+    "query_id": "q24",
+    "type": "filter",
+    "question": "How do I make a copy of my collection?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p236:p2",
+        "page": 236,
+        "rank": 1,
+        "score": 0.4286,
+        "chapter": 9,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p228:p1",
+        "page": 228,
+        "rank": 2,
+        "score": 0.3255,
+        "chapter": 9,
+        "hit": true
+      },
+      {
+        "id": "openstax-intro-python:p229:p1",
+        "page": 229,
+        "rank": 3,
+        "score": 0.3106,
+        "chapter": 9,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p236:p2",
+      "openstax-intro-python:p228:p1",
+      "openstax-intro-python:p229:p1"
+    ],
+    "context_chars": 1089,
+    "elapsed_ms": 214.3,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "dense+filter",
+    "query_id": "q19",
+    "type": "condition",
+    "question": "If the step size of a counter is negative, in which order does it count?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p127:p1",
+        "page": 127,
+        "rank": 1,
+        "score": 0.7346,
+        "chapter": 5,
+        "hit": true
+      },
+      {
+        "id": "openstax-intro-python:p127:p0",
+        "page": 127,
+        "rank": 2,
+        "score": 0.5436,
+        "chapter": 5,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p126:p3",
+        "page": 126,
+        "rank": 3,
+        "score": 0.5119,
+        "chapter": 5,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p127:p1",
+      "openstax-intro-python:p127:p0",
+      "openstax-intro-python:p126:p3"
+    ],
+    "context_chars": 1302,
+    "elapsed_ms": 280.1,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "dense+filter",
+    "query_id": "q20",
+    "type": "direct",
+    "question": "What is an infinite loop, and which statement is essential for leaving it?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p138:p0",
+        "page": 138,
+        "rank": 1,
+        "score": 0.6356,
+        "chapter": 5,
+        "hit": true
+      },
+      {
+        "id": "openstax-intro-python:p141:p0",
+        "page": 141,
+        "rank": 2,
+        "score": 0.4971,
+        "chapter": 5,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p143:p2",
+        "page": 143,
+        "rank": 3,
+        "score": 0.4813,
+        "chapter": 5,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p138:p0",
+      "openstax-intro-python:p141:p0"
+    ],
+    "context_chars": 1049,
+    "elapsed_ms": 237.6,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "dense+filter",
+    "query_id": "q21",
+    "type": "exception",
+    "question": "Why might \"Gail\" be placed before \"apple\" when a list of words is sorted?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p225:p1",
+        "page": 225,
+        "rank": 1,
+        "score": 0.4547,
+        "chapter": 9,
+        "hit": true
+      },
+      {
+        "id": "openstax-intro-python:p221:p2",
+        "page": 221,
+        "rank": 2,
+        "score": 0.3895,
+        "chapter": 9,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p225:p0",
+        "page": 225,
+        "rank": 3,
+        "score": 0.3875,
+        "chapter": 9,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p225:p1",
+      "openstax-intro-python:p221:p2",
+      "openstax-intro-python:p225:p0"
+    ],
+    "context_chars": 1296,
+    "elapsed_ms": 436.3,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "dense+filter",
+    "query_id": "q22",
+    "type": "paraphrase",
+    "question": "When iterating with items(), what does the loop variable receive on each pass?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p125:p2",
+        "page": 125,
+        "rank": 1,
+        "score": 0.4719,
+        "chapter": 5,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p125:p1",
+        "page": 125,
+        "rank": 2,
+        "score": 0.445,
+        "chapter": 5,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p129:p0",
+        "page": 129,
+        "rank": 3,
+        "score": 0.4419,
+        "chapter": 5,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p125:p2",
+      "openstax-intro-python:p125:p1",
+      "openstax-intro-python:p129:p0"
+    ],
+    "context_chars": 715,
+    "elapsed_ms": 251.6,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  },
+  {
+    "config": "dense+filter",
+    "query_id": "q23",
+    "type": "filter",
+    "question": "What does nested mean for this data type?",
+    "filter_applied": {
+      "chapter": 10
+    },
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p251:p3",
+        "page": 251,
+        "rank": 1,
+        "score": 0.5477,
+        "chapter": 10,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p252:p1",
+        "page": 252,
+        "rank": 2,
+        "score": 0.4679,
+        "chapter": 10,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p255:p4",
+        "page": 255,
+        "rank": 3,
+        "score": 0.4566,
+        "chapter": 10,
+        "hit": true
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p251:p3",
+      "openstax-intro-python:p252:p1",
+      "openstax-intro-python:p255:p4"
+    ],
+    "context_chars": 1089,
+    "elapsed_ms": 271.2,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "dense+filter",
+    "query_id": "q24",
+    "type": "filter",
+    "question": "How do I make a copy of my collection?",
+    "filter_applied": {
+      "chapter": 9
+    },
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p236:p2",
+        "page": 236,
+        "rank": 1,
+        "score": 0.4286,
+        "chapter": 9,
+        "hit": false
+      },
+      {
+        "id": "openstax-intro-python:p228:p1",
+        "page": 228,
+        "rank": 2,
+        "score": 0.3255,
+        "chapter": 9,
+        "hit": true
+      },
+      {
+        "id": "openstax-intro-python:p229:p1",
+        "page": 229,
+        "rank": 3,
+        "score": 0.3106,
+        "chapter": 9,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p236:p2",
+      "openstax-intro-python:p228:p1",
+      "openstax-intro-python:p229:p1"
+    ],
+    "context_chars": 1089,
+    "elapsed_ms": 273.0,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "hybrid_rrf",
+    "query_id": "q19",
+    "type": "condition",
+    "question": "If the step size of a counter is negative, in which order does it count?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p127:p1",
+        "page": 127,
+        "rank": 1,
+        "score": 0.0328,
+        "chapter": 5,
+        "hit": true,
+        "component_scores": {
+          "dense": 0.7345532417036915,
+          "bm25": 29.261635209125902
+        }
+      },
+      {
+        "id": "openstax-intro-python:p127:p0",
+        "page": 127,
+        "rank": 2,
+        "score": 0.0323,
+        "chapter": 5,
+        "hit": false,
+        "component_scores": {
+          "dense": 0.5435703092897815,
+          "bm25": 21.535045029999313
+        }
+      },
+      {
+        "id": "openstax-intro-python:p126:p3",
+        "page": 126,
+        "rank": 3,
+        "score": 0.031,
+        "chapter": 5,
+        "hit": false,
+        "component_scores": {
+          "dense": 0.5119261709517492,
+          "bm25": 11.691472558539969
+        }
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p127:p1",
+      "openstax-intro-python:p127:p0",
+      "openstax-intro-python:p126:p3"
+    ],
+    "context_chars": 1302,
+    "elapsed_ms": 270.3,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "hybrid_rrf",
+    "query_id": "q20",
+    "type": "direct",
+    "question": "What is an infinite loop, and which statement is essential for leaving it?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p138:p0",
+        "page": 138,
+        "rank": 1,
+        "score": 0.0328,
+        "chapter": 5,
+        "hit": true,
+        "component_scores": {
+          "dense": 0.6356092399160285,
+          "bm25": 20.0848326946839
+        }
+      },
+      {
+        "id": "openstax-intro-python:p141:p0",
+        "page": 141,
+        "rank": 2,
+        "score": 0.0313,
+        "chapter": 5,
+        "hit": false,
+        "component_scores": {
+          "dense": 0.4971016545983762,
+          "bm25": 8.802863186757289
+        }
+      },
+      {
+        "id": "openstax-intro-python:p143:p2",
+        "page": 143,
+        "rank": 3,
+        "score": 0.0304,
+        "chapter": 5,
+        "hit": false,
+        "component_scores": {
+          "dense": 0.4812573837915386,
+          "bm25": 8.594689656911928
+        }
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p138:p0",
+      "openstax-intro-python:p141:p0"
+    ],
+    "context_chars": 1049,
+    "elapsed_ms": 255.1,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "hybrid_rrf",
+    "query_id": "q21",
+    "type": "exception",
+    "question": "Why might \"Gail\" be placed before \"apple\" when a list of words is sorted?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p225:p1",
+        "page": 225,
+        "rank": 1,
+        "score": 0.0328,
+        "chapter": 9,
+        "hit": true,
+        "component_scores": {
+          "dense": 0.4547330872964954,
+          "bm25": 17.294874628772448
+        }
+      },
+      {
+        "id": "openstax-intro-python:p235:p1",
+        "page": 235,
+        "rank": 2,
+        "score": 0.0315,
+        "chapter": 9,
+        "hit": false,
+        "component_scores": {
+          "dense": 0.35111638729623007,
+          "bm25": 14.221497093569077
+        }
+      },
+      {
+        "id": "openstax-intro-python:p225:p0",
+        "page": 225,
+        "rank": 3,
+        "score": 0.0313,
+        "chapter": 9,
+        "hit": false,
+        "component_scores": {
+          "dense": 0.38763337470710046,
+          "bm25": 10.256477095861872
+        }
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p225:p1",
+      "openstax-intro-python:p235:p1"
+    ],
+    "context_chars": 1090,
+    "elapsed_ms": 243.2,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "hybrid_rrf",
+    "query_id": "q22",
+    "type": "paraphrase",
+    "question": "When iterating with items(), what does the loop variable receive on each pass?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p248:p1",
+        "page": 248,
+        "rank": 1,
+        "score": 0.032,
+        "chapter": 10,
+        "hit": true,
+        "component_scores": {
+          "dense": 0.4410516006722134,
+          "bm25": 17.266882949307764
+        }
+      },
+      {
+        "id": "openstax-intro-python:p135:p0",
+        "page": 135,
+        "rank": 2,
+        "score": 0.0301,
+        "chapter": 5,
+        "hit": false,
+        "component_scores": {
+          "dense": 0.42921409778781605,
+          "bm25": 9.563957172347866
+        }
+      },
+      {
+        "id": "openstax-intro-python:p129:p1",
+        "page": 129,
+        "rank": 3,
+        "score": 0.0299,
+        "chapter": 5,
+        "hit": false,
+        "component_scores": {
+          "dense": 0.40952341896363187,
+          "bm25": 11.23673609837963
+        }
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p248:p1",
+      "openstax-intro-python:p135:p0"
+    ],
+    "context_chars": 1156,
+    "elapsed_ms": 239.3,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "hybrid_rrf",
+    "query_id": "q23",
+    "type": "filter",
+    "question": "What does nested mean for this data type?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p229:p3",
+        "page": 229,
+        "rank": 1,
+        "score": 0.0311,
+        "chapter": 9,
+        "hit": false,
+        "component_scores": {
+          "dense": 0.5275026303811412,
+          "bm25": 7.1731559558172915
+        }
+      },
+      {
+        "id": "openstax-intro-python:p251:p2",
+        "page": 251,
+        "rank": 2,
+        "score": 0.0306,
+        "chapter": 10,
+        "hit": true,
+        "component_scores": {
+          "dense": 0.41433684361401335,
+          "bm25": 9.363735400929421
+        }
+      },
+      {
+        "id": "openstax-intro-python:p229:p2",
+        "page": 229,
+        "rank": 3,
+        "score": 0.0303,
+        "chapter": 9,
+        "hit": false,
+        "component_scores": {
+          "dense": 0.42461429010836305,
+          "bm25": 8.661925149941807
+        }
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p229:p3",
+      "openstax-intro-python:p251:p2"
+    ],
+    "context_chars": 1040,
+    "elapsed_ms": 245.2,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "hybrid_rrf",
+    "query_id": "q24",
+    "type": "filter",
+    "question": "How do I make a copy of my collection?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p236:p2",
+        "page": 236,
+        "rank": 1,
+        "score": 0.0325,
+        "chapter": 9,
+        "hit": false,
+        "component_scores": {
+          "dense": 0.4285910645921549,
+          "bm25": 8.051317942830144
+        }
+      },
+      {
+        "id": "openstax-intro-python:p229:p1",
+        "page": 229,
+        "rank": 2,
+        "score": 0.0323,
+        "chapter": 9,
+        "hit": false,
+        "component_scores": {
+          "dense": 0.3106044487846069,
+          "bm25": 9.549154659436965
+        }
+      },
+      {
+        "id": "openstax-intro-python:p228:p1",
+        "page": 228,
+        "rank": 3,
+        "score": 0.0304,
+        "chapter": 9,
+        "hit": true,
+        "component_scores": {
+          "dense": 0.32549279207641457,
+          "bm25": 5.8697141110583875
+        }
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p236:p2",
+      "openstax-intro-python:p229:p1",
+      "openstax-intro-python:p228:p1"
+    ],
+    "context_chars": 1089,
+    "elapsed_ms": 286.6,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "hybrid_rrf+filter",
+    "query_id": "q19",
+    "type": "condition",
+    "question": "If the step size of a counter is negative, in which order does it count?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p127:p1",
+        "page": 127,
+        "rank": 1,
+        "score": 0.0328,
+        "chapter": 5,
+        "hit": true,
+        "component_scores": {
+          "dense": 0.7345532417036915,
+          "bm25": 29.261635209125902
+        }
+      },
+      {
+        "id": "openstax-intro-python:p127:p0",
+        "page": 127,
+        "rank": 2,
+        "score": 0.0323,
+        "chapter": 5,
+        "hit": false,
+        "component_scores": {
+          "dense": 0.5435703092897815,
+          "bm25": 21.535045029999313
+        }
+      },
+      {
+        "id": "openstax-intro-python:p126:p3",
+        "page": 126,
+        "rank": 3,
+        "score": 0.031,
+        "chapter": 5,
+        "hit": false,
+        "component_scores": {
+          "dense": 0.5119261709517492,
+          "bm25": 11.691472558539969
+        }
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p127:p1",
+      "openstax-intro-python:p127:p0",
+      "openstax-intro-python:p126:p3"
+    ],
+    "context_chars": 1302,
+    "elapsed_ms": 251.8,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "hybrid_rrf+filter",
+    "query_id": "q20",
+    "type": "direct",
+    "question": "What is an infinite loop, and which statement is essential for leaving it?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p138:p0",
+        "page": 138,
+        "rank": 1,
+        "score": 0.0328,
+        "chapter": 5,
+        "hit": true,
+        "component_scores": {
+          "dense": 0.6356092399160285,
+          "bm25": 20.0848326946839
+        }
+      },
+      {
+        "id": "openstax-intro-python:p141:p0",
+        "page": 141,
+        "rank": 2,
+        "score": 0.0313,
+        "chapter": 5,
+        "hit": false,
+        "component_scores": {
+          "dense": 0.4971016545983762,
+          "bm25": 8.802863186757289
+        }
+      },
+      {
+        "id": "openstax-intro-python:p143:p2",
+        "page": 143,
+        "rank": 3,
+        "score": 0.0304,
+        "chapter": 5,
+        "hit": false,
+        "component_scores": {
+          "dense": 0.4812573837915386,
+          "bm25": 8.594689656911928
+        }
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p138:p0",
+      "openstax-intro-python:p141:p0"
+    ],
+    "context_chars": 1049,
+    "elapsed_ms": 234.7,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "hybrid_rrf+filter",
+    "query_id": "q21",
+    "type": "exception",
+    "question": "Why might \"Gail\" be placed before \"apple\" when a list of words is sorted?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p225:p1",
+        "page": 225,
+        "rank": 1,
+        "score": 0.0328,
+        "chapter": 9,
+        "hit": true,
+        "component_scores": {
+          "dense": 0.4547330872964954,
+          "bm25": 17.294874628772448
+        }
+      },
+      {
+        "id": "openstax-intro-python:p235:p1",
+        "page": 235,
+        "rank": 2,
+        "score": 0.0315,
+        "chapter": 9,
+        "hit": false,
+        "component_scores": {
+          "dense": 0.35111638729623007,
+          "bm25": 14.221497093569077
+        }
+      },
+      {
+        "id": "openstax-intro-python:p225:p0",
+        "page": 225,
+        "rank": 3,
+        "score": 0.0313,
+        "chapter": 9,
+        "hit": false,
+        "component_scores": {
+          "dense": 0.38763337470710046,
+          "bm25": 10.256477095861872
+        }
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p225:p1",
+      "openstax-intro-python:p235:p1"
+    ],
+    "context_chars": 1090,
+    "elapsed_ms": 254.1,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "hybrid_rrf+filter",
+    "query_id": "q22",
+    "type": "paraphrase",
+    "question": "When iterating with items(), what does the loop variable receive on each pass?",
+    "filter_applied": null,
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p248:p1",
+        "page": 248,
+        "rank": 1,
+        "score": 0.032,
+        "chapter": 10,
+        "hit": true,
+        "component_scores": {
+          "dense": 0.4410516006722134,
+          "bm25": 17.266882949307764
+        }
+      },
+      {
+        "id": "openstax-intro-python:p135:p0",
+        "page": 135,
+        "rank": 2,
+        "score": 0.0301,
+        "chapter": 5,
+        "hit": false,
+        "component_scores": {
+          "dense": 0.42921409778781605,
+          "bm25": 9.563957172347866
+        }
+      },
+      {
+        "id": "openstax-intro-python:p129:p1",
+        "page": 129,
+        "rank": 3,
+        "score": 0.0299,
+        "chapter": 5,
+        "hit": false,
+        "component_scores": {
+          "dense": 0.40952341896363187,
+          "bm25": 11.23673609837963
+        }
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p248:p1",
+      "openstax-intro-python:p135:p0"
+    ],
+    "context_chars": 1156,
+    "elapsed_ms": 249.6,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "hybrid_rrf+filter",
+    "query_id": "q23",
+    "type": "filter",
+    "question": "What does nested mean for this data type?",
+    "filter_applied": {
+      "chapter": 10
+    },
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p251:p2",
+        "page": 251,
+        "rank": 1,
+        "score": 0.0315,
+        "chapter": 10,
+        "hit": true,
+        "component_scores": {
+          "dense": 0.41433684361401335,
+          "bm25": 9.363735400929421
+        }
+      },
+      {
+        "id": "openstax-intro-python:p252:p1",
+        "page": 252,
+        "rank": 2,
+        "score": 0.0298,
+        "chapter": 10,
+        "hit": false,
+        "component_scores": {
+          "dense": 0.46794130675550827,
+          "bm25": 4.206931629398855
+        }
+      },
+      {
+        "id": "openstax-intro-python:p251:p3",
+        "page": 251,
+        "rank": 3,
+        "score": 0.0296,
+        "chapter": 10,
+        "hit": false,
+        "component_scores": {
+          "dense": 0.5476688927894794,
+          "bm25": 3.3858316312932866
+        }
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p251:p2",
+      "openstax-intro-python:p252:p1",
+      "openstax-intro-python:p251:p3"
+    ],
+    "context_chars": 1218,
+    "elapsed_ms": 257.2,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "config": "hybrid_rrf+filter",
+    "query_id": "q24",
+    "type": "filter",
+    "question": "How do I make a copy of my collection?",
+    "filter_applied": {
+      "chapter": 9
+    },
+    "top_k": 3,
+    "results": [
+      {
+        "id": "openstax-intro-python:p236:p2",
+        "page": 236,
+        "rank": 1,
+        "score": 0.0325,
+        "chapter": 9,
+        "hit": false,
+        "component_scores": {
+          "dense": 0.4285910645921549,
+          "bm25": 8.051317942830144
+        }
+      },
+      {
+        "id": "openstax-intro-python:p229:p1",
+        "page": 229,
+        "rank": 2,
+        "score": 0.0323,
+        "chapter": 9,
+        "hit": false,
+        "component_scores": {
+          "dense": 0.3106044487846069,
+          "bm25": 9.549154659436965
+        }
+      },
+      {
+        "id": "openstax-intro-python:p228:p1",
+        "page": 228,
+        "rank": 3,
+        "score": 0.0313,
+        "chapter": 9,
+        "hit": true,
+        "component_scores": {
+          "dense": 0.32549279207641457,
+          "bm25": 5.8697141110583875
+        }
+      }
+    ],
+    "context_ids": [
+      "openstax-intro-python:p236:p2",
+      "openstax-intro-python:p229:p1",
+      "openstax-intro-python:p228:p1"
+    ],
+    "context_chars": 1089,
+    "elapsed_ms": 231.9,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": true
+  }
+]

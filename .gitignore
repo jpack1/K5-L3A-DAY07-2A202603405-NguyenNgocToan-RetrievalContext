@@ -9,3 +9,8 @@ __pycache__/
 # Local datasets and generated output; share permitted artifacts deliberately
 starter/data/
 starter/results/
+
+# Advanced: source PDF and page renders (re-download/rebuild with advanced/prepare.py)
+advanced/data/raw/
+advanced/data/pages/
+advanced/data/check/

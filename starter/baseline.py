@@ -47,8 +47,13 @@ def validate(chunks, questions):
                 raise ValueError(f"question {q['id']}: gold không nằm trọn trong chunk đúng nguồn/trang")
 
 
+def _ws(s):
+    return ' '.join(s.split())
+
+
 def hit(chunk, gold):
-    return any(chunk['source_id'] == g['source_id'] and chunk['page'] == g['page'] and g['evidence'] in chunk['text'] for g in gold)
+    # Whitespace-insensitive, same rule as the Day 6 benchmark (PDF text keeps line breaks).
+    return any(chunk['source_id'] == g['source_id'] and chunk['page'] == g['page'] and _ws(g['evidence']) in _ws(chunk['text']) for g in gold)
 
 
 class TfidfIndex:

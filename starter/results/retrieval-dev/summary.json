@@ -1,0 +1,94 @@
+{
+  "split": "dev",
+  "n": 18,
+  "budget_chars": 1500,
+  "embedding_model": "text-embedding-3-small",
+  "dimensions": 1536,
+  "day6_strategy": "B",
+  "configs": {
+    "tfidf": {
+      "hit1": "7/18",
+      "evidence_hit3": "9/18",
+      "context_evidence": "9/18",
+      "hit1_rate": 0.389,
+      "hit3_rate": 0.5,
+      "mrr@3": 0.435,
+      "avg_context_chars": 1219,
+      "median_ms": 0.6,
+      "embedding_tokens": 0,
+      "cost_usd": 0.0
+    },
+    "bm25": {
+      "hit1": "7/18",
+      "evidence_hit3": "11/18",
+      "context_evidence": "10/18",
+      "hit1_rate": 0.389,
+      "hit3_rate": 0.611,
+      "mrr@3": 0.481,
+      "avg_context_chars": 1216,
+      "median_ms": 0.6,
+      "embedding_tokens": 0,
+      "cost_usd": 0.0
+    },
+    "bm25+filter": {
+      "hit1": "8/18",
+      "evidence_hit3": "12/18",
+      "context_evidence": "11/18",
+      "hit1_rate": 0.444,
+      "hit3_rate": 0.667,
+      "mrr@3": 0.537,
+      "avg_context_chars": 1205,
+      "median_ms": 0.6,
+      "embedding_tokens": 0,
+      "cost_usd": 0.0
+    },
+    "dense": {
+      "hit1": "6/18",
+      "evidence_hit3": "10/18",
+      "context_evidence": "10/18",
+      "hit1_rate": 0.333,
+      "hit3_rate": 0.556,
+      "mrr@3": 0.435,
+      "avg_context_chars": 1148,
+      "median_ms": 223.6,
+      "embedding_tokens": 259,
+      "cost_usd": 5e-06
+    },
+    "dense+filter": {
+      "hit1": "6/18",
+      "evidence_hit3": "12/18",
+      "context_evidence": "12/18",
+      "hit1_rate": 0.333,
+      "hit3_rate": 0.667,
+      "mrr@3": 0.491,
+      "avg_context_chars": 1141,
+      "median_ms": 209.2,
+      "embedding_tokens": 259,
+      "cost_usd": 5e-06
+    },
+    "hybrid_rrf": {
+      "hit1": "6/18",
+      "evidence_hit3": "14/18",
+      "context_evidence": "12/18",
+      "hit1_rate": 0.333,
+      "hit3_rate": 0.778,
+      "mrr@3": 0.528,
+      "avg_context_chars": 1183,
+      "median_ms": 204.8,
+      "embedding_tokens": 259,
+      "cost_usd": 5e-06
+    },
+    "hybrid_rrf+filter": {
+      "hit1": "7/18",
+      "evidence_hit3": "16/18",
+      "context_evidence": "14/18",
+      "hit1_rate": 0.389,
+      "hit3_rate": 0.889,
+      "mrr@3": 0.611,
+      "avg_context_chars": 1224,
+      "median_ms": 199.2,
+      "embedding_tokens": 259,
+      "cost_usd": 5e-06
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "config": {
+    "split": "dev",
+    "method": "hybrid_rrf",
+    "filter": true,
+    "top_k": 3,
+    "budget": 3000,
+    "max_searches": 3,
+    "context_order": "rank",
+    "stop_repeat": true,
+    "model": "gpt-4o-mini",
+    "output": "results\\exp-dev\\R4-hybridf-b3000-rank-stop"
+  },
+  "cases": 21,
+  "errors": 0,
+  "tool_use": "21/21",
+  "searches_distribution": {
+    "1": 19,
+    "2": 1,
+    "3": 1
+  },
+  "context_evidence_rate": "15/18",
+  "answered_with_gold_cited": "15/18",
+  "false_abstention": "0/18",
+  "abstention_unanswerable": "3/3",
+  "answers_with_citation": "18/18",
+  "median_s": 3.71,
+  "total_cost_usd": 0.004634,
+  "avg_context_chars": 1567,
+  "note": "context/abstention counts are automatic; answer grade and citation support need manual review"
+}

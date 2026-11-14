@@ -1,0 +1,1317 @@
+[
+  {
+    "query_id": "q19",
+    "split": "test",
+    "question": "If the step size of a counter is negative, in which order does it count?",
+    "config": {
+      "split": "test",
+      "method": "hybrid_rrf",
+      "filter": true,
+      "top_k": 3,
+      "budget": 1500,
+      "max_searches": 3,
+      "context_order": "rank",
+      "stop_repeat": true,
+      "model": "gpt-4o-mini",
+      "output": "results\\exp-test\\R5-hybridf-b1500-rank-stop"
+    },
+    "filter_applied": null,
+    "status": "answered",
+    "answer": "If the step size of a counter is negative, it counts in descending order. Conversely, if the step size is positive, the counter counts in ascending order. [openstax-intro-python:p127:p1]",
+    "citations": [
+      "openstax-intro-python:p127:p1"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "negative step size counter order",
+        "filter": null,
+        "results": [
+          {
+            "id": "openstax-intro-python:p127:p1",
+            "source_id": "openstax-intro-python",
+            "source": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+            "page": 127,
+            "text": " If the step size is a positive number, the counter counts in ascending order, and if the step size\nis a negative number, the counter counts in descending order.\nEXAMPLE 5.1\nA program printing all odd numbers between 1 and 10\n# Initialization\ncounter = 1\n# While loop condition\nwhile counter <= 10:\n  if counter % 2 == 1:\n    print(counter)\n  # Counting up and increasing counter's value by 1 in each iteration\n  counter += 1\nCHECKPOINT\nCounting with while loop",
+            "score": 0.03278688524590164,
+            "rank": 1,
+            "strategy": "hybrid_rrf",
+            "metadata": {
+              "printed_page": 117,
+              "chapter": 5,
+              "sections": [
+                "5.1 While loop"
+              ]
+            },
+            "component_scores": {
+              "dense": 0.6180833553015989,
+              "bm25": 23.8789213868324
+            }
+          },
+          {
+            "id": "openstax-intro-python:p127:p0",
+            "source_id": "openstax-intro-python",
+            "source": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+            "page": 127,
+            "text": "determine the number of iterations executed. Ex: A programmer may want to print all even numbers between\n1 and 20. The task can be done by using a counter initialized with 1. In each iteration, the counter's value is\nincreased by one, and a condition can check whether the counter's value is an even number or not. The\nchange in the counter's value in each iteration is called the step size. The step size can be any positive or\nnegative value.",
+            "score": 0.03225806451612903,
+            "rank": 2,
+            "strategy": "hybrid_rrf",
+            "metadata": {
+              "printed_page": 117,
+              "chapter": 5,
+              "sections": [
+                "5.1 While loop"
+              ]
+            },
+            "component_scores": {
+              "dense": 0.579949107390933,
+              "bm25": 18.119702588245904
+            }
+          },
+          {
+            "id": "openstax-intro-python:p130:p2",
+            "source_id": "openstax-intro-python",
+            "source": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+            "page": 130,
+            "text": "• Generates a sequence beginning at 0\nuntil end.\n• Step size: 1\nrange(4) 0, 1, 2, 3\nrange(start, end)\n• Generates a sequence beginning at\nstart until end.\n• Step size: 1\nrange(0, 3) 0, 1, 2\nrange(2, 6) 2, 3, 4, 5\nrange(-13,\n-9)\n-13, -12,\n-11, -10\nrange(start, end,\nstep)\n• Generates a sequence beginning at\nstart until end.\n• Step size: step\nrange(0, 4,\n1) 0, 1, 2, 3\nrange(1, 7,\n2) 1, 3, 5\nrange(3,\n-2, -1)\n3, 2, 1, 0,\n-1\nrange(10,\n0, -4) 10, 6, 2\nTable 5.1 Using the range() function.",
+            "score": 0.03149801587301587,
+            "rank": 3,
+            "strategy": "hybrid_rrf",
+            "metadata": {
+              "printed_page": 120,
+              "chapter": 5,
+              "sections": [
+                "5.2 For loop"
+              ]
+            },
+            "component_scores": {
+              "dense": 0.43027526060005905,
+              "bm25": 10.09034522697072
+            }
+          }
+        ],
+        "context": "[openstax-intro-python:p127:p1 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 127]\n If the step size is a positive number, the counter counts in ascending order, and if the step size\nis a negative number, the counter counts in descending order.\nEXAMPLE 5.1\nA program printing all odd numbers between 1 and 10\n# Initialization\ncounter = 1\n# While loop condition\nwhile counter <= 10:\n  if counter % 2 == 1:\n    print(counter)\n  # Counting up and increasing counter's value by 1 in each iteration\n  counter += 1\nCHECKPOINT\nCounting with while loop\n\n[openstax-intro-python:p127:p0 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 127]\ndetermine the number of iterations executed. Ex: A programmer may want to print all even numbers between\n1 and 20. The task can be done by using a counter initialized with 1. In each iteration, the counter's value is\nincreased by one, and a condition can check whether the counter's value is an even number or not. The\nchange in the counter's value in each iteration is called the step size. The step size can be any positive or\nnegative value.",
+        "context_ids": [
+          "openstax-intro-python:p127:p1",
+          "openstax-intro-python:p127:p0"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "model_calls": [
+      {
+        "tool": "search",
+        "args": {
+          "query": "negative step size counter order"
+        },
+        "prompt_tokens": 290,
+        "completion_tokens": 9,
+        "ms": 1210
+      },
+      {
+        "tool": "answer",
+        "args": {
+          "answer": "If the step size of a counter is negative, it counts in descending order. Conversely, if the step size is positive, the counter counts in ascending order.",
+          "citations": [
+            "openstax-intro-python:p127:p1"
+          ]
+        },
+        "prompt_tokens": 574,
+        "completion_tokens": 58,
+        "ms": 1133,
+        "citation_markers_appended": [
+          "openstax-intro-python:p127:p1"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "final_context": "[openstax-intro-python:p127:p1 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 127]\n If the step size is a positive number, the counter counts in ascending order, and if the step size\nis a negative number, the counter counts in descending order.\nEXAMPLE 5.1\nA program printing all odd numbers between 1 and 10\n# Initialization\ncounter = 1\n# While loop condition\nwhile counter <= 10:\n  if counter % 2 == 1:\n    print(counter)\n  # Counting up and increasing counter's value by 1 in each iteration\n  counter += 1\nCHECKPOINT\nCounting with while loop\n\n[openstax-intro-python:p127:p0 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 127]\ndetermine the number of iterations executed. Ex: A programmer may want to print all even numbers between\n1 and 20. The task can be done by using a counter initialized with 1. In each iteration, the counter's value is\nincreased by one, and a condition can check whether the counter's value is an even number or not. The\nchange in the counter's value in each iteration is called the step size. The step size can be any positive or\nnegative value.",
+    "final_context_ids": [
+      "openstax-intro-python:p127:p1",
+      "openstax-intro-python:p127:p0"
+    ],
+    "elapsed_s": 2.77,
+    "prompt_tokens": 864,
+    "completion_tokens": 67,
+    "embedding_tokens": 5,
+    "cost_usd": 0.00017,
+    "context_evidence": true,
+    "cited_evidence": true
+  },
+  {
+    "query_id": "q20",
+    "split": "test",
+    "question": "What is an infinite loop, and which statement is essential for leaving it?",
+    "config": {
+      "split": "test",
+      "method": "hybrid_rrf",
+      "filter": true,
+      "top_k": 3,
+      "budget": 1500,
+      "max_searches": 3,
+      "context_order": "rank",
+      "stop_repeat": true,
+      "model": "gpt-4o-mini",
+      "output": "results\\exp-test\\R5-hybridf-b1500-rank-stop"
+    },
+    "filter_applied": null,
+    "status": "answered",
+    "answer": "An infinite loop is a loop that does not have a termination condition, meaning it will continue to execute indefinitely. A break statement is essential for leaving an infinite loop, as it provides a way to exit the loop when a certain condition is met. For example, in a loop that counts up from 1 and prints the counter's value while it is less than 10, the break statement is triggered when the counter reaches 10, allowing the program to exit the loop. [openstax-intro-python:p138:p0]",
+    "citations": [
+      "openstax-intro-python:p138:p0"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "infinite loop definition essential statement for leaving it",
+        "filter": null,
+        "results": [
+          {
+            "id": "openstax-intro-python:p138:p0",
+            "source_id": "openstax-intro-python",
+            "source": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+            "page": 138,
+            "text": "INFINITE LOOP\nA break statement is an essential part of a loop that does not have a termination condition. A loop without\na termination condition is known as an infinite loop. Ex: An infinite loop that counts up starting from 1 and\nprints the counter's value while the counter's value is less than 10. A break condition is triggered when the\ncounter's value is equal to 10, and hence the program execution exits.\ncounter = 1\nwhile True:\n  if counter >= 10:\n    break\n  print(counter)\n  counter += 1",
+            "score": 0.03278688524590164,
+            "rank": 1,
+            "strategy": "hybrid_rrf",
+            "metadata": {
+              "printed_page": 128,
+              "chapter": 5,
+              "sections": [
+                "5.4 Break and continue"
+              ]
+            },
+            "component_scores": {
+              "dense": 0.5932757253676038,
+              "bm25": 14.966981824573743
+            }
+          },
+          {
+            "id": "openstax-intro-python:p140:p2",
+            "source_id": "openstax-intro-python",
+            "source": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+            "page": 140,
+            "text": "5.5 Loop else\nLearning objectives\nBy the end of this section you should be able to\n• Use loop else statement to identify when the loop execution is interrupted using a break statement.\n• Implement a loop else statement with a for or a while loop.\nLoop else\nA loop else statement runs after the loop's execution is completed without being interrupted by a break\nTRY IT\nTRY IT",
+            "score": 0.030621785881252923,
+            "rank": 2,
+            "strategy": "hybrid_rrf",
+            "metadata": {
+              "printed_page": 130,
+              "chapter": 5,
+              "sections": [
+                "5.4 Break and continue",
+                "5.5 Loop else"
+              ]
+            },
+            "component_scores": {
+              "dense": 0.42326264270788316,
+              "bm25": 10.093357034638029
+            }
+          },
+          {
+            "id": "openstax-intro-python:p145:p0",
+            "source_id": "openstax-intro-python",
+            "source": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+            "page": 145,
+            "text": "Function Description\ncontinue statement\n# initialization\nwhile loop_expression:\n  # loop body\n  if continue_condition:\n    continue\n  # remaining body of loop\n# statements after the loop\nLoop else statement\n# initialization\nfor loop_expression:\n  # loop body\n  if break_condition:\n    break\n  # remaining body of loop\nelse:\n  # loop else statement\n# statements after the loop\nTable 5.4 Chapter 5 reference.\nPrime numbers",
+            "score": 0.03055037313432836,
+            "rank": 3,
+            "strategy": "hybrid_rrf",
+            "metadata": {
+              "printed_page": 135,
+              "chapter": 5,
+              "sections": [
+                "5.6 Chapter summary"
+              ]
+            },
+            "component_scores": {
+              "dense": 0.47128354821446505,
+              "bm25": 7.236362126426009
+            }
+          }
+        ],
+        "context": "[openstax-intro-python:p138:p0 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 138]\nINFINITE LOOP\nA break statement is an essential part of a loop that does not have a termination condition. A loop without\na termination condition is known as an infinite loop. Ex: An infinite loop that counts up starting from 1 and\nprints the counter's value while the counter's value is less than 10. A break condition is triggered when the\ncounter's value is equal to 10, and hence the program execution exits.\ncounter = 1\nwhile True:\n  if counter >= 10:\n    break\n  print(counter)\n  counter += 1\n\n[openstax-intro-python:p140:p2 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 140]\n5.5 Loop else\nLearning objectives\nBy the end of this section you should be able to\n• Use loop else statement to identify when the loop execution is interrupted using a break statement.\n• Implement a loop else statement with a for or a while loop.\nLoop else\nA loop else statement runs after the loop's execution is completed without being interrupted by a break\nTRY IT\nTRY IT",
+        "context_ids": [
+          "openstax-intro-python:p138:p0",
+          "openstax-intro-python:p140:p2"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "model_calls": [
+      {
+        "tool": "search",
+        "args": {
+          "query": "infinite loop definition essential statement for leaving it"
+        },
+        "prompt_tokens": 288,
+        "completion_tokens": 13,
+        "ms": 1175
+      },
+      {
+        "tool": "answer",
+        "args": {
+          "answer": "An infinite loop is a loop that does not have a termination condition, meaning it will continue to execute indefinitely. A break statement is essential for leaving an infinite loop, as it provides a way to exit the loop when a certain condition is met. For example, in a loop that counts up from 1 and prints the counter's value while it is less than 10, the break statement is triggered when the counter reaches 10, allowing the program to exit the loop. [openstax-intro-python:p138:p0]",
+          "citations": [
+            "openstax-intro-python:p138:p0"
+          ]
+        },
+        "prompt_tokens": 556,
+        "completion_tokens": 134,
+        "ms": 3559
+      }
+    ],
+    "n_searches": 1,
+    "final_context": "[openstax-intro-python:p138:p0 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 138]\nINFINITE LOOP\nA break statement is an essential part of a loop that does not have a termination condition. A loop without\na termination condition is known as an infinite loop. Ex: An infinite loop that counts up starting from 1 and\nprints the counter's value while the counter's value is less than 10. A break condition is triggered when the\ncounter's value is equal to 10, and hence the program execution exits.\ncounter = 1\nwhile True:\n  if counter >= 10:\n    break\n  print(counter)\n  counter += 1\n\n[openstax-intro-python:p140:p2 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 140]\n5.5 Loop else\nLearning objectives\nBy the end of this section you should be able to\n• Use loop else statement to identify when the loop execution is interrupted using a break statement.\n• Implement a loop else statement with a for or a while loop.\nLoop else\nA loop else statement runs after the loop's execution is completed without being interrupted by a break\nTRY IT\nTRY IT",
+    "final_context_ids": [
+      "openstax-intro-python:p138:p0",
+      "openstax-intro-python:p140:p2"
+    ],
+    "elapsed_s": 4.99,
+    "prompt_tokens": 844,
+    "completion_tokens": 147,
+    "embedding_tokens": 9,
+    "cost_usd": 0.000215,
+    "context_evidence": true,
+    "cited_evidence": true
+  },
+  {
+    "query_id": "q21",
+    "split": "test",
+    "question": "Why might \"Gail\" be placed before \"apple\" when a list of words is sorted?",
+    "config": {
+      "split": "test",
+      "method": "hybrid_rrf",
+      "filter": true,
+      "top_k": 3,
+      "budget": 1500,
+      "max_searches": 3,
+      "context_order": "rank",
+      "stop_repeat": true,
+      "model": "gpt-4o-mini",
+      "output": "results\\exp-test\\R5-hybridf-b1500-rank-stop"
+    },
+    "filter_applied": null,
+    "status": "answered",
+    "answer": "\"Gail\" is placed before \"apple\" when a list of words is sorted because Python uses ASCII values for sorting strings. In ASCII, uppercase characters have lower values than lowercase characters, which means that uppercase letters come before lowercase letters in ascending order. Therefore, \"Gail\" (starting with an uppercase 'G') is ordered before \"apple\" (starting with a lowercase 'a'). [openstax-intro-python:p225:p1]",
+    "citations": [
+      "openstax-intro-python:p225:p1"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Gail apple sorting list",
+        "filter": null,
+        "results": [
+          {
+            "id": "openstax-intro-python:p225:p1",
+            "source_id": "openstax-intro-python",
+            "source": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+            "page": 225,
+            "text": "Python provides methods for arranging elements in a list.\n• The sort() method arranges the elements of a list in ascending order. For strings, ASCII values are used\nand uppercase characters come before lowercase characters, leading to unexpected results. Ex: \"A\" is\nordered before \"a\" in ascending order but so is \"G\"; thus, \"Gail\" comes before \"apple\".\n• The reverse() method reverses the elements in a list.\nEXAMPLE 9.2\nSorting and reversing lists\n# Setup a list of numbers",
+            "score": 0.032266458495966696,
+            "rank": 1,
+            "strategy": "hybrid_rrf",
+            "metadata": {
+              "printed_page": 215,
+              "chapter": 9,
+              "sections": [
+                "9.2 Sorting and reversing lists"
+              ]
+            },
+            "component_scores": {
+              "dense": 0.36342182348713936,
+              "bm25": 11.592050431117318
+            }
+          },
+          {
+            "id": "openstax-intro-python:p221:p2",
+            "source_id": "openstax-intro-python",
+            "source": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+            "page": 221,
+            "text": "9.2 Sorting and reversing lists",
+            "score": 0.032018442622950824,
+            "rank": 2,
+            "strategy": "hybrid_rrf",
+            "metadata": {
+              "printed_page": null,
+              "chapter": 9,
+              "sections": [
+                "9.1 Modifying and iterating lists"
+              ]
+            },
+            "component_scores": {
+              "dense": 0.39344733631580486,
+              "bm25": 5.526908555524064
+            }
+          },
+          {
+            "id": "openstax-intro-python:p224:p3",
+            "source_id": "openstax-intro-python",
+            "source": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+            "page": 224,
+            "text": "Sorting\nSorting; ch 9, video 2 (https://www.openstax.org/r/sorting)\nTRY IT\nTRY IT",
+            "score": 0.031754032258064516,
+            "rank": 3,
+            "strategy": "hybrid_rrf",
+            "metadata": {
+              "printed_page": 214,
+              "chapter": 9,
+              "sections": [
+                "9.1 Modifying and iterating lists",
+                "9.2 Sorting and reversing lists"
+              ]
+            },
+            "component_scores": {
+              "dense": 0.357859105692114,
+              "bm25": 6.708875559494974
+            }
+          }
+        ],
+        "context": "[openstax-intro-python:p225:p1 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 225]\nPython provides methods for arranging elements in a list.\n• The sort() method arranges the elements of a list in ascending order. For strings, ASCII values are used\nand uppercase characters come before lowercase characters, leading to unexpected results. Ex: \"A\" is\nordered before \"a\" in ascending order but so is \"G\"; thus, \"Gail\" comes before \"apple\".\n• The reverse() method reverses the elements in a list.\nEXAMPLE 9.2\nSorting and reversing lists\n# Setup a list of numbers\n\n[openstax-intro-python:p221:p2 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 221]\n9.2 Sorting and reversing lists\n\n[openstax-intro-python:p224:p3 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 224]\nSorting\nSorting; ch 9, video 2 (https://www.openstax.org/r/sorting)\nTRY IT\nTRY IT",
+        "context_ids": [
+          "openstax-intro-python:p225:p1",
+          "openstax-intro-python:p221:p2",
+          "openstax-intro-python:p224:p3"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "model_calls": [
+      {
+        "tool": "search",
+        "args": {
+          "query": "Gail apple sorting list"
+        },
+        "prompt_tokens": 293,
+        "completion_tokens": 9,
+        "ms": 1101
+      },
+      {
+        "tool": "answer",
+        "args": {
+          "answer": "\"Gail\" is placed before \"apple\" when a list of words is sorted because Python uses ASCII values for sorting strings. In ASCII, uppercase characters have lower values than lowercase characters, which means that uppercase letters come before lowercase letters in ascending order. Therefore, \"Gail\" (starting with an uppercase 'G') is ordered before \"apple\" (starting with a lowercase 'a').",
+          "citations": [
+            "openstax-intro-python:p225:p1"
+          ]
+        },
+        "prompt_tokens": 535,
+        "completion_tokens": 106,
+        "ms": 2862,
+        "citation_markers_appended": [
+          "openstax-intro-python:p225:p1"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "final_context": "[openstax-intro-python:p225:p1 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 225]\nPython provides methods for arranging elements in a list.\n• The sort() method arranges the elements of a list in ascending order. For strings, ASCII values are used\nand uppercase characters come before lowercase characters, leading to unexpected results. Ex: \"A\" is\nordered before \"a\" in ascending order but so is \"G\"; thus, \"Gail\" comes before \"apple\".\n• The reverse() method reverses the elements in a list.\nEXAMPLE 9.2\nSorting and reversing lists\n# Setup a list of numbers\n\n[openstax-intro-python:p221:p2 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 221]\n9.2 Sorting and reversing lists\n\n[openstax-intro-python:p224:p3 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 224]\nSorting\nSorting; ch 9, video 2 (https://www.openstax.org/r/sorting)\nTRY IT\nTRY IT",
+    "final_context_ids": [
+      "openstax-intro-python:p225:p1",
+      "openstax-intro-python:p221:p2",
+      "openstax-intro-python:p224:p3"
+    ],
+    "elapsed_s": 4.21,
+    "prompt_tokens": 828,
+    "completion_tokens": 115,
+    "embedding_tokens": 5,
+    "cost_usd": 0.000193,
+    "context_evidence": true,
+    "cited_evidence": true
+  },
+  {
+    "query_id": "q22",
+    "split": "test",
+    "question": "When iterating with items(), what does the loop variable receive on each pass?",
+    "config": {
+      "split": "test",
+      "method": "hybrid_rrf",
+      "filter": true,
+      "top_k": 3,
+      "budget": 1500,
+      "max_searches": 3,
+      "context_order": "rank",
+      "stop_repeat": true,
+      "model": "gpt-4o-mini",
+      "output": "results\\exp-test\\R5-hybridf-b1500-rank-stop"
+    },
+    "filter_applied": null,
+    "status": "answered",
+    "answer": "When iterating with the items() function in a loop, the loop variable receives both the key and value for each item in the dictionary on each pass. [openstax-intro-python:p248:p1]",
+    "citations": [
+      "openstax-intro-python:p248:p1"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "iterating with items() loop variable",
+        "filter": null,
+        "results": [
+          {
+            "id": "openstax-intro-python:p126:p3",
+            "source_id": "openstax-intro-python",
+            "source": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+            "page": 126,
+            "text": "A while loop can be used to count up or down. A counter variable can be used in the loop expression to",
+            "score": 0.03125763125763126,
+            "rank": 1,
+            "strategy": "hybrid_rrf",
+            "metadata": {
+              "printed_page": 116,
+              "chapter": 5,
+              "sections": [
+                "5.1 While loop"
+              ]
+            },
+            "component_scores": {
+              "dense": 0.4665269016540762,
+              "bm25": 6.661175540988204
+            }
+          },
+          {
+            "id": "openstax-intro-python:p248:p1",
+            "source_id": "openstax-intro-python",
+            "source": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+            "page": 248,
+            "text": "Looping over a Python dictionary is a way to iterate through key-value pairs in the dictionary. Looping in a\ndictionary can be done by iterating over keys or items. When looping using keys, keys are obtained using the\nkeys() function and are passed to the loop variable one at a time. When looping over items using the\nitems() function, both the key and value for each item are passed to the loop variable.\nA FOR LOOP OVER A DICTIONARY RETRIEVES EACH KEY IN THE DICTIONARY",
+            "score": 0.030886196246139225,
+            "rank": 2,
+            "strategy": "hybrid_rrf",
+            "metadata": {
+              "printed_page": 238,
+              "chapter": 10,
+              "sections": [
+                "10.4 Conditionals and looping in dictionaries"
+              ]
+            },
+            "component_scores": {
+              "dense": 0.42463270837541867,
+              "bm25": 10.70615171856159
+            }
+          },
+          {
+            "id": "openstax-intro-python:p129:p0",
+            "source_id": "openstax-intro-python",
+            "source": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+            "page": 129,
+            "text": "For loop\nIn Python, a container can be a range of numbers, a string of characters, or a list of values. To access objects\nwithin a container, an iterative loop can be designed to retrieve objects one at a time. A for loop iterates over\nall elements in a container. Ex: Iterating over a class roster and printing students' names.\nCHECKPOINT\nFor loop example for iterating over a container object",
+            "score": 0.030090497737556562,
+            "rank": 3,
+            "strategy": "hybrid_rrf",
+            "metadata": {
+              "printed_page": 119,
+              "chapter": 5,
+              "sections": [
+                "5.2 For loop"
+              ]
+            },
+            "component_scores": {
+              "dense": 0.45675257217862564,
+              "bm25": 5.169631523296008
+            }
+          }
+        ],
+        "context": "[openstax-intro-python:p126:p3 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 126]\nA while loop can be used to count up or down. A counter variable can be used in the loop expression to\n\n[openstax-intro-python:p248:p1 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 248]\nLooping over a Python dictionary is a way to iterate through key-value pairs in the dictionary. Looping in a\ndictionary can be done by iterating over keys or items. When looping using keys, keys are obtained using the\nkeys() function and are passed to the loop variable one at a time. When looping over items using the\nitems() function, both the key and value for each item are passed to the loop variable.\nA FOR LOOP OVER A DICTIONARY RETRIEVES EACH KEY IN THE DICTIONARY\n\n[openstax-intro-python:p129:p0 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 129]\nFor loop\nIn Python, a container can be a range of numbers, a string of characters, or a list of values. To access objects\nwithin a container, an iterative loop can be designed to retrieve objects one at a time. A for loop iterates over\nall elements in a container. Ex: Iterating over a class roster and printing students' names.\nCHECKPOINT\nFor loop example for iterating over a container object",
+        "context_ids": [
+          "openstax-intro-python:p126:p3",
+          "openstax-intro-python:p248:p1",
+          "openstax-intro-python:p129:p0"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "model_calls": [
+      {
+        "tool": "search",
+        "args": {
+          "query": "iterating with items() loop variable"
+        },
+        "prompt_tokens": 289,
+        "completion_tokens": 11,
+        "ms": 1080
+      },
+      {
+        "tool": "answer",
+        "args": {
+          "answer": "When iterating with the items() function in a loop, the loop variable receives both the key and value for each item in the dictionary on each pass.",
+          "citations": [
+            "openstax-intro-python:p248:p1"
+          ]
+        },
+        "prompt_tokens": 606,
+        "completion_tokens": 57,
+        "ms": 1874,
+        "citation_markers_appended": [
+          "openstax-intro-python:p248:p1"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "final_context": "[openstax-intro-python:p126:p3 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 126]\nA while loop can be used to count up or down. A counter variable can be used in the loop expression to\n\n[openstax-intro-python:p248:p1 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 248]\nLooping over a Python dictionary is a way to iterate through key-value pairs in the dictionary. Looping in a\ndictionary can be done by iterating over keys or items. When looping using keys, keys are obtained using the\nkeys() function and are passed to the loop variable one at a time. When looping over items using the\nitems() function, both the key and value for each item are passed to the loop variable.\nA FOR LOOP OVER A DICTIONARY RETRIEVES EACH KEY IN THE DICTIONARY\n\n[openstax-intro-python:p129:p0 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 129]\nFor loop\nIn Python, a container can be a range of numbers, a string of characters, or a list of values. To access objects\nwithin a container, an iterative loop can be designed to retrieve objects one at a time. A for loop iterates over\nall elements in a container. Ex: Iterating over a class roster and printing students' names.\nCHECKPOINT\nFor loop example for iterating over a container object",
+    "final_context_ids": [
+      "openstax-intro-python:p126:p3",
+      "openstax-intro-python:p248:p1",
+      "openstax-intro-python:p129:p0"
+    ],
+    "elapsed_s": 3.26,
+    "prompt_tokens": 895,
+    "completion_tokens": 68,
+    "embedding_tokens": 7,
+    "cost_usd": 0.000175,
+    "context_evidence": true,
+    "cited_evidence": true
+  },
+  {
+    "query_id": "q23",
+    "split": "test",
+    "question": "What does nested mean for this data type?",
+    "config": {
+      "split": "test",
+      "method": "hybrid_rrf",
+      "filter": true,
+      "top_k": 3,
+      "budget": 1500,
+      "max_searches": 3,
+      "context_order": "rank",
+      "stop_repeat": true,
+      "model": "gpt-4o-mini",
+      "output": "results\\exp-test\\R5-hybridf-b1500-rank-stop"
+    },
+    "filter_applied": {
+      "chapter": 10
+    },
+    "status": "answered",
+    "answer": "In the context of Python dictionaries, \"nested\" refers to dictionaries that are stored as values within another dictionary. This allows for organizing complex data structures, such as an organizational chart where each department is a key and the corresponding value is another dictionary containing employee information. For example, a nested dictionary can have keys representing different departments, with values being dictionaries of employees in those departments, allowing for structured data storage and access. [openstax-intro-python:p251:p2] [openstax-intro-python:p252:p0]",
+    "citations": [
+      "openstax-intro-python:p251:p2",
+      "openstax-intro-python:p252:p0"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "nested data type",
+        "filter": {
+          "chapter": 10
+        },
+        "results": [
+          {
+            "id": "openstax-intro-python:p251:p2",
+            "source_id": "openstax-intro-python",
+            "source": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+            "page": 251,
+            "text": "As described before, Python dictionaries are a type of data structure that allows for storing data in key-value\npairs. Nested dictionaries are dictionaries that are stored as values within another dictionary. Ex: An\norganizational chart with keys being different departments and values being dictionaries of employees in a\ngiven department. For storing employee information in a department, a dictionary can be used with keys\nbeing employee IDs and values being employee names.",
+            "score": 0.03225806451612903,
+            "rank": 1,
+            "strategy": "hybrid_rrf",
+            "metadata": {
+              "printed_page": 241,
+              "chapter": 10,
+              "sections": [
+                "10.4 Conditionals and looping in dictionaries",
+                "10.5 Nested dictionaries and dictionary comprehension"
+              ]
+            },
+            "component_scores": {
+              "dense": 0.3459021040349102,
+              "bm25": 8.180210807451564
+            }
+          },
+          {
+            "id": "openstax-intro-python:p251:p3",
+            "source_id": "openstax-intro-python",
+            "source": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+            "page": 251,
+            "text": " The tables below outline the structure of such nested\ndictionaries and how nested values can be accessed.",
+            "score": 0.031099324975891997,
+            "rank": 2,
+            "strategy": "hybrid_rrf",
+            "metadata": {
+              "printed_page": 241,
+              "chapter": 10,
+              "sections": [
+                "10.4 Conditionals and looping in dictionaries",
+                "10.5 Nested dictionaries and dictionary comprehension"
+              ]
+            },
+            "component_scores": {
+              "dense": 0.41889342710424815,
+              "bm25": 3.3858316312932866
+            }
+          },
+          {
+            "id": "openstax-intro-python:p252:p0",
+            "source_id": "openstax-intro-python",
+            "source": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+            "page": 252,
+            "text": "EXAMPLE 10.4\nDefining nested dictionaries and accessing elements\nDefining nested dictionaries\ncompany_org_chart = {\n  \"Marketing\": {\n    \"ID234\": \"Jane Smith\"\n  },\n  \"Sales\": {\n    \"ID123\": \"Bob Johnson\",\n    \"ID122\": \"David Lee\"\n  },\n  \"Engineering\": {\n    \"ID303\": \"Radhika Potlapally\",\n    \"ID321\": \"Maryam Samimi\"\n  }\n}\nTable 10.8\nAccessing nested dictionary items\nprint(company_org_chart[\"Sales\"][\"ID122\"])\nprint(company_org_chart[\"Engineering\"][\"ID321\"])\nDavid Lee\nMaryam Samimi\nTable 10.9",
+            "score": 0.030158730158730156,
+            "rank": 3,
+            "strategy": "hybrid_rrf",
+            "metadata": {
+              "printed_page": 242,
+              "chapter": 10,
+              "sections": [
+                "10.5 Nested dictionaries and dictionary comprehension"
+              ]
+            },
+            "component_scores": {
+              "dense": 0.3158159697659598,
+              "bm25": 3.111590166500664
+            }
+          }
+        ],
+        "context": "[openstax-intro-python:p251:p2 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 251]\nAs described before, Python dictionaries are a type of data structure that allows for storing data in key-value\npairs. Nested dictionaries are dictionaries that are stored as values within another dictionary. Ex: An\norganizational chart with keys being different departments and values being dictionaries of employees in a\ngiven department. For storing employee information in a department, a dictionary can be used with keys\nbeing employee IDs and values being employee names.\n\n[openstax-intro-python:p251:p3 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 251]\n The tables below outline the structure of such nested\ndictionaries and how nested values can be accessed.\n\n[openstax-intro-python:p252:p0 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 252]\nEXAMPLE 10.4\nDefining nested dictionaries and accessing elements\nDefining nested dictionaries\ncompany_org_chart = {\n  \"Marketing\": {\n    \"ID234\": \"Jane Smith\"\n  },\n  \"Sales\": {\n    \"ID123\": \"Bob Johnson\",\n    \"ID122\": \"David Lee\"\n  },\n  \"Engineering\": {\n    \"ID303\": \"Radhika Potlapally\",\n    \"ID321\": \"Maryam Samimi\"\n  }\n}\nTable 10.8\nAccessing nested dictionary items\nprint(company_org_chart[\"Sales\"][\"ID122\"])\nprint(company_org_chart[\"Engineering\"][\"ID321\"])\nDavid Lee\nMaryam Samimi\nTable 10.9",
+        "context_ids": [
+          "openstax-intro-python:p251:p2",
+          "openstax-intro-python:p251:p3",
+          "openstax-intro-python:p252:p0"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "model_calls": [
+      {
+        "tool": "search",
+        "args": {
+          "query": "nested data type"
+        },
+        "prompt_tokens": 282,
+        "completion_tokens": 7,
+        "ms": 1215
+      },
+      {
+        "tool": "answer",
+        "args": {
+          "answer": "In the context of Python dictionaries, \"nested\" refers to dictionaries that are stored as values within another dictionary. This allows for organizing complex data structures, such as an organizational chart where each department is a key and the corresponding value is another dictionary containing employee information. For example, a nested dictionary can have keys representing different departments, with values being dictionaries of employees in those departments, allowing for structured data storage and access.",
+          "citations": [
+            "openstax-intro-python:p251:p2",
+            "openstax-intro-python:p252:p0"
+          ]
+        },
+        "prompt_tokens": 623,
+        "completion_tokens": 120,
+        "ms": 2930,
+        "citation_markers_appended": [
+          "openstax-intro-python:p251:p2",
+          "openstax-intro-python:p252:p0"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "final_context": "[openstax-intro-python:p251:p2 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 251]\nAs described before, Python dictionaries are a type of data structure that allows for storing data in key-value\npairs. Nested dictionaries are dictionaries that are stored as values within another dictionary. Ex: An\norganizational chart with keys being different departments and values being dictionaries of employees in a\ngiven department. For storing employee information in a department, a dictionary can be used with keys\nbeing employee IDs and values being employee names.\n\n[openstax-intro-python:p251:p3 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 251]\n The tables below outline the structure of such nested\ndictionaries and how nested values can be accessed.\n\n[openstax-intro-python:p252:p0 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 252]\nEXAMPLE 10.4\nDefining nested dictionaries and accessing elements\nDefining nested dictionaries\ncompany_org_chart = {\n  \"Marketing\": {\n    \"ID234\": \"Jane Smith\"\n  },\n  \"Sales\": {\n    \"ID123\": \"Bob Johnson\",\n    \"ID122\": \"David Lee\"\n  },\n  \"Engineering\": {\n    \"ID303\": \"Radhika Potlapally\",\n    \"ID321\": \"Maryam Samimi\"\n  }\n}\nTable 10.8\nAccessing nested dictionary items\nprint(company_org_chart[\"Sales\"][\"ID122\"])\nprint(company_org_chart[\"Engineering\"][\"ID321\"])\nDavid Lee\nMaryam Samimi\nTable 10.9",
+    "final_context_ids": [
+      "openstax-intro-python:p251:p2",
+      "openstax-intro-python:p251:p3",
+      "openstax-intro-python:p252:p0"
+    ],
+    "elapsed_s": 4.4,
+    "prompt_tokens": 905,
+    "completion_tokens": 127,
+    "embedding_tokens": 3,
+    "cost_usd": 0.000212,
+    "context_evidence": true,
+    "cited_evidence": true
+  },
+  {
+    "query_id": "q24",
+    "split": "test",
+    "question": "How do I make a copy of my collection?",
+    "config": {
+      "split": "test",
+      "method": "hybrid_rrf",
+      "filter": true,
+      "top_k": 3,
+      "budget": 1500,
+      "max_searches": 3,
+      "context_order": "rank",
+      "stop_repeat": true,
+      "model": "gpt-4o-mini",
+      "output": "results\\exp-test\\R5-hybridf-b1500-rank-stop"
+    },
+    "filter_applied": {
+      "chapter": 9
+    },
+    "status": "answered",
+    "answer": "To make a copy of a collection (specifically a list) in Python, you can use the `copy()` method. This method creates a complete copy of the list. For example, if you have a list called `word_list`, you can create a copy of it by using `wisdom = word_list.copy()`. [openstax-intro-python:p236:p2] [openstax-intro-python:p228:p1]",
+    "citations": [
+      "openstax-intro-python:p236:p2",
+      "openstax-intro-python:p228:p1"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "make a copy of a collection in Python",
+        "filter": {
+          "chapter": 9
+        },
+        "results": [
+          {
+            "id": "openstax-intro-python:p229:p1",
+            "source_id": "openstax-intro-python",
+            "source": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+            "page": 229,
+            "text": "Make a copy of word_list called wisdom. Sort the list called wisdom. Create a sentence using the words in\neach list and print those sentences (no need to add periods at the end of the sentences).\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n9-3-common-list-operations)",
+            "score": 0.03252247488101534,
+            "rank": 1,
+            "strategy": "hybrid_rrf",
+            "metadata": {
+              "printed_page": 219,
+              "chapter": 9,
+              "sections": [
+                "9.3 Common list operations",
+                "9.4 Nested lists"
+              ]
+            },
+            "component_scores": {
+              "dense": 0.38974712792239874,
+              "bm25": 11.626486819112229
+            }
+          },
+          {
+            "id": "openstax-intro-python:p236:p2",
+            "source_id": "openstax-intro-python",
+            "source": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+            "page": 236,
+            "text": "copy() Makes a complete copy of a list.\nTable 9.1 Chapter 9 reference.",
+            "score": 0.03252247488101534,
+            "rank": 2,
+            "strategy": "hybrid_rrf",
+            "metadata": {
+              "printed_page": 226,
+              "chapter": 9,
+              "sections": [
+                "9.6 Chapter summary"
+              ]
+            },
+            "component_scores": {
+              "dense": 0.45796818757247626,
+              "bm25": 8.051317942830144
+            }
+          },
+          {
+            "id": "openstax-intro-python:p228:p1",
+            "source_id": "openstax-intro-python",
+            "source": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+            "page": 228,
+            "text": "c. 12.4\nCopying a list\nThe copy() method is used to create a copy of a list.\nCHECKPOINT\nCopying a list\nCopying a list; ch 9, video 3 (https://www.openstax.org/r/copying-list)\nCONCEPTS IN PRACTICE\nCopying a list\n4 . What is the output of the following code?\nmy_list = [1, 2, 3]\nlist2 = my_list\nlist2[0] = 13\nprint(sum(my_list))\na. 6\nb. 13\nc. 18\n5 . What is the output of the following code?\nmy_list = [1, 2, 3]",
+            "score": 0.03125763125763126,
+            "rank": 3,
+            "strategy": "hybrid_rrf",
+            "metadata": {
+              "printed_page": 218,
+              "chapter": 9,
+              "sections": [
+                "9.3 Common list operations"
+              ]
+            },
+            "component_scores": {
+              "dense": 0.3740672051179248,
+              "bm25": 6.321872227012979
+            }
+          }
+        ],
+        "context": "[openstax-intro-python:p229:p1 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 229]\nMake a copy of word_list called wisdom. Sort the list called wisdom. Create a sentence using the words in\neach list and print those sentences (no need to add periods at the end of the sentences).\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n9-3-common-list-operations)\n\n[openstax-intro-python:p236:p2 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 236]\ncopy() Makes a complete copy of a list.\nTable 9.1 Chapter 9 reference.\n\n[openstax-intro-python:p228:p1 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 228]\nc. 12.4\nCopying a list\nThe copy() method is used to create a copy of a list.\nCHECKPOINT\nCopying a list\nCopying a list; ch 9, video 3 (https://www.openstax.org/r/copying-list)\nCONCEPTS IN PRACTICE\nCopying a list\n4 . What is the output of the following code?\nmy_list = [1, 2, 3]\nlist2 = my_list\nlist2[0] = 13\nprint(sum(my_list))\na. 6\nb. 13\nc. 18\n5 . What is the output of the following code?\nmy_list = [1, 2, 3]",
+        "context_ids": [
+          "openstax-intro-python:p229:p1",
+          "openstax-intro-python:p236:p2",
+          "openstax-intro-python:p228:p1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "model_calls": [
+      {
+        "tool": "search",
+        "args": {
+          "query": "make a copy of a collection in Python"
+        },
+        "prompt_tokens": 283,
+        "completion_tokens": 12,
+        "ms": 1253
+      },
+      {
+        "tool": "answer",
+        "args": {
+          "answer": "To make a copy of a collection (specifically a list) in Python, you can use the `copy()` method. This method creates a complete copy of the list. For example, if you have a list called `word_list`, you can create a copy of it by using `wisdom = word_list.copy()`.",
+          "citations": [
+            "openstax-intro-python:p236:p2",
+            "openstax-intro-python:p228:p1"
+          ]
+        },
+        "prompt_tokens": 623,
+        "completion_tokens": 103,
+        "ms": 2478,
+        "citation_markers_appended": [
+          "openstax-intro-python:p236:p2",
+          "openstax-intro-python:p228:p1"
+        ]
+      }
+    ],
+    "n_searches": 1,
+    "final_context": "[openstax-intro-python:p229:p1 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 229]\nMake a copy of word_list called wisdom. Sort the list called wisdom. Create a sentence using the words in\neach list and print those sentences (no need to add periods at the end of the sentences).\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n9-3-common-list-operations)\n\n[openstax-intro-python:p236:p2 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 236]\ncopy() Makes a complete copy of a list.\nTable 9.1 Chapter 9 reference.\n\n[openstax-intro-python:p228:p1 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 228]\nc. 12.4\nCopying a list\nThe copy() method is used to create a copy of a list.\nCHECKPOINT\nCopying a list\nCopying a list; ch 9, video 3 (https://www.openstax.org/r/copying-list)\nCONCEPTS IN PRACTICE\nCopying a list\n4 . What is the output of the following code?\nmy_list = [1, 2, 3]\nlist2 = my_list\nlist2[0] = 13\nprint(sum(my_list))\na. 6\nb. 13\nc. 18\n5 . What is the output of the following code?\nmy_list = [1, 2, 3]",
+    "final_context_ids": [
+      "openstax-intro-python:p229:p1",
+      "openstax-intro-python:p236:p2",
+      "openstax-intro-python:p228:p1"
+    ],
+    "elapsed_s": 4.02,
+    "prompt_tokens": 906,
+    "completion_tokens": 115,
+    "embedding_tokens": 8,
+    "cost_usd": 0.000205,
+    "context_evidence": true,
+    "cited_evidence": true
+  },
+  {
+    "query_id": "u04",
+    "split": "test",
+    "question": "What does the dictionary method setdefault() return when the key is missing?",
+    "config": {
+      "split": "test",
+      "method": "hybrid_rrf",
+      "filter": true,
+      "top_k": 3,
+      "budget": 1500,
+      "max_searches": 3,
+      "context_order": "rank",
+      "stop_repeat": true,
+      "model": "gpt-4o-mini",
+      "output": "results\\exp-test\\R5-hybridf-b1500-rank-stop"
+    },
+    "filter_applied": null,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "dictionary method setdefault() return when key is missing",
+        "filter": null,
+        "results": [
+          {
+            "id": "openstax-intro-python:p241:p4",
+            "source_id": "openstax-intro-python",
+            "source": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+            "page": 241,
+            "text": "• get() method: The get() method is called with the key as an argument to access the value associated\nwith that key. If the key is not found, the method returns None by default, or a default value specified as\nthe second argument.",
+            "score": 0.03252247488101534,
+            "rank": 1,
+            "strategy": "hybrid_rrf",
+            "metadata": {
+              "printed_page": 231,
+              "chapter": 10,
+              "sections": [
+                "10.2 Dictionary creation",
+                "10.3 Dictionary operations"
+              ]
+            },
+            "component_scores": {
+              "dense": 0.4762848745713961,
+              "bm25": 8.614831483733044
+            }
+          },
+          {
+            "id": "openstax-intro-python:p241:p5",
+            "source_id": "openstax-intro-python",
+            "source": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+            "page": 241,
+            "text": "Ex: In the code below, a dictionary object my_dict is initialized with items {\"apple\": 2, \"banana\": 3,\n\"orange\": 4}. The square bracket notation and get() method are used to access values associated with the\nkeys \"banana\" and \"apple\", respectively. When accessing the dictionary to obtain the key \"pineapple\", -1\nis returned since the key does not exist in the dictionary.\nmy_dict = {\"apple\": 2, \"banana\": 3, \"orange\": 4}\nprint(my_dict[\"banana\"]) # Prints: 3\nprint(my_dict.get(\"apple\")) # Prints: 2",
+            "score": 0.031544957774465976,
+            "rank": 2,
+            "strategy": "hybrid_rrf",
+            "metadata": {
+              "printed_page": 231,
+              "chapter": 10,
+              "sections": [
+                "10.2 Dictionary creation",
+                "10.3 Dictionary operations"
+              ]
+            },
+            "component_scores": {
+              "dense": 0.3486663134206609,
+              "bm25": 9.230923947195075
+            }
+          },
+          {
+            "id": "openstax-intro-python:p243:p2",
+            "source_id": "openstax-intro-python",
+            "source": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+            "page": 243,
+            "text": "To add an item to a dictionary, either the square bracket notation or update() function can be used.\n• Square bracket notation: When using square brackets to create a new key object and assign a value to the\nkey, the new key-value pair will be added to the dictionary.\n    my_dict = {\"apple\": 2, \"banana\": 3, \"orange\": 4}\n    my_dict[\"pineapple\"] = 1",
+            "score": 0.030309988518943745,
+            "rank": 3,
+            "strategy": "hybrid_rrf",
+            "metadata": {
+              "printed_page": 233,
+              "chapter": 10,
+              "sections": [
+                "10.3 Dictionary operations"
+              ]
+            },
+            "component_scores": {
+              "dense": 0.34038155701613704,
+              "bm25": 7.16376775171823
+            }
+          }
+        ],
+        "context": "[openstax-intro-python:p241:p4 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 241]\n• get() method: The get() method is called with the key as an argument to access the value associated\nwith that key. If the key is not found, the method returns None by default, or a default value specified as\nthe second argument.\n\n[openstax-intro-python:p241:p5 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 241]\nEx: In the code below, a dictionary object my_dict is initialized with items {\"apple\": 2, \"banana\": 3,\n\"orange\": 4}. The square bracket notation and get() method are used to access values associated with the\nkeys \"banana\" and \"apple\", respectively. When accessing the dictionary to obtain the key \"pineapple\", -1\nis returned since the key does not exist in the dictionary.\nmy_dict = {\"apple\": 2, \"banana\": 3, \"orange\": 4}\nprint(my_dict[\"banana\"]) # Prints: 3\nprint(my_dict.get(\"apple\")) # Prints: 2\n\n[openstax-intro-python:p243:p2 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 243]\nTo add an item to a dictionary, either the square bracket notation or update() function can be used.\n• Square bracket notation: When using square brackets to create a new key object and assign a value to the\nkey, the new key-value pair will be added to the dictionary.\n    my_dict = {\"apple\": 2, \"banana\": 3, \"orange\": 4}\n    my_dict[\"pineapple\"] = 1",
+        "context_ids": [
+          "openstax-intro-python:p241:p4",
+          "openstax-intro-python:p241:p5",
+          "openstax-intro-python:p243:p2"
+        ]
+      },
+      {
+        "event": "invalid_or_missing_citations"
+      }
+    ],
+    "model_calls": [
+      {
+        "tool": "search",
+        "args": {
+          "query": "dictionary method setdefault() return when key is missing"
+        },
+        "prompt_tokens": 288,
+        "completion_tokens": 14,
+        "ms": 1287
+      },
+      {
+        "tool": "search",
+        "args": {
+          "query": "dictionary method setdefault() return when key is missing"
+        },
+        "prompt_tokens": 663,
+        "completion_tokens": 22,
+        "ms": 1158,
+        "repeat_query_stop": true
+      }
+    ],
+    "n_searches": 1,
+    "final_context": "[openstax-intro-python:p241:p4 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 241]\n• get() method: The get() method is called with the key as an argument to access the value associated\nwith that key. If the key is not found, the method returns None by default, or a default value specified as\nthe second argument.\n\n[openstax-intro-python:p241:p5 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 241]\nEx: In the code below, a dictionary object my_dict is initialized with items {\"apple\": 2, \"banana\": 3,\n\"orange\": 4}. The square bracket notation and get() method are used to access values associated with the\nkeys \"banana\" and \"apple\", respectively. When accessing the dictionary to obtain the key \"pineapple\", -1\nis returned since the key does not exist in the dictionary.\nmy_dict = {\"apple\": 2, \"banana\": 3, \"orange\": 4}\nprint(my_dict[\"banana\"]) # Prints: 3\nprint(my_dict.get(\"apple\")) # Prints: 2\n\n[openstax-intro-python:p243:p2 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 243]\nTo add an item to a dictionary, either the square bracket notation or update() function can be used.\n• Square bracket notation: When using square brackets to create a new key object and assign a value to the\nkey, the new key-value pair will be added to the dictionary.\n    my_dict = {\"apple\": 2, \"banana\": 3, \"orange\": 4}\n    my_dict[\"pineapple\"] = 1",
+    "final_context_ids": [
+      "openstax-intro-python:p241:p4",
+      "openstax-intro-python:p241:p5",
+      "openstax-intro-python:p243:p2"
+    ],
+    "elapsed_s": 2.69,
+    "prompt_tokens": 951,
+    "completion_tokens": 36,
+    "embedding_tokens": 10,
+    "cost_usd": 0.000164
+  },
+  {
+    "query_id": "u05",
+    "split": "test",
+    "question": "How does enumerate() give both the index and the value when looping over a list?",
+    "config": {
+      "split": "test",
+      "method": "hybrid_rrf",
+      "filter": true,
+      "top_k": 3,
+      "budget": 1500,
+      "max_searches": 3,
+      "context_order": "rank",
+      "stop_repeat": true,
+      "model": "gpt-4o-mini",
+      "output": "results\\exp-test\\R5-hybridf-b1500-rank-stop"
+    },
+    "filter_applied": null,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "enumerate() index value looping over a list",
+        "filter": null,
+        "results": [
+          {
+            "id": "openstax-intro-python:p248:p1",
+            "source_id": "openstax-intro-python",
+            "source": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+            "page": 248,
+            "text": "Looping over a Python dictionary is a way to iterate through key-value pairs in the dictionary. Looping in a\ndictionary can be done by iterating over keys or items. When looping using keys, keys are obtained using the\nkeys() function and are passed to the loop variable one at a time. When looping over items using the\nitems() function, both the key and value for each item are passed to the loop variable.\nA FOR LOOP OVER A DICTIONARY RETRIEVES EACH KEY IN THE DICTIONARY",
+            "score": 0.031099324975891997,
+            "rank": 1,
+            "strategy": "hybrid_rrf",
+            "metadata": {
+              "printed_page": 238,
+              "chapter": 10,
+              "sections": [
+                "10.4 Conditionals and looping in dictionaries"
+              ]
+            },
+            "component_scores": {
+              "dense": 0.4625362851428121,
+              "bm25": 11.627947079702647
+            }
+          },
+          {
+            "id": "openstax-intro-python:p129:p0",
+            "source_id": "openstax-intro-python",
+            "source": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+            "page": 129,
+            "text": "For loop\nIn Python, a container can be a range of numbers, a string of characters, or a list of values. To access objects\nwithin a container, an iterative loop can be designed to retrieve objects one at a time. A for loop iterates over\nall elements in a container. Ex: Iterating over a class roster and printing students' names.\nCHECKPOINT\nFor loop example for iterating over a container object",
+            "score": 0.031054405392392875,
+            "rank": 2,
+            "strategy": "hybrid_rrf",
+            "metadata": {
+              "printed_page": 119,
+              "chapter": 5,
+              "sections": [
+                "5.2 For loop"
+              ]
+            },
+            "component_scores": {
+              "dense": 0.5125646006386319,
+              "bm25": 5.832132610210948
+            }
+          },
+          {
+            "id": "openstax-intro-python:p135:p0",
+            "source_id": "openstax-intro-python",
+            "source": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+            "page": 135,
+            "text": "j += 1\n  i += 1\nNested for loops\nA nested for loop can be implemented and used in the same way as a nested while loop. A for loop is a\npreferable option in cases where a loop is used for counting purposes using a range() function, or when\niterating over a container object, including nested situations. Ex: Iterating over multiple course rosters. The\nouter loop iterates over different courses, and the inner loop iterates over the names in each course roster.\nCHECKPOINT\nNested for loops",
+            "score": 0.029571646010002173,
+            "rank": 3,
+            "strategy": "hybrid_rrf",
+            "metadata": {
+              "printed_page": 125,
+              "chapter": 5,
+              "sections": [
+                "5.3 Nested loops"
+              ]
+            },
+            "component_scores": {
+              "dense": 0.5021740089852235,
+              "bm25": 4.838146274212741
+            }
+          }
+        ],
+        "context": "[openstax-intro-python:p248:p1 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 248]\nLooping over a Python dictionary is a way to iterate through key-value pairs in the dictionary. Looping in a\ndictionary can be done by iterating over keys or items. When looping using keys, keys are obtained using the\nkeys() function and are passed to the loop variable one at a time. When looping over items using the\nitems() function, both the key and value for each item are passed to the loop variable.\nA FOR LOOP OVER A DICTIONARY RETRIEVES EACH KEY IN THE DICTIONARY\n\n[openstax-intro-python:p129:p0 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 129]\nFor loop\nIn Python, a container can be a range of numbers, a string of characters, or a list of values. To access objects\nwithin a container, an iterative loop can be designed to retrieve objects one at a time. A for loop iterates over\nall elements in a container. Ex: Iterating over a class roster and printing students' names.\nCHECKPOINT\nFor loop example for iterating over a container object",
+        "context_ids": [
+          "openstax-intro-python:p248:p1",
+          "openstax-intro-python:p129:p0"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "enumerate() function looping over a list",
+        "filter": null,
+        "results": [
+          {
+            "id": "openstax-intro-python:p135:p0",
+            "source_id": "openstax-intro-python",
+            "source": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+            "page": 135,
+            "text": "j += 1\n  i += 1\nNested for loops\nA nested for loop can be implemented and used in the same way as a nested while loop. A for loop is a\npreferable option in cases where a loop is used for counting purposes using a range() function, or when\niterating over a container object, including nested situations. Ex: Iterating over multiple course rosters. The\nouter loop iterates over different courses, and the inner loop iterates over the names in each course roster.\nCHECKPOINT\nNested for loops",
+            "score": 0.03225806451612903,
+            "rank": 1,
+            "strategy": "hybrid_rrf",
+            "metadata": {
+              "printed_page": 125,
+              "chapter": 5,
+              "sections": [
+                "5.3 Nested loops"
+              ]
+            },
+            "component_scores": {
+              "dense": 0.5000640171263607,
+              "bm25": 6.637536176325211
+            }
+          },
+          {
+            "id": "openstax-intro-python:p129:p0",
+            "source_id": "openstax-intro-python",
+            "source": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+            "page": 129,
+            "text": "For loop\nIn Python, a container can be a range of numbers, a string of characters, or a list of values. To access objects\nwithin a container, an iterative loop can be designed to retrieve objects one at a time. A for loop iterates over\nall elements in a container. Ex: Iterating over a class roster and printing students' names.\nCHECKPOINT\nFor loop example for iterating over a container object",
+            "score": 0.031544957774465976,
+            "rank": 2,
+            "strategy": "hybrid_rrf",
+            "metadata": {
+              "printed_page": 119,
+              "chapter": 5,
+              "sections": [
+                "5.2 For loop"
+              ]
+            },
+            "component_scores": {
+              "dense": 0.5160227831383547,
+              "bm25": 5.832132610210948
+            }
+          },
+          {
+            "id": "openstax-intro-python:p248:p1",
+            "source_id": "openstax-intro-python",
+            "source": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+            "page": 248,
+            "text": "Looping over a Python dictionary is a way to iterate through key-value pairs in the dictionary. Looping in a\ndictionary can be done by iterating over keys or items. When looping using keys, keys are obtained using the\nkeys() function and are passed to the loop variable one at a time. When looping over items using the\nitems() function, both the key and value for each item are passed to the loop variable.\nA FOR LOOP OVER A DICTIONARY RETRIEVES EACH KEY IN THE DICTIONARY",
+            "score": 0.030679156908665108,
+            "rank": 3,
+            "strategy": "hybrid_rrf",
+            "metadata": {
+              "printed_page": 238,
+              "chapter": 10,
+              "sections": [
+                "10.4 Conditionals and looping in dictionaries"
+              ]
+            },
+            "component_scores": {
+              "dense": 0.4573303996632576,
+              "bm25": 12.543012291117051
+            }
+          }
+        ],
+        "context": "[openstax-intro-python:p248:p1 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 248]\nLooping over a Python dictionary is a way to iterate through key-value pairs in the dictionary. Looping in a\ndictionary can be done by iterating over keys or items. When looping using keys, keys are obtained using the\nkeys() function and are passed to the loop variable one at a time. When looping over items using the\nitems() function, both the key and value for each item are passed to the loop variable.\nA FOR LOOP OVER A DICTIONARY RETRIEVES EACH KEY IN THE DICTIONARY\n\n[openstax-intro-python:p135:p0 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 135]\nj += 1\n  i += 1\nNested for loops\nA nested for loop can be implemented and used in the same way as a nested while loop. A for loop is a\npreferable option in cases where a loop is used for counting purposes using a range() function, or when\niterating over a container object, including nested situations. Ex: Iterating over multiple course rosters. The\nouter loop iterates over different courses, and the inner loop iterates over the names in each course roster.\nCHECKPOINT\nNested for loops",
+        "context_ids": [
+          "openstax-intro-python:p248:p1",
+          "openstax-intro-python:p135:p0"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "enumerate() function index value list",
+        "filter": null,
+        "results": [
+          {
+            "id": "openstax-intro-python:p230:p0",
+            "source_id": "openstax-intro-python",
+            "source": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+            "page": 230,
+            "text": "CHECKPOINT\nList-of-lists\nList-of-lists; ch 9, video 4 (https://www.openstax.org/r/list-of-lists)\nCONCEPTS IN PRACTICE\nLists\nFor each of the questions below, consider the following matrix:\n1 . What would be the correct way to represent matA in Python?\na. [[7, 4, 5], [3, 9, 6], [1, 2, 8]]\nb. [7, 4, 5\n3, 9, 6\n1, 2, 8]\nc. [[7, 3, 1], [4, 9, 2], [1, 2, 8]\n2 . What would be the correct index for the number 6 in the above list?\na. [5]\nb. [2][1]\nc. [1][2]",
+            "score": 0.03125763125763126,
+            "rank": 1,
+            "strategy": "hybrid_rrf",
+            "metadata": {
+              "printed_page": 220,
+              "chapter": 9,
+              "sections": [
+                "9.4 Nested lists"
+              ]
+            },
+            "component_scores": {
+              "dense": 0.3887658949664956,
+              "bm25": 5.0362539146507075
+            }
+          },
+          {
+            "id": "openstax-intro-python:p229:p2",
+            "source_id": "openstax-intro-python",
+            "source": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+            "page": 229,
+            "text": "9.4 Nested lists\nLearning objectives\nBy the end of this section you should be able to\n• Demonstrate the use of a list-of-lists to structure data.\n• Demonstrate individual element addressing using multi-dimensional indexing.\n• Use nested loops to iterate a list-of-lists.\nList-of-lists\nLists can be made of any type of element. A list element can also be a list. Ex: [2, [3, 5], 17] is a valid list\nwith the list [3, 5] being the element at index 1.",
+            "score": 0.02946236559139785,
+            "rank": 2,
+            "strategy": "hybrid_rrf",
+            "metadata": {
+              "printed_page": 219,
+              "chapter": 9,
+              "sections": [
+                "9.3 Common list operations",
+                "9.4 Nested lists"
+              ]
+            },
+            "component_scores": {
+              "dense": 0.3690451736738245,
+              "bm25": 5.730040777442465
+            }
+          },
+          {
+            "id": "openstax-intro-python:p141:p2",
+            "source_id": "openstax-intro-python",
+            "source": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+            "page": 141,
+            "text": "In the code examples below, the code on the left prints \"Found 10!\" if the variable i's value is 10. If the\nvalue 10 is not in the list, the code prints \"10 is not in the list.\". The code on the right uses the\nseen Boolean variable to track if the value 10 is in the list. After loop's execution, if seen's value is still false,\nthe code prints \"10 is not in the list.\".\nnumbers = [2, 5, 7, 11, 12]\nfor i in numbers:\n  if i == 10:\n    print(\"Found 10!\")\n    break\nelse:",
+            "score": 0.028850145288501453,
+            "rank": 3,
+            "strategy": "hybrid_rrf",
+            "metadata": {
+              "printed_page": 131,
+              "chapter": 5,
+              "sections": [
+                "5.5 Loop else"
+              ]
+            },
+            "component_scores": {
+              "dense": 0.3692025840124574,
+              "bm25": 4.295123742049553
+            }
+          }
+        ],
+        "context": "[openstax-intro-python:p248:p1 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 248]\nLooping over a Python dictionary is a way to iterate through key-value pairs in the dictionary. Looping in a\ndictionary can be done by iterating over keys or items. When looping using keys, keys are obtained using the\nkeys() function and are passed to the loop variable one at a time. When looping over items using the\nitems() function, both the key and value for each item are passed to the loop variable.\nA FOR LOOP OVER A DICTIONARY RETRIEVES EACH KEY IN THE DICTIONARY\n\n[openstax-intro-python:p135:p0 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 135]\nj += 1\n  i += 1\nNested for loops\nA nested for loop can be implemented and used in the same way as a nested while loop. A for loop is a\npreferable option in cases where a loop is used for counting purposes using a range() function, or when\niterating over a container object, including nested situations. Ex: Iterating over multiple course rosters. The\nouter loop iterates over different courses, and the inner loop iterates over the names in each course roster.\nCHECKPOINT\nNested for loops",
+        "context_ids": [
+          "openstax-intro-python:p248:p1",
+          "openstax-intro-python:p135:p0"
+        ]
+      },
+      {
+        "event": "invalid_or_missing_citations"
+      }
+    ],
+    "model_calls": [
+      {
+        "tool": "search",
+        "args": {
+          "query": "enumerate() index value looping over a list"
+        },
+        "prompt_tokens": 290,
+        "completion_tokens": 13,
+        "ms": 1212
+      },
+      {
+        "tool": "search",
+        "args": {
+          "query": "enumerate() function looping over a list"
+        },
+        "prompt_tokens": 556,
+        "completion_tokens": 20,
+        "ms": 1128
+      },
+      {
+        "tool": "search",
+        "args": {
+          "query": "enumerate() function index value list"
+        },
+        "prompt_tokens": 591,
+        "completion_tokens": 19,
+        "ms": 767
+      },
+      {
+        "tool": "search",
+        "args": {
+          "query": "enumerate() function index value list"
+        },
+        "prompt_tokens": 600,
+        "completion_tokens": 19,
+        "ms": 1147,
+        "repeat_query_stop": true
+      }
+    ],
+    "n_searches": 3,
+    "final_context": "[openstax-intro-python:p248:p1 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 248]\nLooping over a Python dictionary is a way to iterate through key-value pairs in the dictionary. Looping in a\ndictionary can be done by iterating over keys or items. When looping using keys, keys are obtained using the\nkeys() function and are passed to the loop variable one at a time. When looping over items using the\nitems() function, both the key and value for each item are passed to the loop variable.\nA FOR LOOP OVER A DICTIONARY RETRIEVES EACH KEY IN THE DICTIONARY\n\n[openstax-intro-python:p135:p0 | data/raw/Introduction_to_Python_Programming-WEB.pdf | page 135]\nj += 1\n  i += 1\nNested for loops\nA nested for loop can be implemented and used in the same way as a nested while loop. A for loop is a\npreferable option in cases where a loop is used for counting purposes using a range() function, or when\niterating over a container object, including nested situations. Ex: Iterating over multiple course rosters. The\nouter loop iterates over different courses, and the inner loop iterates over the names in each course roster.\nCHECKPOINT\nNested for loops",
+    "final_context_ids": [
+      "openstax-intro-python:p248:p1",
+      "openstax-intro-python:p135:p0"
+    ],
+    "elapsed_s": 4.98,
+    "prompt_tokens": 2037,
+    "completion_tokens": 71,
+    "embedding_tokens": 21,
+    "cost_usd": 0.000349
+  }
+]
